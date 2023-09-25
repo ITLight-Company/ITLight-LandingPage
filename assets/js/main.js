@@ -10,7 +10,7 @@
     document.querySelector(".preloader").style.opacity = "0";
     document.querySelector(".preloader").style.display = "none";
   }
-
+  
   // ======= Sticky
   window.onscroll = function () {
     const header_navbar = document.querySelector(".navbar-area");
@@ -19,10 +19,10 @@
 
     if (window.pageYOffset > sticky) {
       header_navbar.classList.add("sticky");
-      logo.src = "assets/images/logo/logo-2.svg";
+      logo.src = "assets/images/logo/logo2.svg";
     } else {
       header_navbar.classList.remove("sticky");
-      logo.src = "assets/images/logo/logo.svg";
+      logo.src = "assets/images/logo/log.svg";
     }
 
     // show or hide the back-top-top button
@@ -338,3 +338,4 @@
       retina_detect: !0,
     });
 })();
+
