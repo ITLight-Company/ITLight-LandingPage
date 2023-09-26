@@ -58,3 +58,68 @@ document.getElementById('subscribeForm').addEventListener('submit', async functi
     }
 });
 // ...
+// Check if the target date is in localStorage
+let targetDate = localStorage.getItem('targetDate4');
+
+// If not, set the target date to November 13, 2023
+if (!targetDate) {
+    targetDate = new Date(2023, 10, 13, 0, 0, 0); // November is 10 (zero-based index)
+    localStorage.setItem('targetDate4', targetDate);
+} else {
+    targetDate = new Date(targetDate);
+}
+
+// Update the countdown every second
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+    const now = new Date();
+    const timeDifference = targetDate - now;
+
+    if (timeDifference <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown').innerHTML = 'Countdown Complete';
+    } else {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerHTML = `
+            ${days}d ${hours}h ${minutes}m ${seconds}s
+        `;
+    }
+}
+
+// Check if the target date for countdown2 is in localStorage
+let targetDate2 = localStorage.getItem('targetDate3');
+
+// If not, set the target date to January 2, 2024
+if (!targetDate2) {
+    targetDate2 = new Date(2024, 0, 2, 0, 0, 0); // January is 0 (zero-based index)
+    localStorage.setItem('targetDate3', targetDate2);
+} else {
+    targetDate2 = new Date(targetDate2);
+}
+
+// Update the countdown2 every second
+const countdownInterval2 = setInterval(updateCountdown2, 1000);
+
+function updateCountdown2() {
+    const now = new Date();
+    const timeDifference = targetDate2 - now;
+
+    if (timeDifference <= 0) {
+        clearInterval(countdownInterval2);
+        document.getElementById('countdown2').innerHTML = 'Countdown Complete';
+    } else {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown2').innerHTML = `
+            ${days}d ${hours}h ${minutes}m ${seconds}s
+        `;
+    }
+}
