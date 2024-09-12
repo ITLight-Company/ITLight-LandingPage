@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>ITLight - Earning and Saving</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/video/icon.png"
+      type="image/png"
+    />
+
+    <!--====== CSS Files LinkUp ======-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+    <header class="header-area">
+      <div
+        style="
+          background: indigo;
+          position: fixed;
+          z-index: 99;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 99;
+          -webkit-transition: all 0.3s ease-out 0s;
+          transition: all 0.3s ease-out 0s;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+          -webkit-transition: all 0.3s ease-out 0s;
+          transition: all 0.3s ease-out 0s;
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav
+                class="navbar navbar-expand-lg"
+                style="padding: 15px 0 !important"
+              >
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo/NEW_LOGO.svg" alt="Logo" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="toggler-icon"> </span>
+                  <span class="toggler-icon"> </span>
+                  <span class="toggler-icon"> </span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent"
+                >
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+      <a class="page-scroll active" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#features">Apps</a>
+    </li> -->
+                    <li class="nav-item dropdown">
+                      <a
+                        class="dropdown-toggle"
+                        href="#"
+                        id="firmaDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Firma
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#about"
+                            style="
+                              color: black;
+                              padding-left: 10px;
+                              font-size: 15px;
+                            "
+                            >O nas</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#how_we_work"
+                            style="
+                              color: black;
+                              padding-left: 10px;
+                              font-size: 15px;
+                            "
+                            >Jak Pracujemy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#values"
+                            style="
+                              color: black;
+                              padding-left: 10px;
+                              font-size: 15px;
+                            "
+                            >Nasze wartości</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="uslugiDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Usługi
+                      </a>
+                      <ul
+                        class="dropdown-menu multi-column"
+                        aria-labelledby="uslugiDropdown"
+                      >
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h6>Dedykowane oprogramowanie</h6>
+                            <ul class="list-unstyled">
+                              <li>Oprogramowanie szyte na miarę</li>
+                              <li>Integracje systemów</li>
+                              <li>Internet Rzeczy</li>
+                              <li>Transformacja cyfrowa</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3">
+                            <h6>Tworzenie aplikacji mobilnych</h6>
+                            <ul class="list-unstyled">
+                              <li>Aplikacje w React Native</li>
+                              <li>UX/UI Design</li>
+                              <li>Aplikacje na iOS i Android</li>
+                            </ul>
+                            <h6>Budowa MVP</h6>
+                            <ul class="list-unstyled">
+                              <li>Walidacje pomysłu</li>
+                              <li>Prototypowanie</li>
+                              <li>Budowa prostych aplikacji</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3">
+                            <h6>AWS i rozwiązania Chmurowe</h6>
+                            <ul class="list-unstyled">
+                              <li>Zarządzanie chmurą</li>
+                              <li>Budowa architektury w chmurze</li>
+                              <li>Procesy CI/CD</li>
+                            </ul>
+                            <h6>Warsztaty produktowe</h6>
+                            <ul class="list-unstyled">
+                              <li>Product Discovery</li>
+                              <li>Event Storming</li>
+                              <li>Design Sprint</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3">
+                            <h6>Tworzenie aplikacji webowych</h6>
+                            <ul class="list-unstyled">
+                              <li>Platformy B2B</li>
+                              <li>Aplikacje w React, Vue.js</li>
+                            </ul>
+                            <h6>Rozwiązania AI</h6>
+                            <ul class="list-unstyled">
+                              <li>Automatyzacja procesów</li>
+                              <li>ChatGPT</li>
+                              <li>Analiza danych</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="career.html">Kariera</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="contact.html">Kontakt</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- navbar collapse -->
+
+                <div class="navbar-btn d-none d-sm-inline-block">
+                  <a
+                    class="main-btn"
+                    data-scroll-nav="0"
+                    href="https://uideck.com/templates/basic/"
+                    rel="nofollow"
+                  >
+                    Bezpłatna Wycena
+                  </a>
+                </div>
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- navbar area -->
+    </header>
+    <section id="about"></section>
+    <div class="row justify-content-center"></div>
+    <div class="col-lg-12">
+      <div class="section-title text-center pt-140">
+        <div class="line m-auto"></div>
+        <h3 class="title">
+          O nas,
+          <span> wiele Firm z różnych branż!</span>
+        </h3>
+      </div>
+      <!-- section title -->
+    </div>
+
+    <!--====== ABOUT PART START ======-->
+    <div class="about-area pt-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="about-content mt-50 wow fadeInLeftBig"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="section-title">
+                <div class="line"></div>
+                <h3 class="title">Who Our<span> Products Are For </span></h3>
+              </div>
+              <!-- section title -->
+              <p class="text">
+                At ITLight, we understand that financial goals vary from person
+                to person. That's why our suite of mobile applications is
+                tailored for a diverse audience. Whether you're a young
+                professional aiming to grow your savings, a seasoned investor
+                seeking to optimize returns, or someone simply looking for smart
+                and accessible financial management tools, our apps are designed
+                with you in mind. We believe that everyone deserves the
+                opportunity to enhance their financial well-being, and our
+                products are here to make that a reality.
+              </p>
+              <!-- <a href="#features" class="main-btn">Try it Free</a> -->
+            </div>
+            <!-- about content -->
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="about-image text-center mt-50 wow fadeInRightBig"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="col-lg-6">
+                <div
+                  class="contact-form form-style-one mt-35 wow fadeIn"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.5s"
+                >
+                  <form
+                    id="contact-form"
+                    action="assets/contact.php"
+                    method="post"
+                  >
+                    <div class="form-input mt-15">
+                      <label>Name</label>
+                      <div class="input-items default">
+                        <input type="text" placeholder="Name" name="name" />
+                        <i class="lni-user"></i>
+                      </div>
+                    </div>
+                    <!-- form input -->
+                    <div class="form-input mt-15">
+                      <label>Email</label>
+                      <div class="input-items default">
+                        <input type="email" placeholder="Email" name="email" />
+                        <i class="lni-envelope"></i>
+                      </div>
+                    </div>
+                    <!-- form input -->
+                    <div class="form-input mt-15">
+                      <label>Massage</label>
+                      <div class="input-items default">
+                        <textarea
+                          placeholder="Massage"
+                          name="massage"
+                        ></textarea>
+                        <i class="lni-pencil-alt"></i>
+                      </div>
+                    </div>
+                    <!-- form input -->
+                    <p class="form-message"></p>
+                    <div class="form-input rounded-buttons mt-20">
+                      <button type="submit" class="main-btn rounded-three">
+                        Submit
+                      </button>
+                    </div>
+                    <!-- form input -->
+                  </form>
+                </div>
+                <!-- contact form -->
+              </div>
+            </div>
+            <!-- about image -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+  </body>
+</html>

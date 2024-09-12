@@ -499,3 +499,22 @@ $(".client-active").slick({
     },
   ],
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdownToggle = document.getElementById("uslugiDropdown");
+
+  dropdownToggle.addEventListener("click", function () {
+    if (dropdownToggle.classList.contains("show")) {
+      dropdownToggle.classList.remove("show");
+    } else {
+      dropdownToggle.classList.add("show");
+    }
+  });
+
+  dropdownToggle.addEventListener("show.bs.dropdown", function () {
+    dropdownToggle.classList.add("show");
+  });
+
+  dropdownToggle.addEventListener("hide.bs.dropdown", function () {
+    dropdownToggle.classList.remove("show");
+  });
+});

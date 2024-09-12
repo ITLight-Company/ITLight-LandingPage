@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz Kontaktowy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <!-- Załaduj SDK EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("k5w_TeKzh8tZcHn07"); // Zastąp YOUR_USER_ID swoim ID użytkownika z EmailJS
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Skontaktuj się z nami i zbuduj aplikację mobilną</h1>
+      <form id="contactForm">
+        <label for="email">E-mail firmowy *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Numer telefonu *</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Opowiedz nam o swoim projekcie *</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- <label for="attachment"
+          >Dodaj załącznik (np. brief lub specyfikację techniczną)</label
+        >
+        <input type="file" id="attachment" name="attachment" /> -->
+
+        <button type="submit">Wyślij wiadomość</button>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Zapobiega przeładowaniu strony
+
+          // Pobierz dane z formularza
+          var email = document.getElementById("email").value;
+          var phone = document.getElementById("phone").value;
+          var message = document.getElementById("message").value;
+
+          // Konfiguracja danych do wysłania
+          var templateParams = {
+            from_email: email,
+            phone_number: phone,
+            message: message,
+            to_email: "itlight.company@gmail.com",
+          };
+
+          // Wyślij e-mail przez EmailJS
+          emailjs
+            .send("service_k2o1kuj", "template_gmseutu", templateParams)
+            .then(
+              function (response) {
+                alert(
+                  "Wiadomość została wysłana!",
+                  response.status,
+                  response.text
+                );
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Wystąpił błąd przy wysyłaniu wiadomości...", error);
+              }
+            );
+        });
+    </script>
+  </body>
+</html>
