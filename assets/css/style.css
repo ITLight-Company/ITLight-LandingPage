@@ -2366,6 +2366,9 @@ p {
 
 .dropdown-menu ul li {
   margin-bottom: 5px;
+  color: grey;
+  line-height: 1.2;
+  font-size: 15px;
 }
 
 .nav-item .dropdown-toggle::after {
@@ -2543,4 +2546,38 @@ p {
   font-size: 20px;
   z-index: 9;
   color: #6c6c6c;
+}
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  transform: translateZ(0);
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-property: transform, opacity;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide 35s linear 1s infinite;
+}
+
+.slide {
+  flex: 0 0 10%; /* szerokość każdego slajdu jest 20% szerokości slidera */
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 120px;
+  display: block;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
