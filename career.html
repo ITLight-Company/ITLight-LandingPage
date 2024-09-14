@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <!--====== Title ======-->
-    <title>ITLight - Earning and Saving</title>
+<head>
+  <meta charset="utf-8" />
 
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--====== Title ======-->
+  <title>ITLight - Earning and Saving</title>
 
-    <!--====== Favicon Icon ======-->
-    <link
-      rel="shortcut icon"
-      href="assets/images/video/icon.png"
-      type="image/png"
-    />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--====== CSS Files LinkUp ======-->
-    <link rel="stylesheet" href="/assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/lineicons.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/slick.css" />
-  </head>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="assets/images/video/icon.png" type="image/png" />
 
-  <body>
-    <!--[if IE]>
+  <!--====== CSS Files LinkUp ======-->
+  <link rel="stylesheet" href="/assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <style>
+    .services-title a {
+      color: #333;
+      text-align: left;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .services-title a:hover {
+      text-align: left;
+      color: #007bff;
+    }
+
+    .short-text {
+      text-align: left;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .services-content ul {
+      text-align: left;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .services-content h5 {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
         <a href="https://browsehappy.com/">upgrade your browser</a> to improve
@@ -35,13 +64,13 @@
       </p>
     <![endif]-->
 
-    <!--====== PRELOADER PART START ======-->
+  <!--====== PRELOADER PART START ======-->
 
-    <!--====== PRELOADER PART ENDS ======-->
+  <!--====== PRELOADER PART ENDS ======-->
 
-    <!--====== HEADER PART START ======-->
-    <header class="header-area">
-      <div  style="background: #361cc1;  position: fixed;
+  <!--====== HEADER PART START ======-->
+  <header class="header-area">
+    <div style="background: #361cc1;  position: fixed;
       z-index: 99;
   top: 0;
   left: 0;
@@ -55,272 +84,357 @@
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg" style="padding: 15px 0 !important;">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/images/logo/NEW_LOGO.svg" alt="Logo" />
-                </a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
-                </button>
-
-                <div
-                  class="collapse navbar-collapse sub-menu-bar"
-                  id="navbarSupportedContent"
-                >
-                  <ul id="nav" class="navbar-nav ms-auto">
-                       <li class="nav-item">
-                      <a class="nav-link " href="index.html">Firma</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="uslugiDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Usługi
-                      </a>
-                      <ul
-                        class="dropdown-menu multi-column"
-                        aria-labelledby="uslugiDropdown"
-                      >
-                        <div class="row">
-                          <div class="col-md-3">
-                            <h6>Dedykowane oprogramowanie</h6>
-                            <ul class="list-unstyled">
-                              <li>Oprogramowanie szyte na miarę</li>
-                              <li>Integracje systemów</li>
-                              <li>Internet Rzeczy</li>
-                              <li>Transformacja cyfrowa</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-3">
-                            <h6>Tworzenie aplikacji mobilnych</h6>
-                            <ul class="list-unstyled">
-                              <li>Aplikacje w React Native</li>
-                              <li>UX/UI Design</li>
-                              <li>Aplikacje na iOS i Android</li>
-                            </ul>
-                            <h6>Budowa MVP</h6>
-                            <ul class="list-unstyled">
-                              <li>Walidacje pomysłu</li>
-                              <li>Prototypowanie</li>
-                              <li>Budowa prostych aplikacji</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-3">
-                            <h6>AWS i rozwiązania Chmurowe</h6>
-                            <ul class="list-unstyled">
-                              <li>Zarządzanie chmurą</li>
-                              <li>Budowa architektury w chmurze</li>
-                              <li>Procesy CI/CD</li>
-                            </ul>
-                            <h6>Warsztaty produktowe</h6>
-                            <ul class="list-unstyled">
-                              <li>Product Discovery</li>
-                              <li>Event Storming</li>
-                              <li>Design Sprint</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-3">
-                            <h6>Tworzenie aplikacji webowych</h6>
-                            <ul class="list-unstyled">
-                              <li>Platformy B2B</li>
-                              <li>Aplikacje w React, Vue.js</li>
-                            </ul>
-                            <h6>Rozwiązania AI</h6>
-                            <ul class="list-unstyled">
-                              <li>Automatyzacja procesów</li>
-                              <li>ChatGPT</li>
-                              <li>Analiza danych</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </ul>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="career.html">Kariera</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Kontakt</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- navbar collapse -->
-
-                <div class="navbar-btn d-none d-sm-inline-block">
-                  <a
-                    class="main-btn"
-                    data-scroll-nav="0"
-                   href="contact.html"
-                    rel="nofollow"
-                  >
-                    Bezpłatna Wycena
-                  </a>
-                </div>
-              </nav>
-              <!-- navbar -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-      </div>
-      <!-- navbar area -->
-    </header>
-        <section id="features" class="services-area pt-120"></section>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="section-title text-center pb-40">
-              <div class="line m-auto"></div>
-              <h3 class="title">
-                Kariera,
-                <span> Sprawdź nasze dostepne stanowiska</span>
-              </h3>
-            </div>
-            <!-- section title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row justify-content-center">
-          <div class="">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.2s"
-            >
-              <div class="services-icon">
-                <img
-                  class="shape"
-                  src="assets/images/icons/bg.svg"
-                  alt="shape"
-                />
-                <img
-                  class="shape-1"
-                  src="assets/images/icons/mysaving.svg"
-                  alt="shape"
-                />
-             
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Flutter Developer</a>
-                </h4>
-                <p class="text">
-                  An application to help you save money that works on the principle of categorization.
-                  It shows full analytics of your expenses to make it easier for you to understand your money.
-                </p>
-             <div class="navbar-btn d-none d-sm-inline-block" style="padding-top: 20px;">
-                  <a
-                  style="width: 150px;"
-                    class="main-btn"
-                    data-scroll-nav="0"
-                    href="https://uideck.com/templates/basic/"
-                    rel="nofollow"
-                  >
-                   Aplikuj
-                  </a>
-                </div>
-                <p class="text">
-               <em>Version: 2.2.0</em>
-                </p>
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="services-icon">
-                <div class="services-icon">
-                  <img
-                    class="shape"
-                    src="assets/images/icons/bg.svg"
-                    alt="shape"
-                  />
-                  <img
-                    class="shape-1"
-                    src="assets/images/icons/quicktasker.svg"
-                    alt="shape"
-                  />
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">QuickTasker</a>
-                </h4>
-                <p class="text">
-                  An application that allows you to earn by watching ads, completing surveys, participating in games and physical activities. It allows you to enjoy an active lifestyle while increasing your income and feeling financially independent.
-                </p>
-                <p>Premiere:</p>
-                <div id="countdown2"></div>
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.8s"
-            >
-              <div class="services-icon">
-                <div class="services-icon">
-                  <img
-                    class="shape"
-                    src="assets/images/icons/bg.svg"
-                    alt="shape"
-                  />
-                  <img
-                    class="shape-1"
-                    src="assets/images/icons/quickcash.svg"
-                    alt="shape"
-                  />
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">QuickCash</a>
-                </h4>
-                <p class="text">
-                  An application that allows you to earn through a variety of offers, quick and simple tasks for small amounts or large and complex tasks for larger sums. It allows you to effectively add funds to your budget.
-                </p>
-                <p>Premiere:</p>
-                <div id="countdown"></div>
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg" style="padding: 15px 0 !important;">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/NEW_LOGO.svg" alt="Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
 
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Firma</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="uslugiDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Usługi
+                    </a>
+                    <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <h6>Dedykowane oprogramowanie</h6>
+                          <ul class="list-unstyled">
+                            <li>Oprogramowanie szyte na miarę</li>
+                            <li>Integracje systemów</li>
+                            <li>Internet Rzeczy</li>
+                            <li>Transformacja cyfrowa</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h6>Tworzenie aplikacji mobilnych</h6>
+                          <ul class="list-unstyled">
+                            <li>Aplikacje w React Native</li>
+                            <li>UX/UI Design</li>
+                            <li>Aplikacje na iOS i Android</li>
+                          </ul>
+                          <h6>Budowa MVP</h6>
+                          <ul class="list-unstyled">
+                            <li>Walidacje pomysłu</li>
+                            <li>Prototypowanie</li>
+                            <li>Budowa prostych aplikacji</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h6>AWS i rozwiązania Chmurowe</h6>
+                          <ul class="list-unstyled">
+                            <li>Zarządzanie chmurą</li>
+                            <li>Budowa architektury w chmurze</li>
+                            <li>Procesy CI/CD</li>
+                          </ul>
+                          <h6>Warsztaty produktowe</h6>
+                          <ul class="list-unstyled">
+                            <li>Product Discovery</li>
+                            <li>Event Storming</li>
+                            <li>Design Sprint</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h6>Tworzenie aplikacji webowych</h6>
+                          <ul class="list-unstyled">
+                            <li>Platformy B2B</li>
+                            <li>Aplikacje w React, Vue.js</li>
+                          </ul>
+                          <h6>Rozwiązania AI</h6>
+                          <ul class="list-unstyled">
+                            <li>Automatyzacja procesów</li>
+                            <li>ChatGPT</li>
+                            <li>Analiza danych</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="career.html">Kariera</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <!-- single services -->
+
+              <!-- navbar collapse -->
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
+                  Bezpłatna Wycena
+                </a>
+              </div>
+            </nav>
+            <!-- navbar -->
           </div>
         </div>
         <!-- row -->
       </div>
       <!-- container -->
+    </div>
+    <!-- navbar area -->
+  </header>
+  <section id="features" class="services-area pt-120"></section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <h3 class="title">
+            Kariera,
+            <span> Sprawdź nasze dostępne stanowiska</span>
+          </h3>
+        </div>
+        <!-- section title -->
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row justify-content-center">
+      <div class="">
+        <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="services-icon" style="height: 70px;">
+            <img src="assets/images/career/Flutter_logo.svg.png" alt="shape" style="width: 50px;" />
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <p style="font-size: 22px; padding: 10px; font-weight: 800; color: #333;">Flutter Developer</p>
+            </h4>
+            <p class="short-text">
+              ITLight powstało w 2024 roku, aby wprowadzić świeże podejście do rozwiązań technologicznych. Nasza ekipa,
+              posiadająca bogate doświadczenie z różnych firm IT, specjalizuje się w tworzeniu nowoczesnych stron
+              internetowych i aplikacji.
+            </p>
+
+            <div class="full-text" style="display: none; text-align: left;">
+              Śledzimy najnowsze trendy, by zapewnić naszym klientom najbardziej efektywne i innowacyjne rozwiązania.
+              W ITLight traktujemy siebie jak rodzinę – wspieramy się nawzajem, co przekłada się na zaangażowanie i
+              jakość naszej pracy.
+              Do naszego nowego projektu, poszukujemy zmotywowanych osób,
+              które dołączą do naszego rozwijającego się zespołu.
+              <h5>Opis stanowiska:</h5>
+              <ul>
+                <li>Tworzenie responsywnych i atrakcyjnych interfejsów użytkownika</li>
+                <li>Implementacja funkcjonalności interfejsów zgodnie z wymaganiami projektu Flutter</li>
+                <li>Współpraca z zespołem projektowym i programistycznym w procesie tworzenia oprogramowania</li>
+                <li>Testowanie, debugowanie i optymalizacja kodu</li>
+                <li>Uczestnictwo w procesie projektowania architektury oprogramowania</li>
+              </ul>
+
+              <h5>Nowe umiejętności do zdobycia:</h5>
+              <ul>
+                <li>Praktyczna wiedza i możliwość rozwoju Flutter</li>
+                <li>Budowa aplikacji mobilnych</li>
+                <li>Nauka Flutter, Dart od zera</li>
+              </ul>
+
+              <h5>Oferujemy:</h5>
+              <ul>
+                <li>Elastyczne godziny</li>
+                <li>100% zdalna praca</li>
+              </ul>
+            </div>
+
+<div class="toggle-button navbar-btn d-none d-sm-inline-block main-btn" style="margin-top: 20px;">
+  Rozwiń
+</div>
+
+
+          </div>
+          <p class="text" style="margin-top: 10px;">
+            <em>Zgłoszenia prosimy przesyłać na email: itlight.career@gmail.com</em>
+          </p>
+        </div>
+
+        <!-- single services -->
+      </div>
+      <div class="">
+        <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="services-icon" style="height: 100px;">
+
+            <img src="assets/images/career/laravel.jpg" alt="shape" style="width: 150px;" />
+
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <p style="font-size: 22px; padding: 10px; font-weight: 800; color: #333;">Laravel Developer</p>
+            </h4>
+            <p class="short-text">
+              ITLight powstało w 2024 roku, aby wprowadzić świeże podejście do rozwiązań technologicznych. Nasza ekipa,
+              posiadająca bogate doświadczenie z różnych firm IT, specjalizuje się w tworzeniu nowoczesnych stron
+              internetowych i aplikacji.
+            </p>
+
+            <div class="full-text" style="display: none; text-align: left;">
+    Śledzimy najnowsze trendy technologiczne, aby zapewnić naszym klientom najbardziej efektywne i innowacyjne 
+    rozwiązania. W ITLight traktujemy się jak rodzina – wspieramy się nawzajem, co przekłada się na zaangażowanie 
+    i wysoką jakość naszej pracy. Do naszego nowego projektu, poszukujemy zmotywowanego Laravel Developera do naszego zespołu.
+              <h5>Opis stanowiska:</h5>
+              <ul>
+    <li>Tworzenie i rozwijanie aplikacji internetowych opartych na frameworku Laravel</li>
+      <li>Implementacja nowych funkcjonalności oraz integracji zewnętrznych API</li>
+      <li>Projektowanie i optymalizacja baz danych, szczególnie z wykorzystaniem MySQL</li>
+      <li>Współpraca z zespołem frontendowym w celu zapewnienia sprawnego działania aplikacji</li>
+      <li>Testowanie, debugowanie oraz optymalizacja kodu pod kątem wydajności i bezpieczeństwa</li>
+      <li>Tworzenie dokumentacji technicznej oraz dbanie o jakość kodu</li>
+              </ul>
+
+              <h5>Nowe umiejętności do zdobycia:</h5>
+              <ul>
+      <li>Praktyczna znajomość frameworka Laravel</li>
+      <li>Znajomość PHP, MySQL, HTML, CSS i JavaScript</li>
+      <li>Doświadczenie w pracy z systemem kontroli wersji (Git)</li>
+      <li>Znajomość zasad tworzenia RESTful API</li>
+      <li>Dbałość o szczegóły i umiejętność rozwiązywania problemów</li>
+              </ul>
+
+              <h5>Oferujemy:</h5>
+              <ul>
+                <li>Elastyczne godziny</li>
+                <li>100% zdalna praca</li>
+                      <li>Możliwość rozwoju i zdobycia nowych umiejętności</li>
+      <li>Przyjazne i wspierające środowisko pracy</li>
+              </ul>
+            </div>
+
+<div class="toggle-button navbar-btn d-none d-sm-inline-block main-btn" style="margin-top: 20px;">
+  Rozwiń
+</div>
+
+          </div>
+          <p class="text" style="margin-top: 10px;">
+            <em>Zgłoszenia prosimy przesyłać na email: itlight.career@gmail.com</em>
+          </p>
+        </div>
+        <!-- single services -->
+      </div>
+  
+    </div>
+    <!-- container -->
     </section>
-  </body>
+    </div>
+    <footer id="footer" class="footer-area mt-100" style="background-color: #2e82ef;">
+      <div class="container">
+
+        <!-- subscribe area -->
+        <div class="footer-widget ">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+              <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <a class="logo" href="javascript:void(0)">
+                  <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
+                </a>
+                <p class="text">
+                  Zbuduj wspaniałą aplikację lub stronę internetową z naszą pomocą.
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100090586831204">
+                      <i class="lni lni-facebook-filled"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/it-light/about/">
+                      <i class="lni lni-linkedin-original"> </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- footer about -->
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-12">
+              <div class="footer-link d-flex mt-50 justify-content-sm-end">
+                <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                  <div class="footer-title">
+                    <h4 class="title" style="font-size: 18px;">Firma</h4>
+                  </div>
+                  <ul class="link" style="padding: 0;">
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#how_we_work">Jak Pracujemy</a></li>
+                    <li><a href="#values">Nasze wartości</a></li>
+                  </ul>
+                </div>
+
+                <!-- footer wrapper -->
+                <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                  <div class="footer-title">
+                    <h4 class="title" style="font-size: 18px;">Strony</h4>
+                  </div>
+                  <ul class="link" style="padding: 0;">
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="career.html">Kariera</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="privacy_policy.html">Polityka prywatności</a></li>
+                  </ul>
+                </div>
+                <!-- footer wrapper -->
+              </div>
+              <!-- footer link -->
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-12">
+              <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                <div class="footer-title">
+                  <h4 class="title" style="font-size: 18px;">Skontaktuj się z nami</h4>
+                </div>
+                <ul class="contact">
+                  <li>+48 794 540 252</li>
+                  <li>itlight.company@gmail.com</li>
+
+                  <!-- <li>
+                   21-540 Wspólna 13 , Małaszewicze, <br />
+                    Polska.
+                  </li> -->
+                </ul>
+              </div>
+              <!-- footer contact -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- footer widget -->
+        <div class="footer-copyright">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright d-sm-flex justify-content-between">
+                <div class="copyright-content">
+                  <p class="text">
+                    ITLight Copyright 2024
+
+                  </p>
+                </div>
+                <!-- copyright content -->
+              </div>
+              <!-- copyright -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- footer copyright -->
+      </div>
+      <!-- container -->
+      <div id="particles-2"></div>
+    </footer>
+</body>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/glightbox.min.js"></script>
@@ -330,91 +444,43 @@
 <script src="assets/js/slick.min.js"></script>
 
 <script src="assets/js/firebase.js" type="module"></script>
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+document.querySelectorAll('.toggle-button').forEach(button => {
+  button.addEventListener('click', function() {
+    const fullText = this.previousElementSibling; // Find the full-text section before the button
+    if (fullText.style.display === 'none' || !fullText.style.display) {
+      fullText.style.display = 'block'; // Show the text
+      this.textContent = 'Zwiń'; // Change button text to "Zwiń"
+    } else {
+      fullText.style.display = 'none'; // Hide the text
+      this.textContent = 'Rozwiń'; // Change button text back to "Rozwiń"
+    }
+  });
+});
 
-    <script>
-      function changeLanguage() {
-        // Pobierz elementy, które mają być przetłumaczone
-        const elementsToTranslate = document.querySelectorAll('[data-lang]');
-    
-        // Sprawdź bieżący język
-        const currentLanguage = document.documentElement.lang;
-    
-        // Ustaw nowy język
-        const newLanguage = currentLanguage === 'en' ? 'pl' : 'en';
-        document.documentElement.lang = newLanguage;
-    
-        // Ustaw tłumaczenia
-        elementsToTranslate.forEach(element => {
-          const translationKey = element.getAttribute('data-lang');
-          const translations = languageTranslations[newLanguage];
-          const translation = translations[translationKey];
-    
-          if (translation) {
-            element.innerText = translation;
-          }
-        });
-      }
-    
-      const languageTranslations = {
-  en: {
-    welcomeMessage: 'Welcome to ITLight',
-    partnerMessage: 'Your Partner in Achieving Financial Independence.',
-    buttonText: 'Get Started',
-    aboutTitle1: 'Who Our Products Are For',
-    aboutText1: `At ITLight, we understand that financial goals vary from person to person. That's why our suite of mobile applications is tailored for a diverse audience. Whether you're a young professional aiming to grow your savings, a seasoned investor seeking to optimize returns, or someone simply looking for smart and accessible financial management tools, our apps are designed with you in mind. We believe that everyone deserves the opportunity to enhance their financial well-being, and our products are here to make that a reality.`,
-    aboutTitle2: 'What You\'ll Gain with These Products',
-    aboutText2: `Our savings apps use an advanced algorithm that integrates with Google Play and Apple Pay. They automatically categorize your expenses, making it incredibly easy to analyze your finances. As a result, you quickly gain control over your finances, without too much effort. In addition, we offer an app that allows you to earn in a variety of ways - watch ads, complete surveys, play games and even play sports. With our earning app, you can benefit from your daily activities and grow your finances.`,
-    aboutTitle3: 'How Easy It Is to Use Our Products',
-    aboutText3: `Worried about complicated financial tools? With ITLight, you need worry no more. Our intuitive interfaces and simple panels make managing your finances a breeze, whether you want to save or earn. Designed with simplicity in mind, even beginners can navigate effortlessly. Accessibility should never hinder financial development. Whether you're a technology enthusiast or a novice, using the ITLight app is not only easy, but also a pleasant step toward a better financial future.`,
-    factsTitle: 'Cool facts about this app',
-    factsText: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.`,
-    downloadText: 'Download Now',
-    subscribeTitle: 'Subscribe Our Newsletter get reguler updates',
-    subscribeButton: 'Subscribe',
-    quickLinkTitle: 'Quick Link',
-    privacyPolicy: 'Privacy Policy',
-    refundPolicy: 'Refund Policy',
-    termsOfService: 'Terms of Service',
-    pricing: 'Pricing',
-    resourcesTitle: 'Resources',
-    home: 'Home',
-    page: 'Page',
-    portfolio: 'Portfolio',
-    blog: 'Blog',
-    contact: 'Contact Us'
-  },
-  pl: {
-    welcomeMessage: 'Witaj w ITLight',
-    partnerMessage: 'Twój Partner w Osiąganiu Niezależności Finansowej.',
-    buttonText: 'Zacznij',
-    aboutTitle1: 'Dla Kogo Są Nasze Produkty',
-    aboutText1: `W ITLight rozumiemy, że cele finansowe różnią się w zależności od osoby. Dlatego nasz zestaw aplikacji mobilnych jest dostosowany do zróżnicowanej publiczności. Czy jesteś młodym profesjonalistą, który chce rozwijać oszczędności, doświadczonym inwestorem szukającym optymalizacji zysków, czy po prostu osobą poszukującą inteligentnych i dostępnych narzędzi do zarządzania finansami – nasze aplikacje są zaprojektowane z myślą o Tobie. Wierzymy, że każdy zasługuje na możliwość poprawy swojego dobrostanu finansowego, a nasze produkty są tutaj, aby to uczynić rzeczywistością.`,
-    aboutTitle2: 'Co Zdobędziesz Korzystając z Naszych Produktów',
-    aboutText2: `Nasze aplikacje oszczędnościowe wykorzystują zaawansowany algorytm, który integruje się z Google Play i Apple Pay. Automatycznie kategoryzują Twoje wydatki, sprawiając, że analiza Twoich finansów staje się niezwykle łatwa. W rezultacie szybko zyskujesz kontrolę nad swoimi finansami, nie wymagając zbyt dużego wysiłku. Ponadto oferujemy aplikację, która umożliwia zarabianie na różne sposoby - oglądaj reklamy, wypełniaj ankiety, graj w gry, a nawet uprawiaj sport. Dzięki naszej aplikacji do zarabiania możesz czerpać korzyści z codziennych aktywności i rozwijać swoje finanse.`,
-    aboutTitle3: 'Jak łatwo korzystać z naszych produktów',
-    aboutText3: `Martwisz się skomplikowanymi narzędziami finansowymi? Z ITLight nie musisz się już martwić. Nasze intuicyjne interfejsy i proste panele sprawiają, że zarządzanie finansami staje się łatwe, czy chcesz oszczędzać czy zarabiać. Zaprojektowane z myślą o prostocie, nawet początkujący mogą poruszać się z łatwością. Dostępność nie powinna utrudniać rozwoju finansowego. Bez względu na to, czy jesteś entuzjastą technologii, czy początkującym, korzystanie z aplikacji ITLight jest nie tylko łatwe, ale także przyjemnym krokiem w kierunku lepszej przyszłości finansowej.`,
-    factsTitle: 'Fajne fakty o tej aplikacji',
-    factsText: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.`,
-    downloadText: 'Pobierz Teraz',
-    subscribeTitle: 'Zapisz Się na Nasz Newsletter, Otrzymuj Regularne Aktualizacje',
-    subscribeButton: 'Zapisz się',
-    quickLinkTitle: 'Szybkie Linki',
-    privacyPolicy: 'Polityka Prywatności',
-    refundPolicy: 'Polityka Zwrotów',
-    termsOfService: 'Warunki Korzystania',
-    pricing: 'Cennik',
-    resourcesTitle: 'Zasoby',
-    home: 'Strona Główna',
-    page: 'Strona',
-    portfolio: 'Portfolio',
-    blog: 'Blog',
-    contact: 'Skontaktuj Się z Nami'
-  }
-};
-    </script>
-    <script>
+</script>
+<script>
+  document.getElementById('toggle-button2').addEventListener('click', function (e) {
+    e.preventDefault(); // Zapobiega domyślnej akcji kliknięcia
+
+    const fullText2 = this.previousElementSibling; // Pełny tekst
+    const shortText2 = fullText2.previousElementSibling; // Krótki tekst
+
+    if (fullText.style.display === 'none') {
+      fullText.style.display = 'block';
+      shortText.style.display = 'none';
+      this.textContent = 'Zwiń';
+    } else {
+      fullText.style.display = 'none';
+      shortText.style.display = 'block';
+      this.textContent = 'Rozwiń';
+    }
+  });
+
+</script>
+<script>
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
   const slider = document.querySelector('.slider');
@@ -444,5 +510,5 @@
   }, 3000); // Przesuwaj co 3 sekundy
 </script>
 
-    
+
 </html>
