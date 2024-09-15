@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
 
     <!--====== Title ======-->
-    <title>ITLight - Earning and Saving</title>
+    <title>ITLight - Kontakt</title>
 
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Bezpłatna wycena twoejgo projektu, napisz do nas."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--====== Favicon Icon ======-->
@@ -18,12 +21,18 @@
 
     <!--====== CSS Files LinkUp ======-->
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="assets/images/logo/NEW_LOGO.svg" as="image" />
+
     <style>
       .container2 {
         max-width: 600px;
@@ -80,19 +89,6 @@
   </head>
 
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!--====== PRELOADER PART START ======-->
-
-    <!--====== PRELOADER PART ENDS ======-->
-
-    <!--====== HEADER PART START ======-->
     <header class="header-area">
       <div
         style="
@@ -225,12 +221,22 @@
                     <li class="nav-item">
                       <a class="nav-link active" href="contact.html">Kontakt</a>
                     </li>
+                    <div class="navbar-btn-mobile">
+                      <a
+                        class="main-btn"
+                        data-scroll-nav="0"
+                        href="contact.html"
+                        rel="nofollow"
+                      >
+                        Bezpłatna Wycena
+                      </a>
+                    </div>
                   </ul>
                 </div>
 
                 <!-- navbar collapse -->
 
-                <div class="navbar-btn d-none d-sm-inline-block">
+                <div class="navbar-btn">
                   <a
                     class="main-btn"
                     data-scroll-nav="0"
@@ -256,8 +262,8 @@
       <div class="section-title text-center pt-140">
         <div class="line m-auto"></div>
         <h3 class="title">
-          O nas,
-          <span> wiele Firm z różnych branż!</span>
+          Kontakt,
+          <span> odezwij się do nas</span>
         </h3>
       </div>
       <!-- section title -->
@@ -266,7 +272,7 @@
     <!--====== ABOUT PART START ======-->
     <div class="about-area pt-70">
       <div class="container">
-        <div class="row">
+        <div class="contact-form">
           <div class="col-lg-6">
             <div
               class="about-content mt-50 wow fadeInLeftBig"
@@ -282,17 +288,16 @@
               </div>
               <!-- section title -->
               <p class="text">
-                W ITLight rozumiemy, że cele finansowe różnią się w zależności
-                od osoby. Dlatego nasz zestaw aplikacji mobilnych jest
-                dostosowany do szerokiego grona użytkowników. Niezależnie od
-                tego, czy jesteś młodym profesjonalistą dążącym do powiększenia
-                oszczędności, doświadczonym inwestorem szukającym sposobów na
-                maksymalizację zwrotów, czy po prostu potrzebujesz
-                inteligentnych i łatwo dostępnych narzędzi do zarządzania
-                finansami — nasze aplikacje zostały zaprojektowane z myślą o
-                Tobie. Wierzymy, że każdy zasługuje na możliwość poprawy swojego
-                dobrobytu finansowego, a nasze produkty są tutaj, aby to
-                umożliwić.
+                W ITLight rozumiemy, że cele finansowe mogą być różne w
+                zależności od osoby. Dlatego nasze aplikacje mobilne są
+                dostosowane do szerokiej grupy użytkowników. Niezależnie od
+                tego, czy jesteś młodym profesjonalistą dążącym do oszczędzania,
+                doświadczonym inwestorem poszukującym sposobów na maksymalizację
+                zwrotów, czy po prostu potrzebujesz inteligentnych i łatwych
+                narzędzi do zarządzania finansami — nasze rozwiązania są
+                stworzone z myślą o Tobie. Wierzymy, że każdy zasługuje na
+                możliwość poprawy swojego dobrobytu finansowego, a nasze
+                produkty są tutaj, aby to umożliwić.
               </p>
               <!-- <a href="#features" class="main-btn">Try it Free</a> -->
             </div>
@@ -342,7 +347,7 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.2s"
               >
-                <a class="logo" href="javascript:void(0)">
+                <a class="logo" href="">
                   <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
                 </a>
                 <p class="text">
@@ -367,7 +372,7 @@
               <!-- footer about -->
             </div>
             <div class="col-lg-5 col-md-7 col-sm-12">
-              <div class="footer-link d-flex mt-50 justify-content-sm-end">
+              <div class="footer-link d-flex mt-50 justify-content-sm-start">
                 <div
                   class="link-wrapper wow fadeIn"
                   data-wow-duration="1s"
@@ -417,7 +422,7 @@
                   </h4>
                 </div>
                 <ul class="contact">
-                  <li>+48 794 540 252</li>
+                  <li>+48 786 497 374</li>
                   <li>itlight.company@gmail.com</li>
 
                   <!-- <li>
@@ -451,7 +456,7 @@
       <!-- container -->
       <div id="particles-2"></div>
     </footer>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
@@ -489,8 +494,8 @@
             );
         });
     </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/wow.min.js" defer></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
@@ -500,34 +505,5 @@
     <script src="assets/js/firebase.js" type="module"></script>
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const slider = document.querySelector(".slider");
-      const slides = document.querySelectorAll(".slide");
-      const slideCount = slides.length;
-      let currentIndex = 0;
-
-      function updateSlider() {
-        const offset = -currentIndex * 100; // Przesunięcie w procentach
-        slider.style.transform = `translateX(${offset}%)`;
-      }
-
-      prevButton.addEventListener("click", () => {
-        currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
-        updateSlider();
-      });
-
-      nextButton.addEventListener("click", () => {
-        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
-        updateSlider();
-      });
-
-      // Opcjonalnie: Automatyczne przesuwanie slajdów
-      setInterval(() => {
-        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
-        updateSlider();
-      }, 3000); // Przesuwaj co 3 sekundy
-    </script>
   </body>
 </html>

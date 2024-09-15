@@ -5,16 +5,16 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>ITLight - Earning and Saving</title>
+  <title>ITLight - Kariera</title>
 
-  <meta name="description" content="" />
+<meta name="description" content="Dołącz do naszego zespołu i zacznij się rozwijać w IT!">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/video/icon.png" type="image/png" />
 
   <!--====== CSS Files LinkUp ======-->
-  <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
   <link rel="stylesheet" href="assets/css/lineicons.css" />
@@ -175,12 +175,17 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Kontakt</a>
                   </li>
+                   <div class=" navbar-btn-mobile ">
+                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
+                  Bezpłatna Wycena
+                </a>
+              </div>
                 </ul>
               </div>
 
               <!-- navbar collapse -->
 
-              <div class="navbar-btn d-none d-sm-inline-block">
+              <div class="navbar-btn ">
                 <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
                   Bezpłatna Wycena
                 </a>
@@ -255,7 +260,7 @@
               </ul>
             </div>
 
-<div class="toggle-button navbar-btn d-none d-sm-inline-block main-btn" style="margin-top: 20px;">
+<div class="toggle-button   main-btn" style="margin-top: 20px;padding: 0 25px!important;">
   Rozwiń
 </div>
 
@@ -317,7 +322,7 @@
               </ul>
             </div>
 
-<div class="toggle-button navbar-btn d-none d-sm-inline-block main-btn" style="margin-top: 20px;">
+<div class="toggle-button   main-btn" style="margin-top: 20px; padding: 0 25px!important;">
   Rozwiń
 </div>
 
@@ -341,7 +346,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-8">
               <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a class="logo" href="javascript:void(0)">
+                <a class="logo">
                   <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
                 </a>
                 <p class="text">
@@ -363,7 +368,7 @@
               <!-- footer about -->
             </div>
             <div class="col-lg-5 col-md-7 col-sm-12">
-              <div class="footer-link d-flex mt-50 justify-content-sm-end">
+              <div class="footer-link d-flex mt-50 justify-content-sm-start">
                 <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                   <div class="footer-title">
                     <h4 class="title" style="font-size: 18px;">Firma</h4>
@@ -397,7 +402,7 @@
                   <h4 class="title" style="font-size: 18px;">Skontaktuj się z nami</h4>
                 </div>
                 <ul class="contact">
-                  <li>+48 794 540 252</li>
+                  <li>+48 786 497 374</li>
                   <li>itlight.company@gmail.com</li>
 
                   <!-- <li>
@@ -461,54 +466,7 @@ document.querySelectorAll('.toggle-button').forEach(button => {
 });
 
 </script>
-<script>
-  document.getElementById('toggle-button2').addEventListener('click', function (e) {
-    e.preventDefault(); // Zapobiega domyślnej akcji kliknięcia
 
-    const fullText2 = this.previousElementSibling; // Pełny tekst
-    const shortText2 = fullText2.previousElementSibling; // Krótki tekst
-
-    if (fullText.style.display === 'none') {
-      fullText.style.display = 'block';
-      shortText.style.display = 'none';
-      this.textContent = 'Zwiń';
-    } else {
-      fullText.style.display = 'none';
-      shortText.style.display = 'block';
-      this.textContent = 'Rozwiń';
-    }
-  });
-
-</script>
-<script>
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const slideCount = slides.length;
-  let currentIndex = 0;
-
-  function updateSlider() {
-    const offset = -currentIndex * 100; // Przesunięcie w procentach
-    slider.style.transform = `translateX(${offset}%)`;
-  }
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slideCount - 1;
-    updateSlider();
-  });
-
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex < slideCount - 1) ? currentIndex + 1 : 0;
-    updateSlider();
-  });
-
-  // Opcjonalnie: Automatyczne przesuwanie slajdów
-  setInterval(() => {
-    currentIndex = (currentIndex < slideCount - 1) ? currentIndex + 1 : 0;
-    updateSlider();
-  }, 3000); // Przesuwaj co 3 sekundy
-</script>
 
 
 </html>
