@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Ustawienia e-maila
-    $to = "itlight.company@gmail.com";
+    $to = "kontakt@itlight.eu";
     $subject = "Zapytanie o wycenę";
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
