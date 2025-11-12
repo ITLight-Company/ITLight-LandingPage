@@ -47,7 +47,7 @@
     .sticky-cta {
       position: fixed;
       bottom: 20px;
-      right: 20px;
+      right: 80px;
       z-index: 999;
       background: linear-gradient(135deg, #361cc1 0%, #2e82ef 100%);
       color: white;
@@ -104,6 +104,83 @@
       justify-content: center;
     }
 
+    /* Hero Section Stable Layout */
+    .header-hero {
+      display: flex;
+      align-items: center;
+      min-height: 85vh;
+      max-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      padding: 20px 0;
+      background: linear-gradient(135deg, #361cc1 0%, #4834d4 25%, #2e82ef 75%, #3498db 100%) !important;
+    }
+
+    .header-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 90%, rgba(54, 28, 193, 0.3) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .header-container {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-content {
+      align-items: center;
+      min-height: 50vh;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .header-hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-hero-content h2 {
+      margin-bottom: 15px;
+    }
+
+    .header-hero-content h3 {
+      margin-bottom: 20px;
+    }
+
+    .header-hero-content p {
+      margin-bottom: 20px;
+    }
+
+    .header-hero-image {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-hero-image img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
     /* Maintenance Dialog Styles */
     @keyframes fadeInScale {
       0% {
@@ -149,6 +226,68 @@
     }
 
     @media (max-width: 768px) {
+      .header-hero {
+        min-height: 80vh !important;
+        max-height: 90vh !important;
+        padding: 15px 0 !important;
+      }
+
+      .header-content {
+        min-height: 40vh !important;
+        margin-bottom: 10px !important;
+      }
+
+      .header-hero-content {
+        padding: 0 15px !important;
+      }
+
+      .header-hero-content h2 {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
+      }
+
+      .header-hero-content h3 {
+        font-size: 20px !important;
+        margin-bottom: 15px !important;
+      }
+
+      .header-hero-content p {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 15px !important;
+        padding: 0 10px !important;
+      }
+
+      .header-hero-image {
+        margin-top: 5px !important;
+      }
+
+      .header-hero-image img {
+        max-width: 300px !important;
+        width: 85% !important;
+      }
+
+      .cta-buttons-group {
+        margin-top: 15px !important;
+        gap: 10px !important;
+      }
+
+      .cta-buttons-group a {
+        width: 100% !important;
+        max-width: 250px !important;
+        margin: 5px 0 !important;
+      }
+
+      .quick-contact-link {
+        margin-top: 5px !important;
+      }
+
+      .quick-contact-link a {
+        font-size: 14px !important;
+      }
+
+      /* Dialog styles for mobile */
       #maintenanceDialog>div {
         margin: 15px;
         width: calc(100% - 30px);
@@ -177,7 +316,7 @@
 
       .sticky-cta {
         bottom: 15px;
-        right: 15px;
+        right: 70px;
         padding: 12px 20px;
         font-size: 14px;
       }
@@ -211,7 +350,100 @@
       }
 
       .header-hero {
-        height: 70vh !important;
+        height: 100vh !important;
+      }
+    }
+
+    /* Medium devices (tablets landscape, 769px - 1024px) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .header-hero {
+        min-height: 85vh !important;
+        display: flex !important;
+        align-items: center !important;
+        padding: 40px 0 !important;
+      }
+
+      .header-content {
+        min-height: auto !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      .header-hero-content {
+        max-width: 700px !important;
+        margin: 0 auto !important;
+        padding: 0 30px !important;
+      }
+
+      .header-hero h2 {
+        font-size: 32px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 15px !important;
+      }
+
+      .header-hero h3 {
+        font-size: 24px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .header-hero p {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 25px !important;
+        max-width: 600px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .header-hero-image {
+        margin-top: 20px !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+
+      .header-hero-image img {
+        max-width: 400px !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .main-btn {
+        font-size: 16px !important;
+        margin: 5px !important;
+        width: auto !important;
+        min-width: 160px !important;
+      }
+
+      .cta-buttons-group {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+        margin-top: 25px !important;
+      }
+
+      .container {
+        max-width: 960px !important;
+        margin-bottom: 80px;
+      }
+    }
+
+    /* Large tablets and small desktops (1025px - 1200px) */
+    @media (min-width: 1025px) and (max-width: 1200px) {
+      .header-hero h1 {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+      }
+
+      .header-hero p {
+        font-size: 19px !important;
+        max-width: 650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .header-hero-image img {
+        max-width: 450px !important;
       }
     }
 
@@ -429,10 +661,10 @@
     <!-- navbar area -->
 
     <div id="home" class="header-hero bg_cover"
-      style="background-image: url(assets/images/header/banner-bgs.svg); height: 90vh;">
+      style="background: linear-gradient(135deg, #361cc1 0%, #4834d4 25%, #2e82ef 75%, #3498db 100%); height: 85vh; min-height: 600px;">
       <div class="header-container container">
         <div class="row justify-content-center header-content">
-          <div class="col-lg12">
+          <div class="col-lg-12">
             <div class="header-hero-content text-center">
               <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                 Aplikacje mobilne i strony internetowe
@@ -446,7 +678,7 @@
                 Otrzymaj rozwiązanie dopasowane do Twoich potrzeb biznesowych.
               </p>
               <div class="cta-buttons-group wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"
-                style="margin-top: 30px;">
+                style="margin-top: 20px;">
                 <a href="contact.html" style="width: 200px; margin-right: 15px; margin-bottom: 10px;" class="main-btn">
                   Bezpłatna Wycena
                 </a>
@@ -457,7 +689,7 @@
                 </a>
               </div>
               <div class="quick-contact-link wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.3s"
-                style="margin-top: 0px;">
+                style="margin-top: -5px;">
                 <a href="#quick-survey" style="color: #fff; text-decoration: underline; font-size: 16px;">
                   Lub wypełnij szybką ankietę (2 min) →
                 </a>
@@ -639,8 +871,6 @@
     <!-- container -->
   </section>
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
 
   <!--====== CASE STUDIES PART START ======-->
   <section id="case-studies" class="case-studies-area pt-120">
@@ -767,8 +997,6 @@
   </section>
   <!--====== CASE STUDIES PART ENDS ======-->
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
 
   <section id="about"></section>
   <div class="row justify-content-center"></div>
@@ -956,8 +1184,6 @@
   <!--====== ABOUT PART ENDS ======-->
   </section>
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
 
   <!--====== SERVICES PART START ======-->
   <section id="values"></section>
@@ -1088,8 +1314,7 @@
   </section>
   <!--====== SERVICES PART ENDS ======-->
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
+
 
   <!--====== TESTIMONIALS PART START ======-->
   <section id="testimonials" class="testimonials-area pt-120">
@@ -1117,8 +1342,8 @@
                 Profesjonalne podejście i terminowość wykonania sprawiły, że współpraca przebiegała bardzo gładko."
               </p>
               <div class="testimonial-author">
-                <h5 style="color: #361cc1; font-weight: bold;">Konrad Strek</h5>
-                <p style="color: #888; font-size: 14px;">CEO, Paidwork</p>
+                <h5 style="color: #361cc1; font-weight: bold;">Konrad</h5>
+                <p style="color: #888; font-size: 14px;">Paidwork</p>
               </div>
             </div>
           </div>
@@ -1134,7 +1359,7 @@
               </p>
               <div class="testimonial-author">
                 <h5 style="color: #361cc1; font-weight: bold;">Mikołaj</h5>
-                <p style="color: #888; font-size: 14px;">Startup, HomAI</p>
+                <p style="color: #888; font-size: 14px;">HomAI</p>
               </div>
             </div>
           </div>
@@ -1150,8 +1375,7 @@
   </section>
   <!--====== TESTIMONIALS PART ENDS ======-->
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
+
 
   <!--====== MAINTENANCE PACKAGES PART START ======-->
   <section id="maintenance-packages" class="maintenance-packages-area pt-120 pb-120"
@@ -1381,8 +1605,7 @@
   </section>
   <!--====== MAINTENANCE PACKAGES PART ENDS ======-->
 
-  <!-- Section Separator -->
-  <div class="section-separator"></div>
+
 
   <!--====== QUICK SURVEY PART START ======-->
   <section id="quick-survey" class="quick-survey-area pt-120 pb-120"
