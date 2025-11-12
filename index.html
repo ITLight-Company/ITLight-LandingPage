@@ -2160,12 +2160,12 @@ Telefon: ${surveyData.phone || 'Nie podano'}
     function submitMaintenanceForm() {
       const form = document.getElementById('maintenanceForm');
       const submitButton = document.getElementById('maintenanceSubmitBtn');
-      
+
       if (!form || !submitButton) {
         console.error('Form or button not found');
         return false;
       }
-      
+
       const originalText = submitButton.textContent;
 
       submitButton.textContent = 'Wysyłanie...';
@@ -2173,14 +2173,14 @@ Telefon: ${surveyData.phone || 'Nie podano'}
 
       // Get form data
       const formData = new FormData(form);
-      
+
       // Format message like in survey form
       const packageLabels = {
         'podstawowy': '🛡️ Pakiet Podstawowy (399 zł/mies.)',
         'profesjonalny': '🚀 Pakiet Profesjonalny (899 zł/mies.)',
         'zaawansowany': '👑 Pakiet Zaawansowany (1999 zł/mies.)'
       };
-      
+
       const formattedMessage = `
 === ZAPYTANIE O PAKIET UTRZYMANIA - ITLIGHT ===
 
@@ -2217,7 +2217,7 @@ Telefon: ${formData.get('client_phone') || 'Nie podano'}
           submitButton.textContent = originalText;
           submitButton.disabled = false;
         });
-        
+
       return false; // Prevent any form submission
     }    // Maintenance package dialog functions
     function openMaintenanceDialog(packageType) {
