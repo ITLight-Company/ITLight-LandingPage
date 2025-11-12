@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8" />
 
+  <!-- Preload critical hero image -->
+  <link rel="preload" href="assets/images/header/laptop.svg" as="image" type="image/svg+xml">
+
   <!--====== Title ======-->
   <title>Tworzenie Aplikacji Mobilnych i Stron Internetowych | ITLight - Software House</title>
 
@@ -794,10 +797,15 @@
         <!-- row -->
         <div class="row">
           <div class="col-lg-12">
-            <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
-              <img src="assets/images/header/laptop.svg"
-                alt="Tworzenie aplikacji mobilnych i stron internetowych - ITLight Software House" />
-
+            <div class="header-hero-image text-center">
+              <img id="heroImage" src="assets/images/header/laptop.svg"
+                alt="Tworzenie aplikacji mobilnych i stron internetowych - ITLight Software House"
+                onload="this.style.opacity='1';"
+                onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
+                style="opacity: 0; transition: opacity 0.3s ease;" />
+              <div id="heroFallback" style="display: none; color: white; font-size: 4rem; opacity: 0.8;">
+                <i class="fas fa-laptop-code"></i>
+              </div>
             </div>
             <!-- header hero image -->
           </div>
@@ -1535,8 +1543,7 @@
                 </li>
               </ul>
               <div class="text-center mt-4">
-                <button onclick="openMaintenanceDialog('podstawowy')" class="main-btn"
-                  style="width: 100%; background: #6c757d; border: none;">
+                <button onclick="openMaintenanceDialog('podstawowy')" class="main-btn" style="width: 100%;">
                   Wybierz pakiet
                 </button>
               </div>
@@ -2151,9 +2158,21 @@ Telefon: ${surveyData.phone || 'Nie podano'}
       }
     });
 
-    // Hide sticky button initially  
+    // Hide sticky button initially and ensure hero image loads
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('stickyCta').style.display = 'none';
+
+      // Force hero image to show after 2 seconds if not loaded
+      setTimeout(function () {
+        const heroImage = document.getElementById('heroImage');
+        const heroFallback = document.getElementById('heroFallback');
+
+        if (heroImage && heroImage.style.opacity === '0') {
+          console.log('Hero image failed to load, showing fallback');
+          heroImage.style.display = 'none';
+          heroFallback.style.display = 'flex';
+        }
+      }, 2000);
     });
 
     // Function to handle maintenance form submission
