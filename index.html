@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
 
   <!-- Preload critical hero image -->
-  <link rel="preload" href="assets/images/header/laptop.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="assets/images/header/header-hero.png" as="image" type="image/png">
 
   <!--====== Title ======-->
   <title>Tworzenie Aplikacji Mobilnych i Stron Internetowych | ITLight - Software House</title>
@@ -798,11 +798,14 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="header-hero-image text-center">
-              <img id="heroImage" src="assets/images/header/laptop.svg"
-                alt="Tworzenie aplikacji mobilnych i stron internetowych - ITLight Software House"
-                onload="this.style.opacity='1';"
-                onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
-                style="opacity: 0; transition: opacity 0.3s ease;" />
+              <picture>
+                <source srcset="assets/images/header/laptop.svg" type="image/svg+xml">
+                <img id="heroImage" src="assets/images/header/header-hero.png"
+                  alt="Tworzenie aplikacji mobilnych i stron internetowych - ITLight Software House"
+                  onload="this.style.opacity='1';"
+                  onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
+                  style="opacity: 0; transition: opacity 0.3s ease;" />
+              </picture>
               <div id="heroFallback" style="display: none; color: white; font-size: 4rem; opacity: 0.8;">
                 <i class="fas fa-laptop-code"></i>
               </div>
