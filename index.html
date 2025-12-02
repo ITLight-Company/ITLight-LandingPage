@@ -227,7 +227,6 @@
       display: flex;
       align-items: center;
       min-height: 85vh;
-      max-height: 100vh;
       position: relative;
       overflow: hidden;
       padding: 20px 0;
@@ -329,60 +328,65 @@
 
     @media (max-width: 768px) {
       .header-hero {
-        min-height: 80vh !important;
-        max-height: 90vh !important;
-        padding: 15px 0 !important;
+        min-height: auto !important;
+        max-height: none !important;
+        height: auto !important;
+        padding: 120px 0 40px 0 !important;
       }
 
       .header-content {
-        min-height: 40vh !important;
-        margin-bottom: 10px !important;
+        min-height: auto !important;
+        margin-bottom: 20px !important;
       }
 
       .header-hero-content {
-        padding: 0 15px !important;
+        padding: 0 20px !important;
+      }
+
+      .header-hero-content h1 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 15px !important;
       }
 
       .header-hero-content h2 {
-        font-size: 24px !important;
-        line-height: 1.2 !important;
-        margin-bottom: 10px !important;
-      }
-
-      .header-hero-content h3 {
-        font-size: 20px !important;
-        margin-bottom: 15px !important;
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
       }
 
       .header-hero-content p {
-        font-size: 16px !important;
-        line-height: 1.4 !important;
-        margin-bottom: 15px !important;
-        padding: 0 10px !important;
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 20px !important;
+        padding: 0 !important;
       }
 
       .header-hero-image {
-        margin-top: 5px !important;
+        margin-top: 20px !important;
+        padding-bottom: 30px !important;
       }
 
       .header-hero-image img {
-        max-width: 300px !important;
-        width: 85% !important;
+        max-width: 280px !important;
+        width: 90% !important;
       }
 
       .cta-buttons-group {
-        margin-top: 15px !important;
-        gap: 10px !important;
+        margin-top: 20px !important;
+        gap: 12px !important;
+        flex-direction: column !important;
+        align-items: center !important;
       }
 
       .cta-buttons-group a {
         width: 100% !important;
-        max-width: 250px !important;
-        margin: 5px 0 !important;
+        max-width: 280px !important;
+        margin: 0 !important;
       }
 
       .quick-contact-link {
-        margin-top: 5px !important;
+        margin-top: 15px !important;
       }
 
       .quick-contact-link a {
@@ -451,9 +455,6 @@
         font-size: 1.8rem;
       }
 
-      .header-hero {
-        height: 100vh !important;
-      }
     }
 
     /* Medium devices (tablets landscape, 769px - 1024px) */
