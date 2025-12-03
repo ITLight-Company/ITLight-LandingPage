@@ -48,10 +48,26 @@
       font-size: 16px;
       color: #666;
     }
+html, body {
+  height: 100%; /* Ważne, żeby body i html zajmowały całą wysokość */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(footer) {
+  flex: 1; /* Treść strony rozciąga się, zajmuje pozostałą wysokość */
+}
+
+footer {
+  margin-top: auto; /* Wypycha footer na dół */
+}
 
     .services-content ul {
       text-align: left;
       list-style-type: disc;
+      height: auto;
       padding-left: 20px;
     }
 
@@ -210,7 +226,7 @@
     <!-- navbar area -->
   </header>
   <section id="features" class="services-area pt-120"></section>
-  <div class="container">
+  <div class="container" style="height: auto;">
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="section-title text-center pb-40">
