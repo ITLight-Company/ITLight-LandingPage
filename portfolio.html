@@ -67,13 +67,27 @@
   <link rel="stylesheet" href="assets/css/slick.css" />
   <style>
     /* Language switcher active state */
-    .lang-option.active {
-      font-weight: bold;
+    .lang-option {
+      color: #222 !important;
+      font-size: 14px;
+    }
+    .lang-option:hover {
+      background: #f0f1ff !important;
       color: #361cc1 !important;
-      background: #f8f9ff;
+    }
+    .lang-option.active {
+      font-weight: 700;
+      color: #361cc1 !important;
+      background: #eef0ff !important;
     }
     .lang-option.active::before {
-      content: '✓ ';
+      content: '✓\00a0';
+    }
+    #langDropdown .nav-link {
+      color: #fff;
+    }
+    .dropdown-menu .lang-option {
+      padding: 8px 16px;
     }
   </style>
 
@@ -195,7 +209,7 @@
                       style="font-weight:600; letter-spacing:.5px;">
                       <span id="langIndicator">🇵🇱 PL</span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:130px;">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:160px;">
                       <li><a class="dropdown-item lang-option" href="#" data-lang="pl" onclick="switchLang('pl'); return false;">🇵🇱 Polski</a></li>
                       <li><a class="dropdown-item lang-option" href="#" data-lang="en" onclick="switchLang('en'); return false;">🇬🇧 English</a></li>
                       <li><a class="dropdown-item lang-option" href="#" data-lang="cs" onclick="switchLang('cs'); return false;">🇨🇿 Čeština</a></li>
