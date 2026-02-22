@@ -8,11 +8,11 @@
   'use strict';
 
   /* ---------- helpers ----------------------------------------- */
-  const SUPPORTED = ['pl', 'en', 'cs', 'sk'];
+  const SUPPORTED = ['pl', 'en', 'cs', 'sk', 'lt'];
   const DEFAULT_LANG = 'pl';
 
-  const FLAGS = { pl: '🇵🇱', en: '🇬🇧', cs: '🇨🇿', sk: '🇸🇰' };
-  const LABELS = { pl: 'PL', en: 'EN', cs: 'CS', sk: 'SK' };
+  const FLAGS = { pl: '🇵🇱', en: '🇬🇧', cs: '🇨🇿', sk: '🇸🇰', lt: '🇱🇹' };
+  const LABELS = { pl: 'PL', en: 'EN', cs: 'CS', sk: 'SK', lt: 'LT' };
 
   function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
@@ -25,8 +25,29 @@
     return SUPPORTED.includes(l) ? l : null;
   }
 
+  /**
+   * Auto-detect language from browser's navigator.language.
+   * Only used on first visit (no localStorage preference saved yet).
+   * Maps browser locale codes → supported languages:
+   *   lt-* → lt (Lithuanian)
+   *   sk-* → sk (Slovak)
+   *   cs-* / cz-* → cs (Czech)
+   *   pl-* → pl (Polish)
+   *   en-* → en (English)
+   */
+  function getLangFromBrowser() {
+    const bl = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (bl.startsWith('lt')) return 'lt';
+    if (bl.startsWith('sk')) return 'sk';
+    if (bl.startsWith('cs') || bl.startsWith('cz')) return 'cs';
+    if (bl.startsWith('pl')) return 'pl';
+    if (bl.startsWith('en')) return 'en';
+    return null;
+  }
+
   function getCurrentLang() {
-    return getLangFromUrl() || getLangFromStorage() || DEFAULT_LANG;
+    // Priority: ?lang= URL param > localStorage (user's explicit choice) > browser language > default
+    return getLangFromUrl() || getLangFromStorage() || getLangFromBrowser() || DEFAULT_LANG;
   }
 
   /* ---------- apply translations ------------------------------ */
@@ -117,7 +138,7 @@
   }
 
   function langToLocale(lang) {
-    const map = { pl: 'pl_PL', en: 'en_US', cs: 'cs_CZ', sk: 'sk_SK' };
+    const map = { pl: 'pl_PL', en: 'en_US', cs: 'cs_CZ', sk: 'sk_SK', lt: 'lt_LT' };
     return map[lang] || 'pl_PL';
   }
 
