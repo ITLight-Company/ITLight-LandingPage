@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Strona główna / Home -->
+  <url>
+    <loc>https://itlight.eu/</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://itlight.eu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"       href="https://itlight.eu/?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"       href="https://itlight.eu/?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"       href="https://itlight.eu/?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/"/>
+  </url>
+
+  <!-- Kontakt / Contact -->
+  <url>
+    <loc>https://itlight.eu/contact.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://itlight.eu/contact.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"       href="https://itlight.eu/contact.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"       href="https://itlight.eu/contact.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"       href="https://itlight.eu/contact.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/contact.html"/>
+  </url>
+
+  <!-- Portfolio -->
+  <url>
+    <loc>https://itlight.eu/portfolio.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://itlight.eu/portfolio.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"       href="https://itlight.eu/portfolio.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"       href="https://itlight.eu/portfolio.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"       href="https://itlight.eu/portfolio.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/portfolio.html"/>
+  </url>
+
+  <!-- Kariera / Career -->
+  <url>
+    <loc>https://itlight.eu/career.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/career.html"/>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://itlight.eu/career.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"       href="https://itlight.eu/career.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"       href="https://itlight.eu/career.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"       href="https://itlight.eu/career.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/career.html"/>
+  </url>
+
+  <!-- Polityka prywatności / Privacy Policy -->
+  <url>
+    <loc>https://itlight.eu/privacy_policy.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

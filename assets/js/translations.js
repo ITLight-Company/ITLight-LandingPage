@@ -277,7 +277,7 @@ const TRANSLATIONS = {
     'career-no-recruit-text': 'Dziękujemy za zainteresowanie pracą w naszej firmie. Aktualnie nie prowadzimy rekrutacji na żadne stanowisko. Zachęcamy do odwiedzenia naszej strony w przyszłości – informacje o nowych ofertach pojawią się, gdy tylko będą dostępne.',
 
     /* ---------- Shared footer links ----------------------------- */
-    'footer-copyright': 'ITLight Copyright 2024',
+    'footer-copyright': 'ITLight Copyright 2024–2026',
   },
 
   /* ================================================================
@@ -539,7 +539,7 @@ const TRANSLATIONS = {
     'career-no-recruit-text': 'Thank you for your interest in working at our company. We are not currently hiring for any position. We encourage you to revisit our page in the future — information about new openings will be posted as they become available.',
 
     /* ---------- Shared footer links ----------------------------- */
-    'footer-copyright': 'ITLight Copyright 2024',
+    'footer-copyright': 'ITLight Copyright 2024–2026',
   },
 
   /* ================================================================
@@ -801,7 +801,7 @@ const TRANSLATIONS = {
     'career-no-recruit-text': 'Děkujeme za váš zájem o práci v naší společnosti. Momentálně nepřijímáme na žádnou pozici. Znovu návštivte naše stránky později – informace o nových pozicích budou zveřejněny, jakmile budou k dispozici.',
 
     /* ---------- Shared footer links ----------------------------- */
-    'footer-copyright': 'ITLight Copyright 2024',
+    'footer-copyright': 'ITLight Copyright 2024–2026',
   },
 
   /* ================================================================
@@ -1063,7 +1063,7 @@ const TRANSLATIONS = {
     'career-no-recruit-text': 'Ďakujeme za váš záujem o prácu v našej spoločnosti. Momentálne nepřijímáme na žádnu pozíciu. Znovu navstívte naše stránky neskôr – informácie o nových pozíciách budou zverejnené, akéakoľvek budú k dispozícii.',
 
     /* ---------- Shared footer links ----------------------------- */
-    'footer-copyright': 'ITLight Copyright 2024',
+    'footer-copyright': 'ITLight Copyright 2024–2026',
   },
 
   /* ================================================================
@@ -1338,6 +1338,6 @@ const TRANSLATIONS = {
     'career-no-recruit-text': 'Dėkojame už susidomėjimą darbu mūsų įmonėje. Šiuo metu nevykdome atrankos jokiai pozicijai. Kviečiame apsilankyti mūsų svetainėje ateityje – informacija apie naujus pasiūlymus pasirodys, kai tik bus prieinama.',
 
     /* ---------- Shared footer links ----------------------------- */
-    'footer-copyright': 'ITLight Copyright 2024',
+    'footer-copyright': 'ITLight Copyright 2024–2026',
   }
 };

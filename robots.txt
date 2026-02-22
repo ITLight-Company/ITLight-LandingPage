@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and internal files
+Disallow: /send_mail.php
+Disallow: /docs/
+
+Sitemap: https://itlight.eu/sitemap.xml
