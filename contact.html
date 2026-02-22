@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pl">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -21,10 +21,30 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>ITLight - Contact</title>
+  <title data-i18n="page-title-contact">Kontakt – Bezpłatna Wycena Projektu | ITLight Software House</title>
 
-  <meta name="description" content="Free quote for your project, write to us." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" data-i18n="meta-desc-contact"
+    content="Skontaktuj się z ITLight – profesjonalnym software housem. Bezpłatna wycena aplikacji mobilnej, strony WWW lub systemu webowego w ciągu 24h. Działamy dla klientów z Polski, Czech i Słowacji.">
+  <meta name="keywords" content="kontakt software house, wycena aplikacji mobilnej, tworzenie strony www, oferta IT, ITLight kontakt">
+  <meta name="author" content="ITLight Software House">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pl">
+  <link rel="canonical" href="https://itlight.eu/contact.html" />
+  <link rel="alternate" hreflang="pl" href="https://itlight.eu/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://itlight.eu/contact.html?lang=en" />
+  <link rel="alternate" hreflang="cs" href="https://itlight.eu/contact.html?lang=cs" />
+  <link rel="alternate" hreflang="sk" href="https://itlight.eu/contact.html?lang=sk" />
+  <link rel="alternate" hreflang="x-default" href="https://itlight.eu/contact.html" />
+  <meta property="og:title" content="Kontakt | ITLight Software House">
+  <meta property="og:description" content="Skontaktuj się z nami – bezpłatna wycena projektu IT w ciągu 24h.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://itlight.eu/contact.html">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -91,6 +111,16 @@
     button:hover {
       background-color: #0056b3;
     }
+
+    /* Language switcher active state */
+    .lang-option.active {
+      font-weight: bold;
+      color: #361cc1 !important;
+      background: #f8f9ff;
+    }
+    .lang-option.active::before {
+      content: '✓ ';
+    }
   </style>
   <!-- Załaduj SDK EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -137,65 +167,55 @@
 
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Company</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="firmaDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span data-i18n="nav-company">Firma</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                      <li><a class="dropdown-item" href="index.html#about" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-about">O nas</a></li>
+                      <li><a class="dropdown-item" href="index.html#how_we_work" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-how-we-work">Jak pracujemy</a></li>
+                      <li><a class="dropdown-item" href="index.html#values" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-values">Nasze wartości</a></li>
+                    </ul>
                   </li>
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="uslugiDropdown" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
+                      <span data-i18n="nav-services">Usługi</span>
                     </a>
                     <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
                       <div class="row">
                         <div class="col-md-3">
-                          <h6>Custom Software</h6>
+                          <h6 data-i18n="nav-custom-software-h">Custom Software</h6>
                           <ul class="list-unstyled">
-                            <li>Tailor-made software</li>
-                            <li>System integrations</li>
-                            <li>Internet of Things</li>
-                            <li>Digital transformation</li>
+                            <li data-i18n="nav-custom-software-1">Oprogramowanie szyte na miarę</li>
+                            <li data-i18n="nav-custom-software-2">Integracje systemów</li>
+                            <li data-i18n="nav-custom-software-3">Internet of Things</li>
+                            <li data-i18n="nav-custom-software-4">Transformacja cyfrowa</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Mobile App Development</h6>
+                          <h6 data-i18n="nav-mobile-h">Tworzenie Aplikacji Mobilnych</h6>
                           <ul class="list-unstyled">
-                            <li>Flutter apps</li>
-                            <li>UX/UI Design</li>
-                            <li>iOS & Android apps</li>
-                          </ul>
-                          <h6>MVP Development</h6>
-                          <ul class="list-unstyled">
-                            <li>Idea validation</li>
-                            <li>Prototyping</li>
-                            <li>Simple app development</li>
+                            <li data-i18n="nav-mobile-1">Aplikacje Flutter</li>
+                            <li data-i18n="nav-mobile-2">Projektowanie UX/UI</li>
+                            <li data-i18n="nav-mobile-3">Aplikacje iOS i Android</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>AWS & Cloud Solutions</h6>
+                          <h6 data-i18n="nav-mvp-h">Tworzenie MVP</h6>
                           <ul class="list-unstyled">
-                            <li>Cloud management</li>
-                            <li>Cloud architecture</li>
-                            <li>CI/CD pipelines</li>
-                          </ul>
-                          <h6>Product Workshops</h6>
-                          <ul class="list-unstyled">
-                            <li>Product Discovery</li>
-                            <li>Event Storming</li>
-                            <li>Design Sprint</li>
+                            <li data-i18n="nav-mvp-1">Walidacja pomysłu</li>
+                            <li data-i18n="nav-mvp-2">Prototypowanie</li>
+                            <li data-i18n="nav-mvp-3">Proste aplikacje</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Web App Development</h6>
+                          <h6 data-i18n="nav-web-h">Aplikacje Webowe</h6>
                           <ul class="list-unstyled">
-                            <li>B2B platforms</li>
-                            <li>Angular, Vue, Laravel apps</li>
-                          </ul>
-                          <h6>AI Solutions</h6>
-                          <ul class="list-unstyled">
-                            <li>Process automation</li>
-                            <li>ChatGPT</li>
-                            <li>Data analysis</li>
+                            <li data-i18n="nav-web-1">Landing Pages</li>
+                            <li data-i18n="nav-web-2">Aplikacje Flutter, Angular, WordPress</li>
                           </ul>
                         </div>
                       </div>
@@ -203,27 +223,38 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="career.html">Career</a>
+                    <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html" data-i18n="nav-contact">Kontakt</a>
                   </li>
-                  <div class="navbar-btn-mobile">
-                    <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                      Free Quote
+
+                  <!-- Language switcher -->
+                  <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"
+                      style="font-weight:600; letter-spacing:.5px;">
+                      <span id="langIndicator">🇵🇱 PL</span>
                     </a>
-                  </div>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:130px;">
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="pl" onclick="switchLang('pl'); return false;">🇵🇱 Polski</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="en" onclick="switchLang('en'); return false;">🇬🇧 English</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="cs" onclick="switchLang('cs'); return false;">🇨🇿 Čeština</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="sk" onclick="switchLang('sk'); return false;">🇸🇰 Slovenčina</a></li>
+                    </ul>
+                  </li>
+
                 </ul>
               </div>
 
               <!-- navbar collapse -->
 
               <div class="navbar-btn">
-                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                  Free Quote
+                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow" data-i18n="nav-free-quote">
+                  Bezpłatna Wycena
                 </a>
               </div>
             </nav>
@@ -242,8 +273,8 @@
     <div class="section-title text-center pt-140">
       <div class="line m-auto"></div>
       <h3 class="title">
-        Contact,
-        <span> get in touch with us</span>
+        <span data-i18n="contact-hero-title">Kontakt,</span>
+        <span data-i18n="contact-hero-span"> skontaktuj się z nami</span>
       </h3>
     </div>
     <!-- section title -->
@@ -258,13 +289,12 @@
             <div class="section-title">
               <div class="line"></div>
               <h3 class="title">
-                <span> Contact us and </span>build your dream
-                app or website
+                <span data-i18n="contact-form-title-span"> Skontaktuj się i </span><span data-i18n="contact-form-title">zbuduj wymarzoną aplikację lub stronę</span>
               </h3>
             </div>
             <!-- section title -->
-            <p class="text">
-              At ITLight we understand that financial goals can vary from person to person. That is why our mobile apps are tailored to a wide range of users. Whether you are a young professional looking to save, an experienced investor seeking to maximise returns, or simply need smart and easy tools to manage your finances — our solutions are built with you in mind. We believe everyone deserves the opportunity to improve their financial well-being, and our products are here to make that possible.
+            <p class="text" data-i18n="contact-form-text">
+              W ITLight rozumiemy, że każdy projekt jest inny. Dlatego nasze rozwiązania są dopasowane do Twoich potrzeb. Czy jesteś startupem szukającym MVP, rozwijającą się firmą potrzebującą aplikacji mobilnej, czy przedsiębiorstwem wymagającym zaawansowanego systemu webowego – jesteśmy tutaj, by pomóc. Skontaktuj się z nami i zacznijmy razem budować coś wyjątkowego.
             </p>
             <!-- <a href="#features" class="main-btn">Try it Free</a> -->
           </div>
@@ -272,21 +302,16 @@
         </div>
         <div class="container2">
           <form id="contactForm">
-            <label for="email">E-mail *</label>
+            <label for="email" data-i18n="contact-label-email">E-mail *</label>
             <input type="email" id="email" name="email" required />
 
-            <label for="phone">Phone number (optional)</label>
+            <label for="phone" data-i18n="contact-label-phone">Numer telefonu (opcjonalnie)</label>
             <input type="tel" id="phone" name="phone" required />
 
-            <label for="message">Tell us about your project *</label>
+            <label for="message" data-i18n="contact-label-message">Opisz nam swój projekt *</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <!-- <label for="attachment"
-                >Dodaj załącznik (np. brief lub specyfikację techniczną)</label
-              >
-              <input type="file" id="attachment" name="attachment" /> -->
-
-            <button type="submit" class="main-btn">Send message</button>
+            <button type="submit" class="main-btn" data-i18n="contact-btn-send">Wyślij wiadomość</button>
           </form>
         </div>
       </div>
@@ -304,8 +329,8 @@
               <a class="logo" href="">
                 <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
               </a>
-              <p class="text">
-                Build a great app or website with our help.
+              <p class="text" data-i18n="footer-tagline">
+                Zbuduj świetną aplikację lub stronę z naszą pomocą.
               </p>
               <ul class="social">
                 <li>
@@ -331,27 +356,25 @@
             <div class="footer-link d-flex mt-50 justify-content-sm-start">
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px">Company</h4>
+                  <h4 class="title" style="font-size: 18px" data-i18n="footer-company">Firma</h4>
                 </div>
                 <ul class="link" style="padding: 0">
-                  <li><a href="index.html">About Us</a></li>
-                  <li><a href="index.html">How We Work</a></li>
-                  <li><a href="index.html">Our Values</a></li>
+                  <li><a href="index.html#about" data-i18n="footer-about">O nas</a></li>
+                  <li><a href="index.html#how_we_work" data-i18n="footer-how">Jak pracujemy</a></li>
+                  <li><a href="index.html#values" data-i18n="footer-values">Nasze wartości</a></li>
                 </ul>
               </div>
 
               <!-- footer wrapper -->
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px">Pages</h4>
+                  <h4 class="title" style="font-size: 18px" data-i18n="footer-pages">Strony</h4>
                 </div>
                 <ul class="link" style="padding: 0">
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li>
-                    <a href="privacy_policy.html">Privacy Policy</a>
-                  </li>
+                  <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
+                  <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                  <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>
                 </ul>
               </div>
               <!-- footer wrapper -->
@@ -361,8 +384,8 @@
           <div class="col-lg-3 col-md-5 col-sm-12">
             <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
               <div class="footer-title">
-                <h4 class="title" style="font-size: 18px">
-                  Contact Us
+                <h4 class="title" style="font-size: 18px" data-i18n="footer-contact-title">
+                  Kontakt
                 </h4>
               </div>
               <ul class="contact">
@@ -386,7 +409,7 @@
           <div class="col-lg-12">
             <div class="copyright d-sm-flex justify-content-between">
               <div class="copyright-content">
-                <p class="text">ITLight Copyright 2024</p>
+                <p class="text" data-i18n="footer-copyright">ITLight Copyright 2024</p>
               </div>
               <!-- copyright content -->
             </div>
@@ -424,16 +447,12 @@
           .send("service_xea7ovv", "template_t0vq4lx", templateParams)
           .then(
             function (response) {
-              alert(
-                "Message sent!",
-                response.status,
-                response.text
-              );
+              alert(ITL_t('alert-contact-ok'));
               document.getElementById("contactForm").reset();
             },
             function (error) {
               console.log("FAILED...", error);
-              alert("An error occurred while sending your message...", error);
+              alert(ITL_t('alert-contact-err'));
             }
           );
       });
@@ -449,6 +468,8 @@
   <script src="assets/js/firebase.js" type="module"></script>
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/lang.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pl">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -21,10 +21,30 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>ITLight - Portfolio</title>
+  <title data-i18n="page-title-portfolio">Portfolio – Nasze Realizacje | ITLight Software House</title>
 
-  <meta name="description" content="View our work.">
+  <meta name="description" data-i18n="meta-desc-portfolio"
+    content="Poznaj realizacje ITLight Software House – aplikacje mobilne Flutter, strony WordPress, platformy webowe Angular. Projekty dla firm z Polski, Czech i Słowacji.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="portfolio software house, realizacje IT, aplikacje mobilne Flutter, WordPress, Angular, projekty webowe, ITLight">
+  <meta name="author" content="ITLight Software House">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pl">
+  <link rel="canonical" href="https://itlight.eu/portfolio.html" />
+  <link rel="alternate" hreflang="pl" href="https://itlight.eu/portfolio.html" />
+  <link rel="alternate" hreflang="en" href="https://itlight.eu/portfolio.html?lang=en" />
+  <link rel="alternate" hreflang="cs" href="https://itlight.eu/portfolio.html?lang=cs" />
+  <link rel="alternate" hreflang="sk" href="https://itlight.eu/portfolio.html?lang=sk" />
+  <link rel="alternate" hreflang="x-default" href="https://itlight.eu/portfolio.html" />
+  <meta property="og:title" content="Portfolio – Nasze Realizacje | ITLight">
+  <meta property="og:description" content="Poznaj realizacje ITLight – Flutter, WordPress, Angular. Projekty dla firm.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://itlight.eu/portfolio.html">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -45,7 +65,17 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/slick.css" />
-</head>
+  <style>
+    /* Language switcher active state */
+    .lang-option.active {
+      font-weight: bold;
+      color: #361cc1 !important;
+      background: #f8f9ff;
+    }
+    .lang-option.active::before {
+      content: '✓ ';
+    }
+  </style>
 
 <body>
   <!--[if IE]>
@@ -93,65 +123,55 @@
 
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="index.html">Company</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="firmaDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span data-i18n="nav-company">Firma</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                      <li><a class="dropdown-item" href="index.html#about" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-about">O nas</a></li>
+                      <li><a class="dropdown-item" href="index.html#how_we_work" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-how-we-work">Jak pracujemy</a></li>
+                      <li><a class="dropdown-item" href="index.html#values" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-values">Nasze wartości</a></li>
+                    </ul>
                   </li>
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="uslugiDropdown" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
+                      <span data-i18n="nav-services">Usługi</span>
                     </a>
                     <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
                       <div class="row">
                         <div class="col-md-3">
-                          <h6>Custom Software</h6>
+                          <h6 data-i18n="nav-custom-software-h">Custom Software</h6>
                           <ul class="list-unstyled">
-                            <li>Tailor-made software</li>
-                            <li>System integrations</li>
-                            <li>Internet of Things</li>
-                            <li>Digital transformation</li>
+                            <li data-i18n="nav-custom-software-1">Oprogramowanie szyte na miarę</li>
+                            <li data-i18n="nav-custom-software-2">Integracje systemów</li>
+                            <li data-i18n="nav-custom-software-3">Internet of Things</li>
+                            <li data-i18n="nav-custom-software-4">Transformacja cyfrowa</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Mobile App Development</h6>
+                          <h6 data-i18n="nav-mobile-h">Tworzenie Aplikacji Mobilnych</h6>
                           <ul class="list-unstyled">
-                            <li>Flutter apps</li>
-                            <li>UX/UI Design</li>
-                            <li>iOS & Android apps</li>
-                          </ul>
-                          <h6>MVP Development</h6>
-                          <ul class="list-unstyled">
-                            <li>Idea validation</li>
-                            <li>Prototyping</li>
-                            <li>Simple app development</li>
+                            <li data-i18n="nav-mobile-1">Aplikacje Flutter</li>
+                            <li data-i18n="nav-mobile-2">Projektowanie UX/UI</li>
+                            <li data-i18n="nav-mobile-3">Aplikacje iOS i Android</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>AWS & Cloud Solutions</h6>
+                          <h6 data-i18n="nav-mvp-h">Tworzenie MVP</h6>
                           <ul class="list-unstyled">
-                            <li>Cloud management</li>
-                            <li>Cloud architecture</li>
-                            <li>CI/CD pipelines</li>
-                          </ul>
-                          <h6>Product Workshops</h6>
-                          <ul class="list-unstyled">
-                            <li>Product Discovery</li>
-                            <li>Event Storming</li>
-                            <li>Design Sprint</li>
+                            <li data-i18n="nav-mvp-1">Walidacja pomysłu</li>
+                            <li data-i18n="nav-mvp-2">Prototypowanie</li>
+                            <li data-i18n="nav-mvp-3">Proste aplikacje</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Web App Development</h6>
+                          <h6 data-i18n="nav-web-h">Aplikacje Webowe</h6>
                           <ul class="list-unstyled">
-                            <li>B2B platforms</li>
-                            <li>Angular, Vue, Laravel apps</li>
-                          </ul>
-                          <h6>AI Solutions</h6>
-                          <ul class="list-unstyled">
-                            <li>Process automation</li>
-                            <li>ChatGPT</li>
-                            <li>Data analysis</li>
+                            <li data-i18n="nav-web-1">Landing Pages</li>
+                            <li data-i18n="nav-web-2">Aplikacje Flutter, Angular, WordPress</li>
                           </ul>
                         </div>
                       </div>
@@ -159,27 +179,38 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link active" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="career.html">Career</a>
+                    <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html" data-i18n="nav-contact">Kontakt</a>
                   </li>
-                  <div class=" navbar-btn-mobile ">
-                    <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                      Free Quote
+
+                  <!-- Language switcher -->
+                  <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"
+                      style="font-weight:600; letter-spacing:.5px;">
+                      <span id="langIndicator">🇵🇱 PL</span>
                     </a>
-                  </div>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:130px;">
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="pl" onclick="switchLang('pl'); return false;">🇵🇱 Polski</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="en" onclick="switchLang('en'); return false;">🇬🇧 English</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="cs" onclick="switchLang('cs'); return false;">🇨🇿 Čeština</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="sk" onclick="switchLang('sk'); return false;">🇸🇰 Slovenčina</a></li>
+                    </ul>
+                  </li>
+
                 </ul>
               </div>
 
               <!-- navbar collapse -->
 
               <div class="navbar-btn ">
-                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                  Free Quote
+                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow" data-i18n="nav-free-quote">
+                  Bezpłatna Wycena
                 </a>
               </div>
             </nav>
@@ -200,8 +231,8 @@
           <div class="section-title text-center pb-40">
             <div class="line m-auto"></div>
             <h3 class="title">
-              Portfolio,
-              <span> Check out our work</span>
+              <span data-i18n="pf-hero-title">Portfolio,</span>
+              <span data-i18n="pf-hero-span"> Poznaj nasze realizacje</span>
             </h3>
           </div>
           <!-- section title -->
@@ -216,32 +247,30 @@
               <img src="assets/images/companys/paidwork.png" alt="PaidWork" style="width: 180px;" />
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;">
-                PaidWork - Mobile App
+              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;" data-i18n="pf-pw-title">
+                PaidWork - Aplikacja Mobilna
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">The client needed a modern mobile app
-                    for earning money by completing tasks, working across all mobile platforms.
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-pw-challenge">Klient potrzebował nowoczesnej aplikacji mobilnej do zarabiania pieniędzy przez wykonywanie zadań, działającej na wszystkich platformach mobilnych.
                   </p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">We built a cross-platform app in Flutter
-                    with an intuitive interface, task management system, and secure payment processing.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-pw-solution">Zbudowaliśmy wieloplatformową aplikację Flutter z intuicyjnym interfejsem, systemem zarządzania zadaniami i bezpiecznym przetwarzaniem płatności.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: #361cc1; color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">Flutter</span>
                   <span class="badge"
@@ -255,8 +284,8 @@
               <div class="text-center mt-4">
                 <a style="width: 150px;" class="main-btn"
                   href="https://play.google.com/store/apps/details?id=com.zareklamy&hl=en" rel="nofollow"
-                  target="_blank">
-                  View
+                  target="_blank" data-i18n="pf-btn-view">
+                  Zobacz
                 </a>
               </div>
             </div>
@@ -270,32 +299,29 @@
               <img src="assets/images/companys/BEU_logo.png" alt="BEU" style="width: 120px;" />
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;">
-                BEU - Business Card Website
+              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;" data-i18n="pf-beu-title">
+                BEU - Strona Wizótkowa
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">The client needed a professional business
-                    card website
-                    to showcase their activity and services online.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-beu-challenge">Klient potrzebował profesjonalnej strony wizótkowej, by zaprezentować swoją działalność i usługi online.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">We designed and deployed a responsive
-                    WordPress website with a modern design, CMS system, and contact forms.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-beu-solution">Zaprojektowaliśmy i wdrożyliśmy responsywną stronę WordPress z nowoczesnym designem, systemem CMS i formularzami kontaktowymi.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: #361cc1; color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">WordPress</span>
                   <span class="badge"
@@ -306,8 +332,8 @@
               </div>
 
               <div class="text-center mt-4">
-                <a style="width: 150px;" class="main-btn" href="https://beu.edu.pl" rel="nofollow" target="_blank">
-                  View
+                <a style="width: 150px;" class="main-btn" href="https://beu.edu.pl" rel="nofollow" target="_blank" data-i18n="pf-btn-view">
+                  Zobacz
                 </a>
               </div>
             </div>
@@ -321,32 +347,30 @@
               <img src="assets/images/companys/vocale.png" alt="Vocale" style="width: 60px;" />
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;">
-                Vocale - App Updates
+              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;" data-i18n="pf-vocale-title">
+                Vocale - Aktualizacje Aplikacji
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">An existing communication app required
-                    regular updates and implementation of new features.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-vocale-challenge">Istniejąca aplikacja komunikacyjna wymagała regularnych aktualizacji i implementacji nowych funkcji.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">We delivered a series of Flutter app
-                    updates, improving the user interface and adding new features according to the client's needs.
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-vocale-solution">Dostarczyliśmy serię aktualizacji aplikacji Flutter, ulepszając interfejs użytkownika i dodając nowe funkcje zgodnie z potrzebami klienta.
                   </p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: #361cc1; color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">Flutter</span>
                 </div>
@@ -355,8 +379,8 @@
               <div class="text-center mt-4">
                 <a style="width: 150px;" class="main-btn"
                   href="https://play.google.com/store/apps/details?id=com.vocale.vocale&hl=pl" rel="nofollow"
-                  target="_blank">
-                  View
+                  target="_blank" data-i18n="pf-btn-view">
+                  Zobacz
                 </a>
               </div>
             </div>
@@ -371,31 +395,29 @@
               <img src="assets/images/companys/finzer_logo.svg" alt="Finzer" style="width: 180px;" />
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #fff; margin-bottom: 15px;">
+              <h4 class="services-title text-center" style="color: #fff; margin-bottom: 15px;" data-i18n="pf-finzer-title">
                 Finzer - Frontend & Landing Page
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #ecf0f1; line-height: 1.6;">A fintech startup needed a modern
-                    landing page and frontend for a web application for their investment platform.</p>
+                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #ecf0f1; line-height: 1.6;" data-i18n="pf-finzer-challenge">Fintech startup potrzebował nowoczesnego landing page i frontendu aplikacji webowej dla platformy inwestycyjnej.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #ecf0f1; line-height: 1.6;">We developed a responsive landing page
-                    in Astro and a web app frontend in Flutter Web with a modern user interface.</p>
+                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #ecf0f1; line-height: 1.6;" data-i18n="pf-finzer-solution">Zbudowaliśmy responsywny landing page w Astro i frontend aplikacji webowej w Flutter Web z nowoczesnym interfejsem użytkownika.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #fff; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: rgba(255,255,255,0.2); color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">Flutter
                     Web</span>
@@ -410,12 +432,12 @@
               <div class="text-center mt-4">
                 <div class="d-flex justify-content-center gap-3">
                   <a style="width: 160px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);"
-                    class="main-btn" href="https://finzer.io" rel="nofollow" target="_blank">
-                    View Landing
+                    class="main-btn" href="https://finzer.io" rel="nofollow" target="_blank" data-i18n="pf-btn-view-landing">
+                    Zobacz Landing
                   </a>
                   <a style="width: 170px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);"
-                    class="main-btn" href="https://finzer.app/auth" rel="nofollow" target="_blank">
-                    View Application
+                    class="main-btn" href="https://finzer.app/auth" rel="nofollow" target="_blank" data-i18n="pf-btn-view-app">
+                    Zobacz Aplikację
                   </a>
                 </div>
               </div>
@@ -431,31 +453,29 @@
               <img src="https://www.idoplanet.com/assets/images/logo-2.png" alt="IdoPlanet" style="width: 160px;" />
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;">
-                IdoPlanet - Travel Platform
+              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;" data-i18n="pf-idoplanet-title">
+                IdoPlanet - Platforma Podróżnicza
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">The client needed a modern travel platform
-                    with a flight search engine, news feed, and social features.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-idoplanet-challenge">Klient potrzebował nowoczesnej platformy podróżniczej z wyszukiwarką lotów, feedem wiadomości i funkcjami społecznościowymi.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">We built a comprehensive Angular platform
-                    with Firebase, Flight API integration, and News API to display travel news.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-idoplanet-solution">Zbudowaliśmy kompleksową platformę Angular z Firebase, integracją Flight API i News API do wyświetlania wiadomości podróżniczych.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: #361cc1; color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">Angular</span>
                   <span class="badge"
@@ -471,8 +491,8 @@
 
               <div class="text-center mt-4">
                 <a style="width: 150px;" class="main-btn" href="https://www.idoplanet.com/home" rel="nofollow"
-                  target="_blank">
-                  View
+                  target="_blank" data-i18n="pf-btn-view">
+                  Zobacz
                 </a>
               </div>
             </div>
@@ -491,32 +511,30 @@
               </div>
             </div>
             <div class="services-content">
-              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;">
-                Homai - Apartment Search App
+              <h4 class="services-title text-center" style="color: #361cc1; margin-bottom: 15px;" data-i18n="pf-homai-title">
+                Homai - Aplikacja do Wyszukiwania Mieszkań
               </h4>
 
               <div class="project-details">
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Challenge</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">The client needed an advanced mobile app
-                    for searching and listing apartments with an intelligent recommendation system.</p>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-challenge">Wyzwanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-homai-challenge">Klient potrzebował zaawansowanej aplikacji mobilnej do wyszukiwania i dodawania mieszkań z inteligentnym systemem rekomendacji.</p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Solution</h6>
-                  <p style="font-size: 14px; color: #666; line-height: 1.6;">We built a complete Flutter app with a
-                    proprietary search algorithm, helper chat, and an admin panel for managing listings.
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-solution">Rozwiązanie</h6>
+                  <p style="font-size: 14px; color: #666; line-height: 1.6;" data-i18n="pf-homai-solution">Zbudowaliśmy kompletną aplikację Flutter z własnym algorytmem wyszukiwania, czatem pomocniczym i panelem administracyjnym do zarządzania ogłoszeniami.
                   </p>
                 </div>
 
                 <div class="project-section mb-3">
                   <h6
-                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
-                    Technologies</h6>
+                    style="color: #361cc1; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;"
+                    data-i18n="pf-lbl-tech">Technologie</h6>
                   <span class="badge"
                     style="background: #361cc1; color: white; margin-right: 5px; padding: 4px 8px; border-radius: 12px; font-size: 12px;">Flutter</span>
                   <span class="badge"
@@ -529,8 +547,9 @@
 
               <div class="text-center mt-4">
                 <span
-                  style="width: 150px; padding: 10px 20px; background: #f8f9ff; color: #666; border-radius: 5px; font-size: 14px;">
-                  Project in development
+                  style="width: 150px; padding: 10px 20px; background: #f8f9ff; color: #666; border-radius: 5px; font-size: 14px;"
+                  data-i18n="pf-btn-in-dev">
+                  Projekt w trakcie realizacji
                 </span>
               </div>
             </div>
@@ -552,8 +571,8 @@
               <a class="logo" href="">
                 <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
               </a>
-              <p class="text">
-                Build a great app or website with our help.
+              <p class="text" data-i18n="footer-tagline">
+                Zbuduj świetną aplikację lub stronę z naszą pomocą.
               </p>
               <ul class="social">
                 <li>
@@ -579,25 +598,25 @@
             <div class="footer-link d-flex mt-50 justify-content-sm-start">
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px;">Company</h4>
+                  <h4 class="title" style="font-size: 18px;" data-i18n="footer-company">Firma</h4>
                 </div>
                 <ul class="link" style="padding: 0;">
-                  <li><a href="index.html">About Us</a></li>
-                  <li><a href="index.html">How We Work</a></li>
-                  <li><a href="index.html">Our Values</a></li>
+                  <li><a href="index.html#about" data-i18n="footer-about">O nas</a></li>
+                  <li><a href="index.html#how_we_work" data-i18n="footer-how">Jak pracujemy</a></li>
+                  <li><a href="index.html#values" data-i18n="footer-values">Nasze wartości</a></li>
                 </ul>
               </div>
 
               <!-- footer wrapper -->
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px;">Pages</h4>
+                  <h4 class="title" style="font-size: 18px;" data-i18n="footer-pages">Strony</h4>
                 </div>
                 <ul class="link" style="padding: 0;">
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                  <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
+                  <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                  <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>
                 </ul>
               </div>
               <!-- footer wrapper -->
@@ -607,7 +626,7 @@
           <div class="col-lg-3 col-md-5 col-sm-12">
             <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
               <div class="footer-title">
-                <h4 class="title" style="font-size: 18px;">Contact Us</h4>
+                <h4 class="title" style="font-size: 18px;" data-i18n="footer-contact-title">Kontakt</h4>
               </div>
               <ul class="contact">
                 <li>+48 786 497 374</li>
@@ -630,7 +649,7 @@
           <div class="col-lg-12">
             <div class="copyright d-sm-flex justify-content-between">
               <div class="copyright-content">
-                <p class="text">
+                  <p class="text" data-i18n="footer-copyright">
                   ITLight Copyright 2024
 
                 </p>
@@ -660,6 +679,8 @@
 <script src="assets/js/firebase.js" type="module"></script>
 <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/lang.js"></script>
 
 </html>
 

@@ -37,12 +37,17 @@
     /* 1. <html lang> */
     document.documentElement.lang = lang;
 
-    /* 2. <title> */
-    if (dict['page-title']) document.title = dict['page-title'];
+    /* 2. <title> – uses data-i18n attr on <title> if present, falls back to 'page-title' */
+    const titleEl = document.querySelector('title');
+    const titleKey = (titleEl && titleEl.getAttribute('data-i18n')) || 'page-title';
+    if (dict[titleKey]) document.title = dict[titleKey];
 
-    /* 3. <meta name="description"> */
+    /* 3. <meta name="description"> – uses data-i18n attr if present */
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && dict['meta-description']) metaDesc.content = dict['meta-description'];
+    if (metaDesc) {
+      const descKey = metaDesc.getAttribute('data-i18n') || 'meta-description';
+      if (dict[descKey]) metaDesc.content = dict[descKey];
+    }
 
     /* 4. <meta name="keywords"> */
     const metaKw = document.querySelector('meta[name="keywords"]');

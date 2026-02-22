@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pl">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -21,11 +21,30 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>ITLight - Career</title>
+  <title data-i18n="page-title-career">Kariera – Dołącz do Zespołu ITLight | Software House</title>
 
-  <meta name="description" content="Join our team and start growing in IT!">
-
+  <meta name="description" data-i18n="meta-desc-career"
+    content="Praca w ITLight Software House – sprawdź dostępne stanowiska. Tworzymy aplikacje mobilne i strony internetowe. Praca zdalna, elastyczne godziny.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="kariera software house, praca IT, programista Flutter, praca zdalna, ITLight kariera">
+  <meta name="author" content="ITLight Software House">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pl">
+  <link rel="canonical" href="https://itlight.eu/career.html" />
+  <link rel="alternate" hreflang="pl" href="https://itlight.eu/career.html" />
+  <link rel="alternate" hreflang="en" href="https://itlight.eu/career.html?lang=en" />
+  <link rel="alternate" hreflang="cs" href="https://itlight.eu/career.html?lang=cs" />
+  <link rel="alternate" hreflang="sk" href="https://itlight.eu/career.html?lang=sk" />
+  <link rel="alternate" hreflang="x-default" href="https://itlight.eu/career.html" />
+  <meta property="og:title" content="Kariera | ITLight Software House">
+  <meta property="og:description" content="Dołącz do zespołu ITLight – tworzymy aplikacje mobilne i strony internetowe. Praca zdalna.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://itlight.eu/career.html">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -76,9 +95,9 @@ body > *:not(footer) {
   flex: 1; /* Treść strony rozciąga się, zajmuje pozostałą wysokość */
 }
 
-footer {
-  margin-top: auto; /* Wypycha footer na dół */
-}
+  footer {
+    margin-top: auto; /* Wypycha footer na dół */
+  }
 
     .services-content ul {
       text-align: left;
@@ -92,6 +111,16 @@ footer {
       margin-top: 20px;
       font-size: 18px;
       color: #333;
+    }
+
+    /* Language switcher active state */
+    .lang-option.active {
+      font-weight: bold;
+      color: #361cc1 !important;
+      background: #f8f9ff;
+    }
+    .lang-option.active::before {
+      content: '✓ ';
     }
   </style>
 </head>
@@ -142,65 +171,55 @@ footer {
 
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="index.html">Company</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="firmaDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span data-i18n="nav-company">Firma</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                      <li><a class="dropdown-item" href="index.html#about" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-about">O nas</a></li>
+                      <li><a class="dropdown-item" href="index.html#how_we_work" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-how-we-work">Jak pracujemy</a></li>
+                      <li><a class="dropdown-item" href="index.html#values" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-values">Nasze wartości</a></li>
+                    </ul>
                   </li>
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="uslugiDropdown" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
+                      <span data-i18n="nav-services">Usługi</span>
                     </a>
                     <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
                       <div class="row">
                         <div class="col-md-3">
-                          <h6>Custom Software</h6>
+                          <h6 data-i18n="nav-custom-software-h">Custom Software</h6>
                           <ul class="list-unstyled">
-                            <li>Tailor-made software</li>
-                            <li>System integrations</li>
-                            <li>Internet of Things</li>
-                            <li>Digital transformation</li>
+                            <li data-i18n="nav-custom-software-1">Oprogramowanie szyte na miarę</li>
+                            <li data-i18n="nav-custom-software-2">Integracje systemów</li>
+                            <li data-i18n="nav-custom-software-3">Internet of Things</li>
+                            <li data-i18n="nav-custom-software-4">Transformacja cyfrowa</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Mobile App Development</h6>
+                          <h6 data-i18n="nav-mobile-h">Tworzenie Aplikacji Mobilnych</h6>
                           <ul class="list-unstyled">
-                            <li>Flutter apps</li>
-                            <li>UX/UI Design</li>
-                            <li>iOS & Android apps</li>
-                          </ul>
-                          <h6>MVP Development</h6>
-                          <ul class="list-unstyled">
-                            <li>Idea validation</li>
-                            <li>Prototyping</li>
-                            <li>Simple app development</li>
+                            <li data-i18n="nav-mobile-1">Aplikacje Flutter</li>
+                            <li data-i18n="nav-mobile-2">Projektowanie UX/UI</li>
+                            <li data-i18n="nav-mobile-3">Aplikacje iOS i Android</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>AWS & Cloud Solutions</h6>
+                          <h6 data-i18n="nav-mvp-h">Tworzenie MVP</h6>
                           <ul class="list-unstyled">
-                            <li>Cloud management</li>
-                            <li>Cloud architecture</li>
-                            <li>CI/CD pipelines</li>
-                          </ul>
-                          <h6>Product Workshops</h6>
-                          <ul class="list-unstyled">
-                            <li>Product Discovery</li>
-                            <li>Event Storming</li>
-                            <li>Design Sprint</li>
+                            <li data-i18n="nav-mvp-1">Walidacja pomysłu</li>
+                            <li data-i18n="nav-mvp-2">Prototypowanie</li>
+                            <li data-i18n="nav-mvp-3">Proste aplikacje</li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <h6>Web App Development</h6>
+                          <h6 data-i18n="nav-web-h">Aplikacje Webowe</h6>
                           <ul class="list-unstyled">
-                            <li>B2B platforms</li>
-                            <li>Angular, Vue, Laravel apps</li>
-                          </ul>
-                          <h6>AI Solutions</h6>
-                          <ul class="list-unstyled">
-                            <li>Process automation</li>
-                            <li>ChatGPT</li>
-                            <li>Data analysis</li>
+                            <li data-i18n="nav-web-1">Landing Pages</li>
+                            <li data-i18n="nav-web-2">Aplikacje Flutter, Angular, WordPress</li>
                           </ul>
                         </div>
                       </div>
@@ -208,27 +227,38 @@ footer {
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="career.html">Career</a>
+                    <a class="nav-link active" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html" data-i18n="nav-contact">Kontakt</a>
                   </li>
-                  <div class=" navbar-btn-mobile ">
-                    <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                      Free Quote
+
+                  <!-- Language switcher -->
+                  <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"
+                      style="font-weight:600; letter-spacing:.5px;">
+                      <span id="langIndicator">🇵🇱 PL</span>
                     </a>
-                  </div>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:130px;">
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="pl" onclick="switchLang('pl'); return false;">🇵🇱 Polski</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="en" onclick="switchLang('en'); return false;">🇬🇧 English</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="cs" onclick="switchLang('cs'); return false;">🇨🇿 Čeština</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="sk" onclick="switchLang('sk'); return false;">🇸🇰 Slovenčina</a></li>
+                    </ul>
+                  </li>
+
                 </ul>
               </div>
 
               <!-- navbar collapse -->
 
               <div class="navbar-btn ">
-                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow">
-                  Free Quote
+                <a class="main-btn" data-scroll-nav="0" href="contact.html" rel="nofollow" data-i18n="nav-free-quote">
+                  Bezpłatna Wycena
                 </a>
               </div>
             </nav>
@@ -248,19 +278,18 @@ footer {
         <div class="section-title text-center pb-40">
           <div class="line m-auto"></div>
           <h3 class="title">
-            Career,
-            <span> Check our available positions</span>
+            <span data-i18n="career-hero-title">Kariera,</span>
+            <span data-i18n="career-hero-span"> Sprawdź dostępne stanowiska</span>
           </h3>
         </div>
         <!-- section title -->
       </div>
     </div>
      <h4 class="services-title">
-              <p style="font-size: 22px;  font-weight: 800; color: #333;">We are not currently recruiting</p>
+              <p style="font-size: 22px;  font-weight: 800; color: #333;" data-i18n="career-no-recruit-title">Aktualnie nie prowadzimy rekrutacji</p>
             </h4>
-     <p class="short-text">
-Thank you for your interest in working at our company.
-We are not currently hiring for any position. We encourage you to revisit our page in the future — information about new openings will be posted as they become available.
+     <p class="short-text" data-i18n="career-no-recruit-text">
+Dziękujemy za zainteresowanie pracą w naszej firmie. Aktualnie nie prowadzimy rekrutacji na żadne stanowisko. Zachęcamy do odwiedzenia naszej strony w przyszłości – informacje o nowych ofertach pojawią się, gdy tylko będą dostępne.
             </p>
     <!-- row -->
     <!-- <div class="row justify-content-center">
@@ -399,8 +428,8 @@ We are not currently hiring for any position. We encourage you to revisit our pa
               <a class="logo">
                 <img src="assets/images/logo/NEW_LOGO.svg" alt="logo" />
               </a>
-              <p class="text">
-                Build a great app or website with our help.
+              <p class="text" data-i18n="footer-tagline">
+                Zbuduj świetną aplikację lub stronę z naszą pomocą.
               </p>
               <ul class="social">
                 <li>
@@ -426,25 +455,25 @@ We are not currently hiring for any position. We encourage you to revisit our pa
             <div class="footer-link d-flex mt-50 justify-content-sm-start">
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px;">Company</h4>
+                  <h4 class="title" style="font-size: 18px;" data-i18n="footer-company">Firma</h4>
                 </div>
                 <ul class="link" style="padding: 0;">
-                  <li><a href="index.html">About Us</a></li>
-                  <li><a href="index.html">How We Work</a></li>
-                  <li><a href="index.html">Our Values</a></li>
+                  <li><a href="index.html#about" data-i18n="footer-about">O nas</a></li>
+                  <li><a href="index.html#how_we_work" data-i18n="footer-how">Jak pracujemy</a></li>
+                  <li><a href="index.html#values" data-i18n="footer-values">Nasze wartości</a></li>
                 </ul>
               </div>
 
               <!-- footer wrapper -->
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <div class="footer-title">
-                  <h4 class="title" style="font-size: 18px;">Pages</h4>
+                  <h4 class="title" style="font-size: 18px;" data-i18n="footer-pages">Strony</h4>
                 </div>
                 <ul class="link" style="padding: 0;">
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                  <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
+                  <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                  <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>
                 </ul>
               </div>
               <!-- footer wrapper -->
@@ -454,7 +483,7 @@ We are not currently hiring for any position. We encourage you to revisit our pa
           <div class="col-lg-3 col-md-5 col-sm-12">
             <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
               <div class="footer-title">
-                <h4 class="title" style="font-size: 18px;">Contact Us</h4>
+                <h4 class="title" style="font-size: 18px;" data-i18n="footer-contact-title">Kontakt</h4>
               </div>
               <ul class="contact">
                 <li>+48 786 497 374</li>
@@ -477,7 +506,7 @@ We are not currently hiring for any position. We encourage you to revisit our pa
           <div class="col-lg-12">
             <div class="copyright d-sm-flex justify-content-between">
               <div class="copyright-content">
-                <p class="text">
+                  <p class="text" data-i18n="footer-copyright">
                   ITLight Copyright 2024
 
                 </p>
@@ -506,6 +535,8 @@ We are not currently hiring for any position. We encourage you to revisit our pa
 <script src="assets/js/firebase.js" type="module"></script>
 <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/lang.js"></script>
 <script>
   document.querySelectorAll('.toggle-button').forEach(button => {
     button.addEventListener('click', function () {
