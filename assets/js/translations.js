@@ -10,8 +10,8 @@ const TRANSLATIONS = {
   ================================================================ */
   pl: {
     /* ---------- <title> & meta ---------------------------------- */
-    'page-title': 'Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight – Software House',
-    'meta-description': 'Profesjonalny software house specjalizujący się w tworzeniu aplikacji mobilnych, stron internetowych i systemów webowych. Projekty dla firm – Flutter, Angular, Laravel, WordPress. Bezpłatna wycena w 24h.',
+    'page-title': 'Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight',
+    'meta-description': 'Software house – aplikacje mobilne, strony WWW, systemy webowe dla firm. Flutter, Angular, Laravel, WordPress. Projekty PL/CZ/SK/LT. Bezpłatna wycena w 24h.',
     'meta-keywords': 'aplikacje mobilne, strony internetowe, software house, tworzenie aplikacji, projekty IT, programowanie, Flutter, Angular, Laravel, WordPress, systemy webowe, aplikacje na zamówienie',
     'og-title': 'Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight',
     'og-description': 'Profesjonalny software house – aplikacje mobilne, strony internetowe, systemy webowe. Angular, Laravel, WordPress. Projekty dla firm. Bezpłatna wycena w 24h.',
@@ -285,7 +285,7 @@ const TRANSLATIONS = {
   ================================================================ */
   en: {
     'page-title': 'Mobile App & Website Development | ITLight – Software House',
-    'meta-description': 'Professional software house specialising in mobile app development, websites and web systems. Projects for businesses – Flutter, Angular, Laravel, WordPress. Free quote in 24h.',
+    'meta-description': 'Software house – mobile apps, websites, web systems for businesses. Flutter, Angular, Laravel, WordPress. Projects across PL, CZ, SK, LT. Free quote in 24h.',
     'meta-keywords': 'mobile apps, websites, software house, app development, IT projects, programming, Flutter, Angular, Laravel, WordPress, web systems, custom applications',
     'og-title': 'Mobile App & Website Development | ITLight',
     'og-description': 'Professional software house – mobile apps, websites, web systems. Angular, Laravel, WordPress. Projects for businesses. Free quote in 24h.',
@@ -546,8 +546,8 @@ const TRANSLATIONS = {
      CZECH – Čeština
   ================================================================ */
   cs: {
-    'page-title': 'Vývoj mobilních aplikací a webových stránek | ITLight – Software House',
-    'meta-description': 'Profesionální software house specializující se na vývoj mobilních aplikací, webových stránek a webových systémů. Projekty pro firmy – Flutter, Angular, Laravel, WordPress. Bezplatná nabídka do 24h.',
+    'page-title': 'Vývoj mobilních aplikací a webů | ITLight Software House',
+    'meta-description': 'Profesionální software house – aplikace, weby a systémy na zakázku. Flutter, Angular, Laravel, WordPress. Projekty pro firmy CZ, PL, SK, LT. Bezplatná nabídka do 24h.',
     'meta-keywords': 'mobilní aplikace, webové stránky, software house, vývoj aplikací, IT projekty, programování, Flutter, Angular, Laravel, WordPress, webové systémy, zakázkové aplikace',
     'og-title': 'Vývoj mobilních aplikací a webových stránek | ITLight',
     'og-description': 'Profesionální software house – mobilní aplikace, webové stránky, webové systémy. Angular, Laravel, WordPress. Projekty pro firmy. Bezplatná nabídka do 24h.',
@@ -808,8 +808,8 @@ const TRANSLATIONS = {
      SLOVAK – Slovenčina
   ================================================================ */
   sk: {
-    'page-title': 'Vývoj mobilných aplikácií a webových stránok | ITLight – Software House',
-    'meta-description': 'Profesionálny software house špecializujúci sa na vývoj mobilných aplikácií, webových stránok a webových systémov. Projekty pre firmy – Flutter, Angular, Laravel, WordPress. Bezplatná cenová ponuka do 24h.',
+    'page-title': 'Vývoj mobilných aplikácií a webov | ITLight Software House',
+    'meta-description': 'Profesionálny software house – aplikácie, weby a systémy na mieru. Flutter, Angular, Laravel, WordPress. Projekty pre firmy SK, PL, CZ, LT. Bezplatná ponuka do 24h.',
     'meta-keywords': 'mobilné aplikácie, webové stránky, software house, vývoj aplikácií, IT projekty, programovanie, Flutter, Angular, Laravel, WordPress, webové systémy, zákazkové aplikácie',
     'og-title': 'Vývoj mobilných aplikácií a webových stránok | ITLight',
     'og-description': 'Profesionálny software house – mobilné aplikácie, webové stránky, webové systémy. Angular, Laravel, WordPress. Projekty pre firmy. Bezplatná cenová ponuka do 24h.',
@@ -1071,8 +1071,8 @@ const TRANSLATIONS = {
   ================================================================ */
   lt: {
     /* ---------- <title> & meta ---------------------------------- */
-    'page-title': 'Mobiliųjų programėlių ir svetainių kūrimas | ITLight – Software House',
-    'meta-description': 'Profesionalus software house, specializuojantis mobiliųjų programėlių, svetainių ir žiniatinklio sistemų kūrime. Projektai įmonėms – Flutter, Angular, Laravel, WordPress. Nemokama kaina per 24h.',
+    'page-title': 'Mobiliųjų programėlių ir svetainių kūrimas | ITLight',
+    'meta-description': 'Software house – mobiliųjų programėlių, svetainių ir sistemų kūrimas. Flutter, Angular, Laravel, WordPress. Projektai įmonėms LT, PL, CZ, SK. Nemokama kaina per 24h.',
     'meta-keywords': 'mobiliosios programėlės, svetainės, software house, programėlių kūrimas, IT projektai, programavimas, Flutter, Angular, Laravel, WordPress, žiniatinklio sistemos, individualios programėlės',
     'og-title': 'Mobiliųjų programėlių ir svetainių kūrimas | ITLight',
     'og-description': 'Profesionalus software house – mobiliosios programėlės, svetainės, žiniatinklio sistemos. Angular, Laravel, WordPress. Projektai įmonėms. Nemokama kaina per 24h.',

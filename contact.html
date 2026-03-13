@@ -28,8 +28,10 @@
     content="Skontaktuj się z ITLight – profesjonalnym software housem. Bezpłatna wycena aplikacji mobilnej, strony WWW lub systemu webowego w ciągu 24h. Działamy dla klientów z Polski, Czech i Słowacji.">
   <meta name="keywords" content="kontakt software house, wycena aplikacji mobilnej, tworzenie strony www, oferta IT, ITLight kontakt">
   <meta name="author" content="ITLight Software House">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="language" content="pl">
+  <meta name="theme-color" content="#361cc1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://itlight.eu/contact.html" />
   <link rel="alternate" hreflang="pl" href="https://itlight.eu/contact.html" />
   <link rel="alternate" hreflang="en" href="https://itlight.eu/contact.html?lang=en" />
@@ -41,12 +43,23 @@
   <meta property="og:description" content="Skontaktuj się z nami – bezpłatna wycena projektu IT w ciągu 24h.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://itlight.eu/contact.html">
-  <meta property="og:image" content="https://itlight.eu/assets/images/logo/assets/images/header/header-hero.png">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:secure_url" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ITLight Software House – Kontakt i bezpłatna wycena">
+  <meta property="og:site_name" content="ITLight Software House">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="cs_CZ">
   <meta property="og:locale:alternate" content="sk_SK">
   <meta property="og:locale:alternate" content="lt_LT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ITLightCompany">
+  <meta name="twitter:title" content="Kontakt | ITLight Software House">
+  <meta name="twitter:description" content="Skontaktuj się z nami – bezpłatna wycena projektu IT w ciągu 24h.">
+  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -59,6 +72,51 @@
   </script>
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/video/new_icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/video/new_icon.png">
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona Główna", "item": "https://itlight.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://itlight.eu/contact.html" }
+    ]
+  }
+  </script>
+
+  <!-- ContactPage + ProfessionalService Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Kontakt – Bezpłatna Wycena | ITLight Software House",
+    "url": "https://itlight.eu/contact.html",
+    "description": "Skontaktuj się z ITLight Software House. Bezpłatna wycena aplikacji mobilnej, strony WWW lub systemu webowego w ciągu 24h.",
+    "provider": {
+      "@type": "ProfessionalService",
+      "@id": "https://itlight.eu/#business",
+      "name": "ITLight Software House",
+      "url": "https://itlight.eu",
+      "telephone": "+48786497374",
+      "email": "kontakt@itlight.eu",
+      "address": { "@type": "PostalAddress", "addressCountry": "PL" },
+      "areaServed": ["PL", "CZ", "SK", "LT"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    }
+  }
+  </script>
 
   <!--====== CSS Files LinkUp ======-->
   <link rel="stylesheet" href="assets/css/animate.css" />
@@ -242,6 +300,9 @@
                     <a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
@@ -389,6 +450,7 @@
                 </div>
                 <ul class="link" style="padding: 0">
                   <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
                   <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
                   <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>

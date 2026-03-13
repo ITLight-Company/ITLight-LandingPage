@@ -21,10 +21,10 @@
   <meta charset="utf-8" />
 
   <!-- Preload critical hero image -->
-  <link rel="preload" href="assets/images/header/header-hero.png" as="image" type="image/png">
+  <link rel="preload" href="assets/images/logo/itlight-pg-image.jpg" as="image" type="image/jpeg">
 
   <!--====== Title ======-->
-  <title data-i18n="page-title">Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight – Software House</title>
+  <title data-i18n="page-title">Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" data-i18n="meta-description"
@@ -34,8 +34,10 @@
   <meta name="keywords"
     content="aplikacje mobilne, strony internetowe, software house, tworzenie aplikacji, projekty IT, programowanie, Flutter, Angular, Laravel, WordPress, systemy webowe, aplikacje na zamówienie, software house Polska, software house Czechy, software house Słowacja, software house Litwa">
   <meta name="author" content="ITLight Software House">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="language" content="pl">
+  <meta name="theme-color" content="#361cc1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://itlight.eu/" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://itlight.eu/sitemap.xml" />
 
@@ -52,8 +54,14 @@
   <meta property="og:description"
     content="Profesjonalny software house – aplikacje mobilne, strony internetowe, systemy webowe. Angular, Laravel, WordPress. Projekty dla firm. Bezpłatna wycena w 24h.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://itlight.eu">
-  <meta property="og:image" content="https://itlight.eu/assets/images/logo/assets/images/header/header-hero.png">
+  <meta property="og:url" content="https://itlight.eu/">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:secure_url" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ITLight Software House – Tworzenie Aplikacji Mobilnych i Stron WWW">
+  <meta property="og:site_name" content="ITLight Software House">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="cs_CZ">
@@ -62,10 +70,12 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ITLightCompany">
+  <meta name="twitter:creator" content="@ITLightCompany">
   <meta name="twitter:title" content="Tworzenie Aplikacji Mobilnych i Stron WWW | ITLight">
   <meta name="twitter:description"
     content="Software house – aplikacje mobilne, strony internetowe, systemy webowe. Angular, Laravel, WordPress. Projekty dla firm.">
-  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/assets/images/header/header-hero.png">
+  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
 
   <!-- Business Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -157,6 +167,75 @@
     }
   }
   </script>
+
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://itlight.eu/#website",
+    "url": "https://itlight.eu/",
+    "name": "ITLight Software House",
+    "description": "Tworzenie aplikacji mobilnych, stron internetowych i systemów webowych",
+    "inLanguage": ["pl", "en", "cs", "sk", "lt"],
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://itlight.eu/#organization",
+      "name": "ITLight Software House"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema – rich snippets w wynikach wyszukiwania -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje stworzenie aplikacji mobilnej?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Koszt tworzenia aplikacji mobilnej zależy od zakresu projektu. Proste aplikacje zaczynają się od 5 000 PLN, zaawansowane systemy od 50 000 PLN. Oferujemy bezpłatną wycenę w ciągu 24 h – napisz na kontakt@itlight.eu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak długo trwa stworzenie aplikacji lub strony internetowej?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Czas realizacji zależy od złożoności projektu. Prostą stronę internetową dostarczamy w 2–4 tygodnie, aplikację mobilną MVP w 4–8 tygodni, zaawansowane systemy w 3–6 miesięcy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy ITLight oferuje wsparcie i utrzymanie po wdrożeniu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, oferujemy pakiety wsparcia technicznego: Podstawowy (399 PLN/mies.), Profesjonalny (899 PLN/mies.) i Enterprise (1 999 PLN/mies.). Każdy pakiet obejmuje opiekę techniczną, aktualizacje i dostępność 24/7."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "W jakich technologiach specjalizuje się ITLight Software House?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Specjalizujemy się w Flutter (aplikacje mobilne iOS/Android), Angular (aplikacje webowe), Laravel (backend/API) i WordPress (strony, sklepy). Tworzymy oprogramowanie na zamówienie dla firm z Polski, Czech, Słowacji i Litwy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy ITLight realizuje projekty dla klientów zagranicznych?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, obsługujemy klientów z Polski, Czech, Słowacji i Litwy. Nasz zespół komunikuje się w językach polskim, angielskim, czeskim, słowackim i litewskim."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -171,6 +250,13 @@
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/video/new_icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/video/new_icon.png">
+
+  <!-- Performance: preconnect to external origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
   <!--====== CSS Files LinkUp ======-->
   <link rel="stylesheet" href="assets/css/animate.css" />
@@ -778,6 +864,9 @@
                     <a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
@@ -865,7 +954,7 @@
             <div class="header-hero-image text-center">
               <picture>
                 <source srcset="assets/images/header/laptop.svg" type="image/svg+xml">
-                <img id="heroImage" src="assets/images/header/header-hero.png"
+                <img id="heroImage" src="assets/images/logo/itlight-pg-image.jpg"
                   alt="Mobile app and website development - ITLight Software House"
                   onload="this.style.opacity='1';"
                   onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
@@ -1983,6 +2072,7 @@
                 </div>
                 <ul class="link" style="padding: 0;">
                   <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
                   <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
                   <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>

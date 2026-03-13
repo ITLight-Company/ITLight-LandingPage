@@ -1,330 +1,339 @@
 <!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-555JWTXM0Z"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-555JWTXM0Z');
-    </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "vkd7euqks7");
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formularz Kontaktowy</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-      }
-
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-
-      label {
-        display: block;
-        margin: 10px 0 5px;
-        font-weight: bold;
-      }
-
-      input,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-      }
-
-      button {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #0056b3;
-      }
-    </style>
-    <!-- Załaduj SDK EmailJS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("l1e0nc5oVfShQxF4p"); // Zastąp YOUR_USER_ID swoim ID użytkownika z EmailJS
-      })();
-    </script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11420175883');
-</script>
-  </head>
-  <body>
-    <!--====== VIDEO COUNTER PART START ======-->
-    <!-- <section id="facts" class="video-counter pt-70">
+<html class="no-js" lang="pl">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-555JWTXM0Z"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-555JWTXM0Z');</script>
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vkd7euqks7");</script>
+  <meta charset="utf-8" />
+  <title>Blog ITLight – Artykuły o Aplikacjach Mobilnych i Technologiach IT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Blog ITLight Software House – eksperckie artykuły o tworzeniu aplikacji mobilnych, kosztach developmentu, Flutter, React Native i nowych technologiach IT.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#361cc1">
+  <link rel="canonical" href="https://itlight.eu/blog.html" />
+  <meta property="og:title" content="Blog ITLight – Artykuły o Aplikacjach Mobilnych i IT">
+  <meta property="og:description" content="Eksperckie artykuły o tworzeniu aplikacji mobilnych, kosztach developmentu i technologiach IT od ITLight Software House.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://itlight.eu/blog.html">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:site_name" content="ITLight Software House">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ITLightCompany">
+  <meta name="twitter:title" content="Blog ITLight – Artykuły o Aplikacjach Mobilnych i IT">
+  <meta name="twitter:description" content="Eksperckie artykuły o tworzeniu aplikacji mobilnych, kosztach developmentu i technologiach IT.">
+  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona Główna","item":"https://itlight.eu/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://itlight.eu/blog.html"}]}</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"Blog ITLight Software House","url":"https://itlight.eu/blog.html","description":"Eksperckie artykuły o tworzeniu aplikacji mobilnych i technologiach IT","publisher":{"@type":"Organization","name":"ITLight Software House","url":"https://itlight.eu"},"blogPost":[{"@type":"BlogPosting","headline":"Ile kosztuje aplikacja mobilna w 2026? Kompletny przewodnik","url":"https://itlight.eu/blog-koszt-aplikacji-mobilnej.html","datePublished":"2026-03-13"},{"@type":"BlogPosting","headline":"Flutter vs React Native – co wybrać w 2026?","url":"https://itlight.eu/blog-flutter-vs-react-native.html","datePublished":"2026-03-13"}]}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11420175883');</script>
+  <link rel="shortcut icon" href="assets/images/video/new_icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/video/new_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .lang-option { color: #222 !important; font-size: 14px; }
+    .lang-option:hover { background: #f0f1ff !important; color: #361cc1 !important; }
+    .lang-option.active { font-weight: 700; color: #361cc1 !important; background: #eef0ff !important; }
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+      transition: transform .25s, box-shadow .25s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(54, 28, 193, .15);
+    }
+    .blog-card-img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-card-body {
+      padding: 26px 26px 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card-tag {
+      display: inline-block;
+      background: #eef0ff;
+      color: #361cc1;
+      padding: 4px 13px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    .blog-card-body h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #1a1a2e;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .blog-card-body p {
+      font-size: .94rem;
+      color: #666;
+      line-height: 1.75;
+      margin-bottom: 0;
+      flex: 1;
+    }
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 16px;
+      margin-top: 20px;
+    }
+    .blog-card-meta { font-size: .82rem; color: #aaa; }
+    .blog-read-more {
+      color: #361cc1;
+      font-weight: 700;
+      font-size: .88rem;
+      text-decoration: none;
+      letter-spacing: .2px;
+    }
+    .blog-read-more:hover { color: #2e82ef; }
+    .pb-80 { padding-bottom: 80px; }
+  </style>
+</head>
+<body>
+  <header class="header-area">
+    <div style="background:#361cc1; position:fixed; top:0; left:0; width:100%; z-index:99;
+      backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px);
+      box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.1); transition:all 0.3s ease-out 0s;">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 order-lg-last">
-            <div
-              class="counter-wrapper mt-50 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.8s"
-            >
-              <div class="counter-content">
-                <div class="section-title">
-                  <div class="line"></div>
-                  <h3 class="title">Zrealizowane Projekty <span> into Our Developing Apps</span></h3>
-                </div>
-            
-                <!-- section title -->
-    <!-- <p class="text">
-                    We are thrilled to share some intriguing details about our growing portfolio of applications. As we embark on this exciting journey, we'd like to provide you with a glimpse of our progress.
-                </p>
-              </div> -->
-    <!-- counter content -->
-    <!-- <div class="row no-gutters">
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-1
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="1"
-                      ></span>
-
-                      <p class="text">Downloads</p>
-                    </div>
-                  </div> -->
-    <!-- single counter -->
-    <!-- </div>
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-2
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="1"
-                      ></span>
-                      <p class="text">Active Users</p>
-                    </div>
-                  </div> -->
-    <!-- single counter -->
-    <!-- </div>
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-3
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="1"
-                      ></span>
-                      <p class="text">User Rating</p>
-                    </div>
-                  </div>
-                  <!-- single counter -->
-    <!-- </div>
-              </div> -->
-    <!-- row -->
-    <!-- </div> -->
-    <!-- counter wrapper -->
-    <!-- </div>
-          <div class="col-lg-6">
-            <div
-              class="video-content mt-50 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <img class="dots" src="assets/images/video/dots.svg" alt="dots" />
-              <div class="video-wrapper">
-                <div class="video-image">
-                  <img src="assets/images/video/vide.png" alt="video" />
-                </div> -->
-    <!-- <div class="video-icon">
-                  <a
-                    href="https://www.youtube.com/watch?v=TGgq6lS6qWc"
-                    class="video-popup glightbox"
-                  >
-                    <i class="lni lni-play"> </i>
-                  </a>
-                </div> -->
-    <!-- </div> -->
-    <!-- video wrapper -->
-    <!-- </div> -->
-    <!-- video content -->
-    <!-- </div>
-        </div> -->
-    <!-- row -->
-    <!-- </div> -->
-    <!-- container -->
-    <!-- </section> -->
-    <!-- ====== VIDEO COUNTER PART ENDS ====== -->
-    <!-- Team section Start -->
-    <!-- <section id="team" class="section pt-70">
-      <div class="container">
-
         <div class="row">
           <div class="col-lg-12">
-            <div class="team-text section-header text-center">  
-              <div>   
-                <h2 class="section-title">Founder & Story</h2>
-                <div class="desc-text">
-                  <p>"The idea for ITLight Company was born in my head during one of those nights when I couldn't sleep because of the hot idea that gripped me.I decided to create an application that not only helps you save money, and to create an application that allows you to make money without leaving home.</p>  
-                  <p>With determination and hard work, ITLight has become a place where dreams of financial stability become a reality."</p>
-                </div>
-              </div> 
-            </div>
-          </div>
-
-        </div>
-        <div class="row justify-content-center pt-20">
-  
-          <div class="col-lg-3 col-md-6 col-xs-12 justify-content-center">
-            <div class="single-team">
-              <div class="team-thumb">
-                <img src="assets/images/team/ceo.png" class="img-fluid" alt="">
+            <nav class="navbar navbar-expand-lg" style="padding:15px 0 !important;">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/NEW_LOGO.svg" alt="ITLight Software House – logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="firmaDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span data-i18n="nav-company">Firma</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                      <li><a class="dropdown-item" href="index.html#about"
+                          style="color:black;padding-left:10px;font-size:15px;"
+                          data-i18n="nav-about">O nas</a></li>
+                      <li><a class="dropdown-item" href="index.html#how_we_work"
+                          style="color:black;padding-left:10px;font-size:15px;"
+                          data-i18n="nav-how-we-work">Jak pracujemy</a></li>
+                      <li><a class="dropdown-item" href="index.html#values"
+                          style="color:black;padding-left:10px;font-size:15px;"
+                          data-i18n="nav-values">Nasze wartości</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" data-i18n="nav-contact">Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"
+                      style="font-weight:600; letter-spacing:.5px;">
+                      <span id="langIndicator">🇵🇱 PL</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown"
+                      style="min-width:160px;">
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="pl"
+                          onclick="switchLang('pl');return false;">🇵🇱 Polski</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="en"
+                          onclick="switchLang('en');return false;">🇬🇧 English</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="cs"
+                          onclick="switchLang('cs');return false;">🇨🇿 Čeština</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="sk"
+                          onclick="switchLang('sk');return false;">🇸🇰 Slovenčina</a></li>
+                      <li><a class="dropdown-item lang-option" href="#" data-lang="lt"
+                          onclick="switchLang('lt');return false;">🇱🇹 Lietuvių</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-
-              <div class="team-details">
-              <div class="team-social-icons pt-10">
-                  <ul class="social-list d-flex justify-content-center">
-                    <li class="d-flex justify-content-center align-items-center">
-                      <a href="https://www.instagram.com/__p4r4n0rm44l__/">
-                        <i class="lni lni-instagram-filled"> </i>
-                      </a>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center">
-                      <a href="https://www.linkedin.com/in/maciek-wawryszuk-484737225/">
-                        <i class="lni lni-linkedin-original"> </i>
-                      </a>
-                    </li>
-                  </ul>
-                </div> 
-                <div class="team-inner text-center">
-                  <h5 class="team-title">Maciej Wawryszuk</h5>
-                  <p>CEO & Founder</p>
-                </div>
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a class="main-btn" href="contact.html" rel="nofollow"
+                  data-i18n="nav-free-quote">Bezpłatna Wycena</a>
               </div>
-            </div>
+            </nav>
           </div>
-       
-
- 
-
         </div>
-     
       </div>
-    </section> -->
-    <!-- Team section End -->
-    <!--====== FOOTER PART START ======-->
-    <div class="container">
-      <h1>Skontaktuj się z nami i zbuduj aplikację mobilną</h1>
-      <form id="contactForm">
-        <label for="email">E-mail firmowy *</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="phone">Numer telefonu (opcjonalnie)</label>
-        <input type="tel" id="phone" name="phone" required />
-
-        <label for="message">Opowiedz nam o swoim projekcie *</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <!-- <label for="attachment"
-          >Dodaj załącznik (np. brief lub specyfikację techniczną)</label
-        >
-        <input type="file" id="attachment" name="attachment" /> -->
-
-        <button type="submit">Wyślij wiadomość</button>
-      </form>
     </div>
+  </header>
 
-    <script type="text/javascript">
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Zapobiega przeładowaniu strony
+  <section id="blog" class="services-area pt-120">
+    <div class="container">
 
-          // Pobierz dane z formularza
-          var email = document.getElementById("email").value;
-          var phone = document.getElementById("phone").value;
-          var message = document.getElementById("message").value;
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center pb-40">
+            <div class="line m-auto"></div>
+            <h1 class="title">Blog, <span>wiedza i technologie</span></h1>
+            <p style="font-size:1rem; color:#666; margin-top:14px; line-height:1.75;">
+              Piszemy o tym, co naprawdę ważne przy tworzeniu aplikacji mobilnych i systemów IT.
+              Bez pustych teorii – z konkretnymi liczbami i wnioskami z projektów.
+            </p>
+          </div>
+        </div>
+      </div>
 
-          // Konfiguracja danych do wysłania
-          var templateParams = {
-            from_email: email,
-            phone_number: phone,
-            message: message,
-            to_email: "kontakt@itlight.eu",
-          };
+      <div class="row g-4 justify-content-center pb-80">
 
-          // Wyślij e-mail przez EmailJS
-          emailjs
-            .send("service_xea7ovv", "template_t0vq4lx", templateParams)
-            .then(
-              function (response) {
-                alert(
-                  "Wiadomość została wysłana!",
-                  response.status,
-                  response.text
-                );
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                alert("Wystąpił błąd przy wysyłaniu wiadomości...", error);
-              }
-            );
-        });
-    </script>
-  </body>
+        <div class="col-lg-5 col-md-6">
+          <div class="blog-card wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <a href="blog-koszt-aplikacji-mobilnej.html">
+              <img class="blog-card-img" src="assets/images/blog/blog-1.jpg"
+                alt="Ile kosztuje aplikacja mobilna w 2026" />
+            </a>
+            <div class="blog-card-body">
+              <span class="blog-card-tag">Koszty i wycena</span>
+              <h2>Ile kosztuje aplikacja mobilna w 2026?</h2>
+              <p>Prosta aplikacja 5–15 tys. PLN, zaawansowana platforma ponad 300 tys. PLN.
+                Rozkładamy każdy element wyceny – od wyboru technologii po koszty utrzymania po wdrożeniu.</p>
+              <div class="blog-card-footer">
+                <span class="blog-card-meta">13 marca 2026 &middot; 8 min</span>
+                <a href="blog-koszt-aplikacji-mobilnej.html" class="blog-read-more">Czytaj artykuł &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-6">
+          <div class="blog-card wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+            <a href="blog-flutter-vs-react-native.html">
+              <img class="blog-card-img" src="assets/images/blog/blog-2.jpg"
+                alt="Flutter vs React Native 2026" />
+            </a>
+            <div class="blog-card-body">
+              <span class="blog-card-tag">Technologie</span>
+              <h2>Flutter vs React Native – co wybrać w 2026?</h2>
+              <p>Dwa wiodące frameworki cross-platform, jedno konkretne porównanie. Wydajność,
+                ekosystem, koszty developerów i kiedy naprawdę warto sięgać po który z nich.</p>
+              <div class="blog-card-footer">
+                <span class="blog-card-meta">13 marca 2026 &middot; 10 min</span>
+                <a href="blog-flutter-vs-react-native.html" class="blog-read-more">Czytaj artykuł &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer-area" style="background-color:#2e82ef;">
+    <div class="container">
+      <div class="footer-widget">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a class="logo" href="index.html">
+                <img src="assets/images/logo/NEW_LOGO.svg" alt="ITLight logo" />
+              </a>
+              <p class="text" data-i18n="footer-tagline">Zbuduj świetną aplikację lub stronę z naszą pomocą.</p>
+              <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=100090586831204">
+                  <i class="lni lni-facebook-filled"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/it-light/about/">
+                  <i class="lni lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-7 col-sm-12">
+            <div class="footer-link d-flex mt-50">
+              <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div class="footer-title">
+                  <h4 class="title" style="font-size:18px;" data-i18n="footer-company">Firma</h4>
+                </div>
+                <ul class="link" style="padding:0;">
+                  <li><a href="index.html#about" data-i18n="footer-about">O nas</a></li>
+                  <li><a href="index.html#how_we_work" data-i18n="footer-how">Jak pracujemy</a></li>
+                  <li><a href="index.html#values" data-i18n="footer-values">Nasze wartości</a></li>
+                </ul>
+              </div>
+              <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div class="footer-title">
+                  <h4 class="title" style="font-size:18px;" data-i18n="footer-pages">Strony</h4>
+                </div>
+                <ul class="link" style="padding:0;">
+                  <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
+                  <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                  <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+              <div class="footer-title">
+                <h4 class="title" style="font-size:18px;" data-i18n="footer-contact-title">Kontakt</h4>
+              </div>
+              <ul class="contact">
+                <li>+48 786 497 374</li>
+                <li>kontakt@itlight.eu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright">
+              <div class="copyright-content">
+                <p class="text">ITLight Copyright 2024–2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/lang.js"></script>
+</body>
 </html>

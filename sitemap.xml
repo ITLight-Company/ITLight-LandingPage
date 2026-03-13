@@ -5,7 +5,7 @@
   <!-- Strona główna / Home -->
   <url>
     <loc>https://itlight.eu/</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/"/>
@@ -19,7 +19,7 @@
   <!-- Kontakt / Contact -->
   <url>
     <loc>https://itlight.eu/contact.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/contact.html"/>
@@ -33,7 +33,7 @@
   <!-- Portfolio -->
   <url>
     <loc>https://itlight.eu/portfolio.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/portfolio.html"/>
@@ -47,7 +47,7 @@
   <!-- Kariera / Career -->
   <url>
     <loc>https://itlight.eu/career.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="pl"       href="https://itlight.eu/career.html"/>
@@ -61,9 +61,39 @@
   <!-- Polityka prywatności / Privacy Policy -->
   <url>
     <loc>https://itlight.eu/privacy_policy.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://itlight.eu/blog.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog.html"/>
+  </url>
+
+  <!-- Blog: Ile kosztuje aplikacja mobilna w 2026? -->
+  <url>
+    <loc>https://itlight.eu/blog-koszt-aplikacji-mobilnej.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html"/>
+  </url>
+
+  <!-- Blog: Flutter vs React Native 2026 -->
+  <url>
+    <loc>https://itlight.eu/blog-flutter-vs-react-native.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-flutter-vs-react-native.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-flutter-vs-react-native.html"/>
   </url>
 
 </urlset>

@@ -28,8 +28,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="portfolio software house, realizacje IT, aplikacje mobilne Flutter, WordPress, Angular, projekty webowe, ITLight">
   <meta name="author" content="ITLight Software House">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="language" content="pl">
+  <meta name="theme-color" content="#361cc1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://itlight.eu/portfolio.html" />
   <link rel="alternate" hreflang="pl" href="https://itlight.eu/portfolio.html" />
   <link rel="alternate" hreflang="en" href="https://itlight.eu/portfolio.html?lang=en" />
@@ -41,12 +43,23 @@
   <meta property="og:description" content="Poznaj realizacje ITLight – Flutter, WordPress, Angular. Projekty dla firm.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://itlight.eu/portfolio.html">
-  <meta property="og:image" content="https://itlight.eu/assets/images/logo/assets/images/header/header-hero.png">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:secure_url" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ITLight Software House – Portfolio realizacji">
+  <meta property="og:site_name" content="ITLight Software House">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="cs_CZ">
   <meta property="og:locale:alternate" content="sk_SK">
   <meta property="og:locale:alternate" content="lt_LT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ITLightCompany">
+  <meta name="twitter:title" content="Portfolio – Nasze Realizacje | ITLight">
+  <meta name="twitter:description" content="Poznaj realizacje ITLight – Flutter, WordPress, Angular. Projekty dla firm.">
+  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883">
   </script>
@@ -59,6 +72,41 @@
   </script>
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/video/new_icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/video/new_icon.png">
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona Główna", "item": "https://itlight.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://itlight.eu/portfolio.html" }
+    ]
+  }
+  </script>
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portfolio – Nasze Realizacje | ITLight Software House",
+    "url": "https://itlight.eu/portfolio.html",
+    "description": "Realizacje ITLight Software House – aplikacje mobilne Flutter, strony WordPress, platformy webowe Angular.",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://itlight.eu/#organization",
+      "name": "ITLight Software House",
+      "url": "https://itlight.eu"
+    }
+  }
+  </script>
 
   <!--====== CSS Files LinkUp ======-->
   <link rel="stylesheet" href="assets/css/animate.css" />
@@ -198,6 +246,9 @@
                     <a class="nav-link active" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a>
                   </li>
                   <li class="nav-item">
@@ -247,10 +298,10 @@
         <div class="col-lg-10">
           <div class="section-title text-center pb-40">
             <div class="line m-auto"></div>
-            <h3 class="title">
+            <h1 class="title">
               <span data-i18n="pf-hero-title">Portfolio,</span>
               <span data-i18n="pf-hero-span"> Poznaj nasze realizacje</span>
-            </h3>
+            </h1>
           </div>
           <!-- section title -->
         </div>
@@ -631,6 +682,7 @@
                 </div>
                 <ul class="link" style="padding: 0;">
                   <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="career.html" data-i18n="nav-career">Kariera</a></li>
                   <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
                   <li><a href="privacy_policy.html" data-i18n="footer-privacy">Polityka Prywatności</a></li>
