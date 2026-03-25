@@ -54,8 +54,10 @@ const TRANSLATIONS = {
     'hero-survey-link': 'Lub wypełnij krótką ankietę (2 min) →',
 
     /* ---------- Clients ----------------------------------------- */
-    'clients-title': 'Zaufali nam,',
-    'clients-subtitle': 'klienci z wielu branż!',
+    'clients-title': 'Zaufali nam',
+    'proof-projects': 'zrealizowanych projektów',
+    'proof-clients': 'zadowolonych klientów',
+    'proof-years': 'lata na rynku',
 
     /* ---------- Case Studies ------------------------------------ */
     'cases-title': 'Nasze Realizacje,',
@@ -319,8 +321,10 @@ const TRANSLATIONS = {
     'hero-btn-portfolio': 'Our Work',
     'hero-survey-link': 'Or fill in a quick survey (2 min) →',
 
-    'clients-title': 'Trusted by,',
-    'clients-subtitle': 'many companies across various industries!',
+    'clients-title': 'Trusted by',
+    'proof-projects': 'completed projects',
+    'proof-clients': 'happy clients',
+    'proof-years': 'years on the market',
 
     'cases-title': 'Our Work,',
     'cases-subtitle': 'Concrete projects for our clients',
@@ -575,8 +579,10 @@ const TRANSLATIONS = {
     'hero-btn-portfolio': 'Naše projekty',
     'hero-survey-link': 'Nebo vyplňte krátký dotazník (2 min) →',
 
-    'clients-title': 'Důvěřují nám,',
-    'clients-subtitle': 'klienti z mnoha odvětví!',
+    'clients-title': 'Důvěřují nám',
+    'proof-projects': 'dokončených projektů',
+    'proof-clients': 'spokojených klientů',
+    'proof-years': 'roky na trhu',
 
     'cases-title': 'Naše projekty,',
     'cases-subtitle': 'Konkrétní realizace pro naše klienty',
@@ -831,8 +837,10 @@ const TRANSLATIONS = {
     'hero-btn-portfolio': 'Naše projekty',
     'hero-survey-link': 'Alebo vyplňte krátky dotazník (2 min) →',
 
-    'clients-title': 'Dôverujú nám,',
-    'clients-subtitle': 'klienti z mnohých odvetví!',
+    'clients-title': 'Dôverujú nám',
+    'proof-projects': 'dokončených projektov',
+    'proof-clients': 'spokojených klientov',
+    'proof-years': 'roky na trhu',
 
     'cases-title': 'Naše projekty,',
     'cases-subtitle': 'Konkrétne realizácie pre našich klientov',
@@ -1091,8 +1099,10 @@ const TRANSLATIONS = {
     'hero-survey-link': 'Arba užpildykite trumpą anketą (2 min) →',
 
     /* ---------- Clients ----------------------------------------- */
-    'clients-title': 'Mumis pasitiki,',
-    'clients-subtitle': 'klientai iš daugelio sektorių!',
+    'clients-title': 'Mumis pasitiki',
+    'proof-projects': 'užbaigtų projektų',
+    'proof-clients': 'patenkintų klientų',
+    'proof-years': 'metai rinkoje',
 
     /* ---------- Case Studies ------------------------------------ */
     'cases-title': 'Mūsų darbai,',

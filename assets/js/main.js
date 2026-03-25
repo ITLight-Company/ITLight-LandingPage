@@ -113,6 +113,28 @@
   //=====  WOW active
   new WOW().init();
 
+  //====== social proof counters
+  const proofCounters = document.querySelectorAll('.counter[data-count]');
+  if (proofCounters.length) {
+    const animateCounter = (el) => {
+      const target = +el.getAttribute('data-count');
+      const duration = 1500;
+      const step = target / (duration / 16);
+      let current = 0;
+      const update = () => {
+        current += step;
+        if (current >= target) { el.textContent = target; return; }
+        el.textContent = Math.floor(current);
+        requestAnimationFrame(update);
+      };
+      update();
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); observer.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    proofCounters.forEach(c => observer.observe(c));
+  }
+
   //=====  particles
   if (document.getElementById("particles-1"))
     particlesJS("particles-1", {
