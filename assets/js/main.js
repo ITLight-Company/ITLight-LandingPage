@@ -136,7 +136,7 @@
   }
 
   //=====  particles
-  if (document.getElementById("particles-1"))
+  if (document.getElementById("particles-1") && window.innerWidth >= 768)
     particlesJS("particles-1", {
       particles: {
         number: {
@@ -248,7 +248,7 @@
       retina_detect: !0,
     });
 
-  if (document.getElementById("particles-2"))
+  if (document.getElementById("particles-2") && window.innerWidth >= 768)
     particlesJS("particles-2", {
       particles: {
         number: {
