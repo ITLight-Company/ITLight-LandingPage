@@ -2690,3 +2690,17 @@ p {
     justify-content: center;
   }
 }
+
+/* Tech Stack Marquee */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tech-stack-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.tech-stack-marquee .marquee-track span:hover {
+  color: rgba(255,255,255,0.9);
+}
