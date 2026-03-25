@@ -85,7 +85,7 @@ const TRANSLATIONS = {
     'case-beu-badge': '< 2 s ładowania',
     'cases-cta-title': 'Potrzebujesz podobnego projektu?',
     'cases-cta-text': 'Porozmawiajmy o Twoim projekcie i zobaczmy, jak możemy pomóc Ci osiągnąć cele.',
-    'cases-cta-btn': 'Umów Konsultację',
+    'cases-cta-btn': 'Wycena projektu',
 
     /* ---------- About ------------------------------------------- */
     'about-section-title': 'Jesteśmy ITLight,',
@@ -165,7 +165,7 @@ const TRANSLATIONS = {
     'pkg-why-3-text': 'Ciągłe ulepszanie i dodawanie nowych funkcji',
     'pkg-why-4-title': 'Fokus na biznes',
     'pkg-why-4-text': 'Ty skupiasz się na rozwoju biznesu, my dbamy o technologię',
-    'pkg-details-btn': 'Zapytaj o szczegóły',
+    'pkg-details-btn': 'Wycena projektu',
 
     /* ---------- Survey ------------------------------------------ */
     'survey-title': 'Krótka ankieta,',
@@ -354,7 +354,7 @@ const TRANSLATIONS = {
     'case-beu-badge': '< 2 s load time',
     'cases-cta-title': 'Need a similar project?',
     'cases-cta-text': 'Let\'s talk about your project and see how we can help you achieve your goals.',
-    'cases-cta-btn': 'Book a Consultation',
+    'cases-cta-btn': 'Get a Quote',
 
     'about-section-title': 'We are ITLight,',
     'about-section-subtitle': 'a software house with proven results',
@@ -429,7 +429,7 @@ const TRANSLATIONS = {
     'pkg-why-3-text': 'Continuous improvement and addition of new features',
     'pkg-why-4-title': 'Business focus',
     'pkg-why-4-text': 'You focus on growing your business, we take care of the technology',
-    'pkg-details-btn': 'Ask for details',
+    'pkg-details-btn': 'Get a Quote',
 
     'survey-title': 'Quick survey,',
     'survey-subtitle': 'Describe your project in 2 minutes',
@@ -615,7 +615,7 @@ const TRANSLATIONS = {
     'case-beu-badge': '< 2 s načítání',
     'cases-cta-title': 'Potřebujete podobný projekt?',
     'cases-cta-text': 'Promluvme si o vašem projektu a zjistěme, jak vám můžeme pomoci dosáhnout vašich cílů.',
-    'cases-cta-btn': 'Domluvit konzultaci',
+    'cases-cta-btn': 'Cenová nabídka',
 
     'about-section-title': 'Jsme ITLight,',
     'about-section-subtitle': 'software house s konkrétními výsledky',
@@ -690,7 +690,7 @@ const TRANSLATIONS = {
     'pkg-why-3-text': 'Průběžné zlepšování a přidávání nových funkcí',
     'pkg-why-4-title': 'Zaměření na byznys',
     'pkg-why-4-text': 'Vy se soustředíte na rozvoj podnikání, my se staráme o technologie',
-    'pkg-details-btn': 'Zeptat se na podrobnosti',
+    'pkg-details-btn': 'Cenová nabídka',
 
     'survey-title': 'Krátký dotazník,',
     'survey-subtitle': 'Popište svůj projekt za 2 minuty',
@@ -876,7 +876,7 @@ const TRANSLATIONS = {
     'case-beu-badge': '< 2 s načítanie',
     'cases-cta-title': 'Potrebujete podobný projekt?',
     'cases-cta-text': 'Porozprávajme sa o vašom projekte a zistíme, ako vám môžeme pomôcť dosiahnuť vaše ciele.',
-    'cases-cta-btn': 'Dohodnúť konzultáciu',
+    'cases-cta-btn': 'Cenová ponuka',
 
     'about-section-title': 'Sme ITLight,',
     'about-section-subtitle': 'spoločnosť zameraná na najlepšie riešenia pre našich klientov!',
@@ -951,7 +951,7 @@ const TRANSLATIONS = {
     'pkg-why-3-text': 'Priebežné zlepšovanie a pridávanie nových funkcií',
     'pkg-why-4-title': 'Zameranie na biznis',
     'pkg-why-4-text': 'Vy sa sústreďujete na rozvoj podnikania, my sa staráme o technológie',
-    'pkg-details-btn': 'Spýtať sa na podrobnosti',
+    'pkg-details-btn': 'Cenová ponuka',
 
     'survey-title': 'Krátky dotazník,',
     'survey-subtitle': 'Opíšte svoj projekt za 2 minúty',
@@ -1142,7 +1142,7 @@ const TRANSLATIONS = {
     'case-beu-badge': '< 2 s įkėlimas',
     'cases-cta-title': 'Reikia panašaus projekto?',
     'cases-cta-text': 'Pakalbėkime apie jūsų projektą ir sužinokime, kaip galime padėti pasiekti tikslus.',
-    'cases-cta-btn': 'Susisiekti',
+    'cases-cta-btn': 'Gauti pasiūlymą',
 
     /* ---------- About ------------------------------------------- */
     'about-section-title': 'Mes esame ITLight,',
@@ -1222,7 +1222,7 @@ const TRANSLATIONS = {
     'pkg-why-3-text': 'Nuolatinis tobulinimas ir naujų funkcijų pridėjimas',
     'pkg-why-4-title': 'Fokusas į verslą',
     'pkg-why-4-text': 'Jūs sutelkiate dėmesį į verslo plėtrą, mes rūpinamės technologijomis',
-    'pkg-details-btn': 'Teirautis detalių',
+    'pkg-details-btn': 'Gauti pasiūlymą',
 
     /* ---------- Survey ------------------------------------------ */
     'survey-title': 'Trumpa anketa,',
