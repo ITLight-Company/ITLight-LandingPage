@@ -84,10 +84,10 @@ const TRANSLATIONS = {
 
     /* ---------- About ------------------------------------------- */
     'about-section-title': 'Jesteśmy ITLight,',
-    'about-section-subtitle': 'firmą skupioną na najlepszych rozwiązaniach dla naszych klientów!',
-    'about-title': 'Wiodąca Jakość i ',
-    'about-title-span': 'Innowacyjne Technologie w IT',
-    'about-text': 'ITLight powstało w 2024 r., by dostarczać świeże podejście do rozwiązań technologicznych. Nasz zespół, z bogatym doświadczeniem z różnych firm IT, specjalizuje się w budowaniu nowoczesnych stron internetowych i aplikacji. Śledzimy najnowsze trendy, dostarczając klientom najbardziej efektywne i innowacyjne rozwiązania. W ITLight traktujemy się jak rodzina – wspieramy się nawzajem, co przekłada się na zaangażowanie i jakość w pracy. Z nami Twoje projekty IT zawsze będą aktualne i dopasowane do Twoich potrzeb.',
+    'about-section-subtitle': 'software house z konkretnymi wynikami',
+    'about-title': 'Technologia, która ',
+    'about-title-span': 'pracuje na Twój biznes',
+    'about-text': 'ITLight to software house działający od 2024 roku. Realizujemy projekty różnej skali — od stron wizytówkowych i landing page, przez aplikacje mobilne i MVP, po rozbudowane systemy webowe i ich długofalowe utrzymanie. Nasz zespół to programiści z doświadczeniem zdobytym w polskich i zagranicznych firmach IT. Dobieramy technologię i model współpracy do potrzeb klienta — Fixed Price przy nowych projektach, pakiety maintenance przy utrzymaniu.',
 
     /* ---------- How We Work ------------------------------------- */
     'how-section-title': 'Jak Pracujemy,',
@@ -347,10 +347,10 @@ const TRANSLATIONS = {
     'cases-cta-btn': 'Book a Consultation',
 
     'about-section-title': 'We are ITLight,',
-    'about-section-subtitle': 'a company focused on the best solutions for our clients!',
-    'about-title': 'Leading Quality and ',
-    'about-title-span': 'Innovative Technologies in IT',
-    'about-text': 'ITLight was founded in 2024 to bring a fresh approach to technology solutions. Our team, with extensive experience from various IT companies, specialises in building modern websites and applications. We follow the latest trends to provide our clients with the most effective and innovative solutions. At ITLight we treat each other like family – we support one another, which translates into dedication and quality in our work. With us, your IT projects will always be up to date and tailored to your needs.',
+    'about-section-subtitle': 'a software house with proven results',
+    'about-title': 'Technology that ',
+    'about-title-span': 'works for your business',
+    'about-text': 'ITLight is a software house operating since 2024. We deliver projects of all sizes — from business websites and landing pages, through mobile apps and MVPs, to complex web systems and their long-term maintenance. Our team consists of developers with experience from Polish and international IT companies. We match the technology and cooperation model to the client\'s needs — Fixed Price for new projects, maintenance packages for ongoing support.',
 
     'how-section-title': 'How We Work,',
     'how-section-subtitle': 'Our Path to Success',
@@ -603,10 +603,10 @@ const TRANSLATIONS = {
     'cases-cta-btn': 'Domluvit konzultaci',
 
     'about-section-title': 'Jsme ITLight,',
-    'about-section-subtitle': 'společnost zaměřená na nejlepší řešení pro naše klienty!',
-    'about-title': 'Špičková kvalita a ',
-    'about-title-span': 'inovativní technologie v IT',
-    'about-text': 'ITLight bylo založeno v roce 2024, aby přineslo svěží přístup k technologickým řešením. Náš tým, s bohatými zkušenostmi z různých IT společností, se specializuje na tvorbu moderních webových stránek a aplikací. Sledujeme nejnovější trendy, abychom klientům poskytli ta nejefektivnější a nejinovativnější řešení. V ITLight se k sobě chováme jako rodina – vzájemně se podporujeme, což se odráží v nasazení a kvalitě naší práce. S námi budou vaše IT projekty vždy aktuální a přizpůsobené vašim potřebám.',
+    'about-section-subtitle': 'software house s konkrétními výsledky',
+    'about-title': 'Technologie, která ',
+    'about-title-span': 'pracuje pro váš byznys',
+    'about-text': 'ITLight je software house působící od roku 2024. Realizujeme projekty různého rozsahu — od vizitkových stránek a landing page přes mobilní aplikace a MVP až po rozsáhlé webové systémy a jejich dlouhodobou údržbu. Náš tým tvoří vývojáři se zkušenostmi z českých i zahraničních IT firem. Technologii a model spolupráce přizpůsobujeme potřebám klienta — Fixed Price u nových projektů, údržbové balíčky u stávajících.',
 
     'how-section-title': 'Jak pracujeme,',
     'how-section-subtitle': 'Naše cesta k úspěchu',
@@ -1121,10 +1121,10 @@ const TRANSLATIONS = {
 
     /* ---------- About ------------------------------------------- */
     'about-section-title': 'Mes esame ITLight,',
-    'about-section-subtitle': 'įmonė, orientuota į geriausius sprendimus klientams!',
-    'about-title': 'Pirmaujanti kokybė ir ',
-    'about-title-span': 'Inovatyvios IT technologijos',
-    'about-text': 'ITLight įkurtas 2024 m., siekiant teikti inovatyvius technologinius sprendimus. Mūsų komanda, turinti didelę patirtį įvairiose IT įmonėse, specializuojasi kuriant moderniąsias svetaines ir programėles. Sekame naujausias tendencijas, teikdami klientams efektyviausius ir inovatyviausius sprendimus. ITLight traktuojame save kaip šeimą – palaikome vienas kitą, o tai atsispindi atsidavime ir darbo kokybėje. Su mumis jūsų IT projektai visada bus aktualūs ir pritaikyti jūsų poreikiams.',
+    'about-section-subtitle': 'programinės įrangos namų su konkrečiais rezultatais',
+    'about-title': 'Technologijos, kurios ',
+    'about-title-span': 'dirba jūsų verslui',
+    'about-text': 'ITLight – tai programinės įrangos namų, veikiantis nuo 2024 metų. Įgyvendiname įvairaus masto projektus — nuo vizitinių svetainių ir nukreipimo puslapių, per mobilias programėles ir MVP, iki sudėtingų žiniatinklio sistemos ir jų ilgalaikio palaikymo. Mūsų komandą sudaro programuotojai, patirtį įgiję Lietuvos ir užsienio IT įmonėse. Technologiją ir bendradarbiavimo modelį pritaikome kliento poreikiams — Fixed Price naujiems projektams, priežiūros paketai esamiems.',
 
     /* ---------- How We Work ------------------------------------- */
     'how-section-title': 'Kaip dirbame,',
