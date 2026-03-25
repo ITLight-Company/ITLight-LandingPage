@@ -1949,57 +1949,21 @@
               </div>
 
               <div class="form-step" id="step2" style="display: none;">
-                <h5 style="color: #361cc1; margin-bottom: 25px; text-align: center;" data-i18n="survey-step2-title">Krok 2/3: Jaki jest Twój budżet?
+                <h5 style="color: #361cc1; margin-bottom: 25px; text-align: center;" data-i18n="survey-step2-title">Krok 2/3: Opisz swój projekt
                 </h5>
-                <div class="budget-options">
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label class="option-card"
-                        style="display: block; padding: 20px; border: 2px solid #e9ecef; border-radius: 10px; cursor: pointer; transition: all 0.3s; text-align: center;">
-                        <input type="radio" name="budget" value="2k-5k" style="margin-right: 10px;">
-                        <strong>2,000 - 5,000 PLN</strong><br>
-                        <small style="color: #666;" data-i18n="survey-budget-1-sub">Proste strony, sklepy internetowe</small>
-                      </label>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label class="option-card"
-                        style="display: block; padding: 20px; border: 2px solid #e9ecef; border-radius: 10px; cursor: pointer; transition: all 0.3s; text-align: center;">
-                        <input type="radio" name="budget" value="5k-15k" style="margin-right: 10px;">
-                        <strong>5,000 - 15,000 PLN</strong><br>
-                        <small style="color: #666;" data-i18n="survey-budget-2-sub">Landing pages, strony firmowe</small>
-                      </label>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label class="option-card"
-                        style="display: block; padding: 20px; border: 2px solid #e9ecef; border-radius: 10px; cursor: pointer; transition: all 0.3s; text-align: center;">
-                        <input type="radio" name="budget" value="15k-50k" style="margin-right: 10px;">
-                        <strong>15,000 - 50,000 PLN</strong><br>
-                        <small style="color: #666;" data-i18n="survey-budget-3-sub">Średnie projekty, MVP</small>
-                      </label>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label class="option-card"
-                        style="display: block; padding: 20px; border: 2px solid #e9ecef; border-radius: 10px; cursor: pointer; transition: all 0.3s; text-align: center;">
-                        <input type="radio" name="budget" value="50k-100k" style="margin-right: 10px;">
-                        <strong>50,000 - 100,000 PLN</strong><br>
-                        <small style="color: #666;" data-i18n="survey-budget-4-sub">Zaawansowane aplikacje</small>
-                      </label>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <label class="option-card"
-                        style="display: block; padding: 20px; border: 2px solid #e9ecef; border-radius: 10px; cursor: pointer; transition: all 0.3s; text-align: center;">
-                        <input type="radio" name="budget" value="100k+" style="margin-right: 10px;">
-                        <strong>100,000+ PLN</strong><br>
-                        <small style="color: #666;" data-i18n="survey-budget-5-sub">Kompleksowe platformy</small>
-                      </label>
-                    </div>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea name="projectDescription" id="surveyDescription" rows="5"
+                      style="width: 100%; padding: 15px; border: 2px solid #e9ecef; border-radius: 10px; font-size: 15px; resize: vertical;"
+                      data-i18n-placeholder="survey-describe-placeholder"
+                      placeholder="Np. potrzebuję aplikacji mobilnej do zarządzania zamówieniami w restauracji..."></textarea>
                   </div>
                 </div>
                 <div class="text-center mt-4">
                   <button type="button" class="main-btn" onclick="prevStep(1)"
                     style="background: #6c757d; margin-right: 15px;" data-i18n="survey-back">Wstecz</button>
-                  <button type="button" class="main-btn" onclick="nextStep(3)" id="step2Next" disabled
-                    style="opacity: 0.5;" data-i18n="survey-next">Dalej</button>
+                  <button type="button" class="main-btn" onclick="nextStep(3)" id="step2Next"
+                    data-i18n="survey-next">Dalej</button>
                 </div>
               </div>
 
@@ -2234,13 +2198,6 @@
       });
     });
 
-    document.querySelectorAll('input[name="budget"]').forEach(input => {
-      input.addEventListener('change', function () {
-        document.getElementById('step2Next').disabled = false;
-        document.getElementById('step2Next').style.opacity = '1';
-      });
-    });
-
     // Handle survey form submission
     document.getElementById('quickSurveyForm').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -2260,22 +2217,17 @@
         'web-app': '💻 Web Application',
         'mvp': '🚀 MVP',
         'maintenance': '🛡️ Support/Maintenance'
-      }; const budgetLabels = {
-        '2k-5k': '2,000 - 5,000 PLN',
-        '5k-15k': '5,000 - 15,000 PLN',
-        '15k-50k': '15,000 - 50,000 PLN',
-        '50k-100k': '50,000 - 100,000 PLN',
-        '100k+': '100,000+ PLN',
-        'maintenance-monthly': '499-1999 PLN/mo. (Support packages)'
-      };
+      }; 
 
       const formattedMessage = `
 === PROJECT SURVEY - ITLIGHT ===
 
 Project type: ${projectTypeLabels[surveyData.projectType] || surveyData.projectType || 'Not provided'}
-Budget: ${budgetLabels[surveyData.budget] || surveyData.budget || 'Not provided'}
 
 Project description:
+${surveyData.projectDescription || 'No additional information'}
+
+Additional notes:
 ${surveyData.message || 'No additional information'}
 
 Contact details:
@@ -2309,8 +2261,6 @@ Phone: ${surveyData.phone || 'Not provided'}
             document.getElementById('step1').style.display = 'block';
             document.getElementById('step1Next').disabled = true;
             document.getElementById('step1Next').style.opacity = '0.5';
-            document.getElementById('step2Next').disabled = true;
-            document.getElementById('step2Next').style.opacity = '0.5';
           },
           function (error) {
             console.log('FAILED...', error);
