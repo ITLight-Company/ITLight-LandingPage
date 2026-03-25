@@ -46,11 +46,11 @@ const TRANSLATIONS = {
     'nav-free-quote': 'Bezpłatna Wycena',
 
     /* ---------- Hero -------------------------------------------- */
-    'hero-title': 'Tworzenie Aplikacji Mobilnych i Stron WWW',
+    'hero-title': 'Twoje pomysły zamieniamy w działające produkty',
     'hero-subtitle': 'Software House – Projekty dla Firm',
-    'hero-text': 'Profesjonalny software house specjalizujący się w tworzeniu aplikacji mobilnych, stron internetowych i systemów webowych. Realizujemy projekty dla firm – Flutter, Angular, Laravel, WordPress. Bezpłatna wycena w 24h.',
-    'hero-btn-quote': 'Bezpłatna Wycena',
-    'hero-btn-portfolio': 'Nasze Realizacje',
+    'hero-text': 'Od prostej strony firmowej, przez MVP, po rozbudowane systemy — projektujemy, budujemy i utrzymujemy oprogramowanie dla firm.',
+    'hero-btn-quote': 'Wycena projektu',
+    'hero-btn-portfolio': 'Nasze realizacje',
     'hero-survey-link': 'Lub wypełnij krótką ankietę (2 min) →',
 
     /* ---------- Clients ----------------------------------------- */
@@ -318,11 +318,11 @@ const TRANSLATIONS = {
     'nav-contact': 'Contact',
     'nav-free-quote': 'Free Quote',
 
-    'hero-title': 'Mobile App & Website Development',
+    'hero-title': 'We turn your ideas into working products',
     'hero-subtitle': 'Software House – Projects for Businesses',
-    'hero-text': 'Professional software house specialising in mobile app development, websites and web systems. We deliver projects for businesses – Flutter, Angular, Laravel, WordPress. Free quote in 24h.',
-    'hero-btn-quote': 'Free Quote',
-    'hero-btn-portfolio': 'View Our Work',
+    'hero-text': 'From a simple business website, through MVP, to complex systems — we design, build and maintain software for companies.',
+    'hero-btn-quote': 'Get a Quote',
+    'hero-btn-portfolio': 'Our Work',
     'hero-survey-link': 'Or fill in a quick survey (2 min) →',
 
     'clients-title': 'Trusted by,',
@@ -580,10 +580,10 @@ const TRANSLATIONS = {
     'nav-contact': 'Kontakt',
     'nav-free-quote': 'Bezplatná nabídka',
 
-    'hero-title': 'Vývoj mobilních aplikací a webových stránek',
+    'hero-title': 'Vaše nápady proměníme ve fungující produkty',
     'hero-subtitle': 'Software House – Projekty pro firmy',
-    'hero-text': 'Profesionální software house specializující se na vývoj mobilních aplikací, webových stránek a webových systémů. Realizujeme projekty pro firmy – Flutter, Angular, Laravel, WordPress. Bezplatná nabídka do 24h.',
-    'hero-btn-quote': 'Bezplatná nabídka',
+    'hero-text': 'Od jednoduchých firemních stránek přes MVP až po složité systémy — navrhujeme, stavíme a udržujeme software pro firmy.',
+    'hero-btn-quote': 'Cenová nabídka',
     'hero-btn-portfolio': 'Naše projekty',
     'hero-survey-link': 'Nebo vyplňte krátký dotazník (2 min) →',
 
@@ -842,10 +842,10 @@ const TRANSLATIONS = {
     'nav-contact': 'Kontakt',
     'nav-free-quote': 'Bezplatná cenová ponuka',
 
-    'hero-title': 'Vývoj mobilných aplikácií a webových stránok',
+    'hero-title': 'Vaše nápady meníme na fungujúce produkty',
     'hero-subtitle': 'Software House – Projekty pre firmy',
-    'hero-text': 'Profesionálny software house špecializujúci sa na vývoj mobilných aplikácií, webových stránok a webových systémov. Realizujeme projekty pre firmy – Flutter, Angular, Laravel, WordPress. Bezplatná cenová ponuka do 24h.',
-    'hero-btn-quote': 'Bezplatná cenová ponuka',
+    'hero-text': 'Od jednoduchej firemnej stránky cez MVP až po rozsiahle systémy — navrhujeme, staváme a udržiavame softvér pre firmy.',
+    'hero-btn-quote': 'Cenová ponuka',
     'hero-btn-portfolio': 'Naše projekty',
     'hero-survey-link': 'Alebo vyplňte krátky dotazník (2 min) →',
 
@@ -1107,10 +1107,10 @@ const TRANSLATIONS = {
     'nav-free-quote': 'Nemokama kaina',
 
     /* ---------- Hero -------------------------------------------- */
-    'hero-title': 'Mobiliųjų programėlių ir svetainių kūrimas',
+    'hero-title': 'Jūsų idėjas paverčiame veikiančiais produktais',
     'hero-subtitle': 'Software House – Projektai įmonėms',
-    'hero-text': 'Profesionalus software house, specializuojantis mobiliųjų programėlių, svetainių ir žiniatinklio sistemų kūrime. Vykdome projektus įmonėms – Flutter, Angular, Laravel, WordPress. Nemokama kaina per 24h.',
-    'hero-btn-quote': 'Nemokama kaina',
+    'hero-text': 'Nuo paprasto įmonės tinklalapio iki MVP ir sudėtingų sistemų — projektuojame, kuriame ir prižiūrime programinę įrangą įmonėms.',
+    'hero-btn-quote': 'Gauti pasiūlymą',
     'hero-btn-portfolio': 'Mūsų darbai',
     'hero-survey-link': 'Arba užpildykite trumpą anketą (2 min) →',
 
