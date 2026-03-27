@@ -2344,7 +2344,7 @@ p {
   color: #333;
 }
 .dropdown-menu.multi-column {
-  width: 800px; /* szerokość dropdowna */
+  width: 650px;
   padding: 20px;
 }
 
@@ -2388,9 +2388,9 @@ p {
 .dropdown-menu.show ~ .nav-link {
   color: orange;
 }
-/* Domyślny kolor tekstu */
-.nav-link {
-  color: #000; /* Czarny lub inny domyślny kolor */
+/* Domyślny kolor tekstu nawigacji – biały na fioletowym tle */
+.navbar-nav .nav-link {
+  color: #fff;
 }
 
 /* Kolor tekstu, gdy menu jest otwarte */

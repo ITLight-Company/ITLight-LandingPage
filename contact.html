@@ -21,11 +21,11 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title data-i18n="page-title-contact">Kontakt – Bezpłatna Wycena Projektu | ITLight Software House</title>
+  <title data-i18n="page-title-contact">Kontakt – Bezpłatna Wycena Projektu | ITLight</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" data-i18n="meta-desc-contact"
-    content="Skontaktuj się z ITLight – profesjonalnym software housem. Bezpłatna wycena aplikacji mobilnej, strony WWW lub systemu webowego w ciągu 24h. Działamy dla klientów z Polski, Czech i Słowacji.">
+    content="Skontaktuj się z ITLight – bezpłatna wycena aplikacji mobilnej, strony WWW lub systemu webowego w 24h. Polska, Czechy, Słowacja.">
   <meta name="keywords" content="kontakt software house, wycena aplikacji mobilnej, tworzenie strony www, oferta IT, ITLight kontakt">
   <meta name="author" content="ITLight Software House">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -78,6 +78,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
   <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
@@ -125,7 +127,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/slick.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="preload" href="assets/images/logo/NEW_LOGO.svg" as="image" />
 
@@ -160,16 +161,17 @@
     }
 
     button {
-      background-color: #007bff;
+      background-color: #361cc1;
       color: #fff;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #2a15a0;
     }
 
     /* Language switcher active state */
@@ -254,43 +256,23 @@
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="uslugiDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="index.html#features" id="uslugiDropdown" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       <span data-i18n="nav-services">Usługi</span>
                     </a>
                     <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
                       <div class="row">
-                        <div class="col-md-3">
-                          <h6 data-i18n="nav-custom-software-h">Custom Software</h6>
-                          <ul class="list-unstyled">
-                            <li data-i18n="nav-custom-software-1">Oprogramowanie szyte na miarę</li>
-                            <li data-i18n="nav-custom-software-2">Integracje systemów</li>
-                            <li data-i18n="nav-custom-software-3">Internet of Things</li>
-                            <li data-i18n="nav-custom-software-4">Transformacja cyfrowa</li>
-                          </ul>
+                        <div class="col-md-4">
+                          <a href="strony-i-ecommerce.html" style="text-decoration:none;"><h6 data-i18n="nav-web-pages-h" style="color:#361cc1;">Strony i E-commerce</h6></a>
+                          <ul class="list-unstyled"><li data-i18n="nav-web-pages-1">Landing Page</li><li data-i18n="nav-web-pages-2">Strony firmowe</li><li data-i18n="nav-web-pages-3">Sklepy internetowe</li><li data-i18n="nav-web-pages-4">WordPress</li></ul>
                         </div>
-                        <div class="col-md-3">
-                          <h6 data-i18n="nav-mobile-h">Tworzenie Aplikacji Mobilnych</h6>
-                          <ul class="list-unstyled">
-                            <li data-i18n="nav-mobile-1">Aplikacje Flutter</li>
-                            <li data-i18n="nav-mobile-2">Projektowanie UX/UI</li>
-                            <li data-i18n="nav-mobile-3">Aplikacje iOS i Android</li>
-                          </ul>
+                        <div class="col-md-4">
+                          <a href="aplikacje-i-systemy.html" style="text-decoration:none;"><h6 data-i18n="nav-apps-h" style="color:#361cc1;">Aplikacje i Systemy</h6></a>
+                          <ul class="list-unstyled"><li data-i18n="nav-apps-1">Aplikacje mobilne</li><li data-i18n="nav-apps-2">Systemy webowe</li><li data-i18n="nav-apps-3">MVP i prototypy</li><li data-i18n="nav-apps-4">Custom Software</li></ul>
                         </div>
-                        <div class="col-md-3">
-                          <h6 data-i18n="nav-mvp-h">Tworzenie MVP</h6>
-                          <ul class="list-unstyled">
-                            <li data-i18n="nav-mvp-1">Walidacja pomysłu</li>
-                            <li data-i18n="nav-mvp-2">Prototypowanie</li>
-                            <li data-i18n="nav-mvp-3">Proste aplikacje</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-3">
-                          <h6 data-i18n="nav-web-h">Aplikacje Webowe</h6>
-                          <ul class="list-unstyled">
-                            <li data-i18n="nav-web-1">Landing Pages</li>
-                            <li data-i18n="nav-web-2">Aplikacje Flutter, Angular, WordPress</li>
-                          </ul>
+                        <div class="col-md-4">
+                          <a href="rozwoj-i-utrzymanie.html" style="text-decoration:none;"><h6 data-i18n="nav-maint-h" style="color:#361cc1;">Rozwój i Utrzymanie</h6></a>
+                          <ul class="list-unstyled"><li data-i18n="nav-maint-1">Pakiety maintenance</li><li data-i18n="nav-maint-2">Naprawa błędów</li><li data-i18n="nav-maint-3">Optymalizacja wydajności</li><li data-i18n="nav-maint-4">Rozwój funkcjonalności</li></ul>
                         </div>
                       </div>
                     </ul>
@@ -350,10 +332,10 @@
   <div class="col-lg-12">
     <div class="section-title text-center pt-140">
       <div class="line m-auto"></div>
-      <h3 class="title">
+      <h1 class="title">
         <span data-i18n="contact-hero-title">Kontakt,</span>
         <span data-i18n="contact-hero-span"> skontaktuj się z nami</span>
-      </h3>
+      </h1>
     </div>
     <!-- section title -->
   </div>
@@ -384,7 +366,7 @@
             <input type="email" id="email" name="email" required />
 
             <label for="phone" data-i18n="contact-label-phone">Numer telefonu (opcjonalnie)</label>
-            <input type="tel" id="phone" name="phone" required />
+            <input type="tel" id="phone" name="phone" />
 
             <label for="message" data-i18n="contact-label-message">Opisz nam swój projekt *</label>
             <textarea id="message" name="message" rows="4" required></textarea>
@@ -412,17 +394,17 @@
               </p>
               <ul class="social">
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=100090586831204">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100090586831204">
                     <i class="lni lni-facebook-filled"> </i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/it-light/about/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/it-light/about/">
                     <i class="lni lni-linkedin-original"> </i>
                   </a>
                 </li>
                   <li>
-                  <a href="https://zleca.pl/wykonawca/itlight-1745759165">
+                  <a target="_blank" rel="noopener noreferrer" href="https://zleca.pl/wykonawca/itlight-1745759165">
                         <img style="width: 50%;" src="assets/images/profil_3.svg" alt="logo" />
                   </a>
                 </li>

@@ -61,18 +61,28 @@
   <!-- Polityka prywatności / Privacy Policy -->
   <url>
     <loc>https://itlight.eu/privacy_policy.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/privacy_policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/privacy_policy.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/privacy_policy.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/privacy_policy.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/privacy_policy.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/privacy_policy.html"/>
   </url>
 
   <!-- Blog -->
   <url>
     <loc>https://itlight.eu/blog.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog.html?lang=lt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog.html"/>
   </url>
 
@@ -83,6 +93,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html?lang=lt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-koszt-aplikacji-mobilnej.html"/>
   </url>
 
@@ -93,7 +107,95 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-flutter-vs-react-native.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog-flutter-vs-react-native.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog-flutter-vs-react-native.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog-flutter-vs-react-native.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog-flutter-vs-react-native.html?lang=lt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-flutter-vs-react-native.html"/>
+  </url>
+
+  <!-- Blog: AI w tworzeniu aplikacji -->
+  <url>
+    <loc>https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html"/>
+  </url>
+
+  <!-- Blog: Ile kosztuje strona internetowa w 2026? -->
+  <url>
+    <loc>https://itlight.eu/blog-koszt-strony-internetowej.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-koszt-strony-internetowej.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog-koszt-strony-internetowej.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog-koszt-strony-internetowej.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog-koszt-strony-internetowej.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog-koszt-strony-internetowej.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-koszt-strony-internetowej.html"/>
+  </url>
+
+  <!-- Blog: PWA vs natywna aplikacja -->
+  <url>
+    <loc>https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html"/>
+  </url>
+
+  <!-- Usługa: Strony i E-commerce -->
+  <url>
+    <loc>https://itlight.eu/strony-i-ecommerce.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/strony-i-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/strony-i-ecommerce.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/strony-i-ecommerce.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/strony-i-ecommerce.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/strony-i-ecommerce.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/strony-i-ecommerce.html"/>
+  </url>
+
+  <!-- Usługa: Aplikacje i Systemy -->
+  <url>
+    <loc>https://itlight.eu/aplikacje-i-systemy.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/aplikacje-i-systemy.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/aplikacje-i-systemy.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/aplikacje-i-systemy.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/aplikacje-i-systemy.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/aplikacje-i-systemy.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/aplikacje-i-systemy.html"/>
+  </url>
+
+  <!-- Usługa: Rozwój i Utrzymanie -->
+  <url>
+    <loc>https://itlight.eu/rozwoj-i-utrzymanie.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl"        href="https://itlight.eu/rozwoj-i-utrzymanie.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itlight.eu/rozwoj-i-utrzymanie.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="cs"        href="https://itlight.eu/rozwoj-i-utrzymanie.html?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="sk"        href="https://itlight.eu/rozwoj-i-utrzymanie.html?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="lt"        href="https://itlight.eu/rozwoj-i-utrzymanie.html?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itlight.eu/rozwoj-i-utrzymanie.html"/>
   </url>
 
 </urlset>

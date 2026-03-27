@@ -15,11 +15,21 @@
 - [Contact](https://itlight.eu/contact.html): Free project quote within 24h — phone +48 786 497 374, email kontakt@itlight.eu
 - [Career](https://itlight.eu/career.html): Job openings — Flutter developer, Frontend developer
 - [Blog](https://itlight.eu/blog.html): Expert content about mobile app development and IT technologies
+- [Privacy Policy](https://itlight.eu/privacy_policy.html): Privacy policy — data processing, cookies, GDPR rights
+
+## Service Pages
+
+- [Strony Internetowe i E-commerce](https://itlight.eu/strony-i-ecommerce.html): Professional websites, landing pages, e-commerce stores. WordPress, Astro, custom — technology matched to goals and budget. Free quote within 24h.
+- [Aplikacje Mobilne, Webowe i Systemy IT](https://itlight.eu/aplikacje-i-systemy.html): Mobile apps (Flutter), web systems (Angular, Laravel), admin panels and MVPs. From idea to working product.
+- [Rozwój i Utrzymanie Oprogramowania](https://itlight.eu/rozwoj-i-utrzymanie.html): Maintenance packages, bug fixing, performance optimisation, feature development. Packages from 399 PLN/month (Basic) through 899 PLN/month (Professional) to 1999 PLN/month (Enterprise). Custom packages available.
 
 ## Blog Articles
 
 - [Ile kosztuje aplikacja mobilna w 2026? Kompletny przewodnik](https://itlight.eu/blog-koszt-aplikacji-mobilnej.html): Comprehensive mobile app cost guide — simple app 5k–15k PLN, MVP 15k–40k PLN, business app 40k–100k PLN, advanced 100k–300k+ PLN. Covers: cost factors, Flutter vs native cost savings, own team vs software house, 5 tips for getting a good quote, maintenance costs.
 - [Flutter vs React Native – co wybrać w 2026?](https://itlight.eu/blog-flutter-vs-react-native.html): Detailed comparison of cross-platform mobile technologies — performance (Flutter: AOT compilation, React Native: JSI), ecosystem, developer costs, UI consistency, when to choose each. ITLight recommends Flutter for new projects.
+- [AI w tworzeniu aplikacji – poradnik 2026](https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html): How to leverage AI in app development — chatbots, personalisation, process automation. Where AI delivers the biggest ROI and implementation costs in 2026.
+- [Ile kosztuje strona internetowa w 2026?](https://itlight.eu/blog-koszt-strony-internetowej.html): Website pricing guide — WordPress, custom, SaaS comparison. Concrete prices and tips on saving without sacrificing quality.
+- [PWA vs natywna aplikacja – porównanie 2026](https://itlight.eu/blog-pwa-vs-natywna-aplikacja.html): Progressive Web App vs Flutter vs native Swift/Kotlin — cost, performance and device API access comparison. Decision tree included.
 
 ## About ITLight
 
