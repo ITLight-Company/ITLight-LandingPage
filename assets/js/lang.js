@@ -113,6 +113,12 @@
       if (dict[key] !== undefined) el.placeholder = dict[key];
     });
 
+    /* 10b. Badge attributes (CSS content:attr) */
+    document.querySelectorAll('[data-i18n-badge]').forEach(function (el) {
+      const key = el.getAttribute('data-i18n-badge');
+      if (dict[key] !== undefined) el.setAttribute('data-badge', dict[key]);
+    });
+
     /* 11. Update language switcher indicator */
     const langIndicator = document.getElementById('langIndicator');
     if (langIndicator) {

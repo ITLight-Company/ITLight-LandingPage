@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-555JWTXM0Z"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-555JWTXM0Z');</script>
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vkd7euqks7");</script>
+  <meta charset="utf-8" />
+  <title>AI w tworzeniu aplikacji – poradnik 2026 | ITLight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jak AI zmienia tworzenie aplikacji mobilnych i webowych w 2026? Praktyczne zastosowania, narzędzia i kiedy warto wdrożyć AI w swoim projekcie.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#361cc1">
+  <meta name="author" content="ITLight Software House">
+  <link rel="canonical" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html" />
+  <link rel="alternate" hreflang="pl" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html" />
+  <link rel="alternate" hreflang="en" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=en" />
+  <link rel="alternate" hreflang="cs" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=cs" />
+  <link rel="alternate" hreflang="sk" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=sk" />
+  <link rel="alternate" hreflang="lt" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html?lang=lt" />
+  <link rel="alternate" hreflang="x-default" href="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html" />
+
+  <meta property="og:title" content="AI w tworzeniu aplikacji – jak wykorzystać sztuczną inteligencję w 2026">
+  <meta property="og:description" content="Praktyczny przewodnik po AI w software development. Chatboty, automatyzacja, personalizacja – co naprawdę działa.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html">
+  <meta property="og:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="ITLight Software House">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="article:published_time" content="2026-03-26">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI w tworzeniu aplikacji – poradnik 2026 | ITLight">
+  <meta name="twitter:description" content="Jak AI zmienia tworzenie aplikacji? Chatboty, automatyzacja, personalizacja – praktyczne zastosowania.">
+  <meta name="twitter:image" content="https://itlight.eu/assets/images/logo/itlight-pg-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona Główna", "item": "https://itlight.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://itlight.eu/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "AI w tworzeniu aplikacji", "item": "https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI w tworzeniu aplikacji – jak wykorzystać sztuczną inteligencję w 2026",
+    "description": "Praktyczny przewodnik po AI w tworzeniu aplikacji mobilnych i webowych.",
+    "url": "https://itlight.eu/blog-ai-w-tworzeniu-aplikacji.html",
+    "datePublished": "2026-03-26",
+    "dateModified": "2026-03-26",
+    "inLanguage": "pl",
+    "author": { "@type": "Organization", "name": "ITLight Software House", "url": "https://itlight.eu" },
+    "publisher": { "@type": "Organization", "name": "ITLight Software House", "logo": { "@type": "ImageObject", "url": "https://itlight.eu/assets/images/logo/NEW_LOGO.svg" } },
+    "image": "https://itlight.eu/assets/images/logo/itlight-pg-image.jpg",
+    "keywords": "AI w aplikacjach, sztuczna inteligencja, chatbot, automatyzacja, machine learning, software house"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje wdrożenie AI w aplikacji?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Prosty chatbot oparty o gotowe API (np. OpenAI) to koszt od 3 000 do 10 000 PLN. Zaawansowane systemy rekomendacji czy analizy obrazu mogą kosztować od 20 000 PLN wzwyż." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy każda aplikacja potrzebuje AI?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nie. AI ma sens gdy masz dużo danych do analizy, potrzebujesz personalizacji na skalę lub chcesz zautomatyzować powtarzalne procesy. Dla prostych stron czy CRUD-ów AI jest zbędne." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie narzędzia AI są najpopularniejsze w 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "OpenAI GPT-4o i Claude do chatbotów i generowania tekstu, TensorFlow Lite i Core ML do on-device ML, Firebase ML Kit do rozpoznawania obrazów, Whisper do transkrypcji mowy." }
+      }
+    ]
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11420175883"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11420175883');</script>
+
+  <link rel="shortcut icon" href="assets/images/video/new_icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/video/new_icon.png">
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .lang-option{color:#222!important;font-size:14px}.lang-option:hover{background:#f0f1ff!important;color:#361cc1!important}.lang-option.active{font-weight:700;color:#361cc1!important;background:#eef0ff!important}
+    .article-body{max-width:780px;margin:0 auto;padding:60px 20px 80px}
+    .article-body h2{font-size:1.65rem;font-weight:700;color:#1a1a2e;margin-top:48px;margin-bottom:16px}
+    .article-body h3{font-size:1.25rem;font-weight:700;color:#361cc1;margin-top:32px;margin-bottom:12px}
+    .article-body p{font-size:1.05rem;line-height:1.85;color:#333;margin-bottom:18px}
+    .article-body ul{margin-bottom:18px;padding-left:22px}
+    .article-body ul li{font-size:1.05rem;line-height:1.8;color:#333;margin-bottom:6px}
+    .highlight-box{background:linear-gradient(135deg,#361cc1,#2e82ef);color:#fff;border-radius:14px;padding:32px;margin:40px 0;text-align:center}
+    .highlight-box h3{color:#fff;font-size:1.4rem;margin-bottom:12px}
+    .highlight-box p{color:rgba(255,255,255,.9);margin-bottom:20px}
+    .tip-box{background:#fff9e6;border:1px solid #ffd700;border-radius:10px;padding:20px 24px;margin:24px 0}
+    .tip-box strong{color:#b8860b}
+    .article-meta{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:20px}
+    .tag{display:inline-block;background:rgba(255,255,255,.2);color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;margin-right:8px}
+    .back-link{color:#361cc1;font-weight:600;text-decoration:none;font-size:15px}
+    .back-link:hover{color:#2e82ef}
+    .price-table{background:#f7f8ff;border-radius:12px;padding:24px 28px;margin:32px 0;border-left:4px solid #361cc1}
+    .price-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #e8eaff}
+    .price-row:last-child{border-bottom:none}
+    .price-label{font-weight:600;color:#1a1a2e;font-size:1rem}
+    .price-value{font-weight:700;color:#361cc1;font-size:1rem}
+  </style>
+</head>
+
+<body>
+  <header class="header-area">
+    <div style="background:#361cc1; position:fixed; top:0; left:0; width:100%; z-index:99; backdrop-filter:blur(5px); box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.1); transition:all 0.3s ease-out 0s;">
+      <div class="container">
+        <div class="row"><div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg" style="padding:15px 0 !important;">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo/NEW_LOGO.svg" alt="ITLight Software House – logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+              <ul id="nav" class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="firmaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span data-i18n="nav-company">Firma</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="firmaDropdown">
+                    <li><a class="dropdown-item" href="index.html#about" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-about">O nas</a></li>
+                    <li><a class="dropdown-item" href="index.html#how_we_work" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-how-we-work">Jak pracujemy</a></li>
+                    <li><a class="dropdown-item" href="index.html#values" style="color:black;padding-left:10px;font-size:15px;" data-i18n="nav-values">Nasze wartości</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="index.html#features" id="uslugiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span data-i18n="nav-services">Usługi</span></a>
+                  <ul class="dropdown-menu multi-column" aria-labelledby="uslugiDropdown">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="strony-i-ecommerce.html" style="text-decoration:none;"><h6 data-i18n="nav-web-pages-h" style="color:#361cc1;">Strony i E-commerce</h6></a>
+                        <ul class="list-unstyled"><li data-i18n="nav-web-pages-1">Landing Page</li><li data-i18n="nav-web-pages-2">Strony firmowe</li><li data-i18n="nav-web-pages-3">Sklepy internetowe</li><li data-i18n="nav-web-pages-4">WordPress</li></ul>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="aplikacje-i-systemy.html" style="text-decoration:none;"><h6 data-i18n="nav-apps-h" style="color:#361cc1;">Aplikacje i Systemy</h6></a>
+                        <ul class="list-unstyled"><li data-i18n="nav-apps-1">Aplikacje mobilne</li><li data-i18n="nav-apps-2">Systemy webowe</li><li data-i18n="nav-apps-3">MVP i prototypy</li><li data-i18n="nav-apps-4">Custom Software</li></ul>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="rozwoj-i-utrzymanie.html" style="text-decoration:none;"><h6 data-i18n="nav-maint-h" style="color:#361cc1;">Rozwój i Utrzymanie</h6></a>
+                        <ul class="list-unstyled"><li data-i18n="nav-maint-1">Pakiety maintenance</li><li data-i18n="nav-maint-2">Naprawa błędów</li><li data-i18n="nav-maint-3">Optymalizacja wydajności</li><li data-i18n="nav-maint-4">Rozwój funkcjonalności</li></ul>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html" data-i18n="nav-career">Kariera</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                <li class="nav-item dropdown ms-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight:600;letter-spacing:.5px;"><span id="langIndicator">🇵🇱 PL</span></a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="min-width:160px;">
+                    <li><a class="dropdown-item lang-option" href="#" data-lang="pl" onclick="switchLang('pl');return false;">🇵🇱 Polski</a></li>
+                    <li><a class="dropdown-item lang-option" href="#" data-lang="en" onclick="switchLang('en');return false;">🇬🇧 English</a></li>
+                    <li><a class="dropdown-item lang-option" href="#" data-lang="cs" onclick="switchLang('cs');return false;">🇨🇿 Čeština</a></li>
+                    <li><a class="dropdown-item lang-option" href="#" data-lang="sk" onclick="switchLang('sk');return false;">🇸🇰 Slovenčina</a></li>
+                    <li><a class="dropdown-item lang-option" href="#" data-lang="lt" onclick="switchLang('lt');return false;">🇱🇹 Lietuvių</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-btn d-none d-sm-inline-block">
+              <a class="main-btn" href="contact.html" data-i18n="nav-free-quote">Bezpłatna Wycena</a>
+            </div>
+          </nav>
+        </div></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="services-area pt-120 pb-20" style="border-bottom:1px solid #f0f0f0;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center pb-30">
+            <div class="line m-auto"></div>
+            <p style="margin-bottom:10px;"><a href="blog.html" style="color:#888;font-size:14px;text-decoration:none;">← Blog</a> <span style="color:#ddd;margin:0 8px;">/</span><span style="color:#361cc1;font-size:14px;font-weight:700;">AI &amp; ML</span></p>
+            <h1 class="title">AI w tworzeniu aplikacji – <span>jak wykorzystać sztuczną inteligencję w 2026</span></h1>
+            <p style="font-size:.88rem;color:#aaa;margin-top:10px;margin-bottom:0;">26 marca 2026 &nbsp;·&nbsp; 9 min czytania</p>
+            <p style="font-size:1rem;color:#555;margin-top:16px;line-height:1.75;max-width:600px;margin-left:auto;margin-right:auto;">Sztuczna inteligencja przestała być buzzwordem. Gdzie AI daje największy ROI i ile kosztuje wdrożenie w 2026 roku.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="article-body">
+
+      <p>Sztuczna inteligencja przestała być buzzwordem. W 2026 roku to konkretne narzędzie, które obniża koszty, zwiększa konwersję i automatyzuje procesy, które wcześniej wymagały dziesiątek godzin pracy ludzkiej. Pytanie nie brzmi już „czy warto", ale „gdzie AI da największy zwrot z inwestycji".</p>
+
+      <h2>Gdzie AI naprawdę działa w aplikacjach</h2>
+
+      <h3>1. Chatboty i asystenci AI</h3>
+      <p>Integracja z GPT-4o lub Claude pozwala stworzyć obsługę klienta, która działa 24/7, odpowiada w kilku językach i uczy się z każdej rozmowy. Nie chodzi o prostego bota z drzewkiem odpowiedzi — to pełnoprawny asystent, który rozumie kontekst.</p>
+      <ul>
+        <li>Redukcja zapytań do supportu o 40–60%</li>
+        <li>Natychmiastowa odpowiedź vs. średnio 4h czekania na mail</li>
+        <li>Koszt wdrożenia: od 5 000 PLN (gotowe API) do 30 000 PLN (custom model)</li>
+      </ul>
+
+      <h3>2. Personalizacja treści</h3>
+      <p>Algorytmy rekomendacji to nie tylko Netflix. Każdy sklep e-commerce, platforma edukacyjna czy aplikacja fitnessowa może wykorzystać AI do dopasowania treści do użytkownika. Efekt? Wyższe zaangażowanie, dłuższe sesje i więcej konwersji.</p>
+
+      <h3>3. Automatyzacja procesów</h3>
+      <p>Rozpoznawanie dokumentów (OCR + AI), automatyczna kategoryzacja zgłoszeń, generowanie raportów — to obszary, gdzie AI oszczędza setki godzin miesięcznie. Szczególnie w branżach: fintech, logistyka, HR.</p>
+
+      <h3>4. Analiza obrazu i wideo</h3>
+      <p>Od rozpoznawania produktów na zdjęciach po analizę stanu technicznego maszyn. TensorFlow Lite i Core ML pozwalają uruchamiać modele bezpośrednio na telefonie — bez wysyłania danych na serwer.</p>
+
+      <h2>Ile kosztuje wdrożenie AI w aplikacji</h2>
+
+      <div class="price-table">
+        <div class="price-row"><span class="price-label">Chatbot (gotowe API)</span><span class="price-value">3 000 – 10 000 PLN</span></div>
+        <div class="price-row"><span class="price-label">System rekomendacji</span><span class="price-value">15 000 – 40 000 PLN</span></div>
+        <div class="price-row"><span class="price-label">OCR / rozpoznawanie dokumentów</span><span class="price-value">10 000 – 25 000 PLN</span></div>
+        <div class="price-row"><span class="price-label">Custom model ML</span><span class="price-value">30 000 – 100 000+ PLN</span></div>
+        <div class="price-row"><span class="price-label">On-device ML (mobile)</span><span class="price-value">20 000 – 50 000 PLN</span></div>
+      </div>
+
+      <div class="tip-box">
+        <strong>Wskazówka:</strong> Zacznij od gotowych API (OpenAI, Google Cloud AI). Custom modele mają sens tylko gdy masz unikalne dane i skala projektu to uzasadnia.
+      </div>
+
+      <h2>Kiedy AI nie ma sensu</h2>
+      <p>AI to nie magia. Są sytuacje, gdzie to przerost formy nad treścią:</p>
+      <ul>
+        <li><strong>Mała baza użytkowników</strong> — rekomendacje potrzebują danych. Przy 100 użytkownikach nie ma czego analizować.</li>
+        <li><strong>Proste CRUD-y</strong> — formularz kontaktowy nie potrzebuje machine learningu.</li>
+        <li><strong>Brak jasnego KPI</strong> — „chcemy AI" to nie cel biznesowy. „Chcemy zmniejszyć czas obsługi o 50%" — to jest cel.</li>
+      </ul>
+
+      <h2>Narzędzia AI, które używamy w ITLight</h2>
+      <ul>
+        <li><strong>OpenAI API</strong> — chatboty, generowanie tekstu, analiza danych</li>
+        <li><strong>Claude (Anthropic)</strong> — zaawansowane rozumowanie, analiza dokumentów, kodowanie z AI</li>
+        <li><strong>Firebase ML Kit</strong> — rozpoznawanie tekstu, twarzy, barcode na mobile</li>
+        <li><strong>TensorFlow Lite</strong> — custom modele na urządzeniach mobilnych</li>
+        <li><strong>Whisper</strong> — transkrypcja mowy do tekstu</li>
+        <li><strong>LangChain</strong> — budowanie inteligentnych agentów i pipeline'ów AI</li>
+      </ul>
+
+      <h2>Jak wdrażamy AI w projektach</h2>
+      <p>Nie rzucamy się na głęboką wodę. Każde wdrożenie AI zaczynamy od trzech pytań:</p>
+      <ul>
+        <li><strong>Jaki problem rozwiązujesz?</strong> — konkretny use case, nie „bo konkurencja ma".</li>
+        <li><strong>Jakie dane masz?</strong> — AI potrzebuje paliwa. Im lepsze dane, tym lepsze wyniki.</li>
+        <li><strong>Jaki jest ROI?</strong> — czy automatyzacja zaoszczędzi więcej niż kosztuje wdrożenie?</li>
+      </ul>
+      <p>Potem prototyp (2–3 tygodnie), testy z prawdziwymi użytkownikami, iteracja. Żadnych 6-miesięcznych projektów „na wiarę".</p>
+
+      <div class="highlight-box">
+        <h3>Chcesz dodać AI do swojej aplikacji?</h3>
+        <p>Oceń to bezpłatnie. Powiedz nam co chcesz zautomatyzować — powiemy czy AI ma tu sens i ile to będzie kosztować.</p>
+        <a href="contact.html" class="main-btn" style="background:#fff;color:#361cc1;font-weight:700;">Bezpłatna konsultacja</a>
+      </div>
+
+      <h2>Podsumowanie</h2>
+      <p>AI w 2026 to realne narzędzie, które potrafi obniżyć koszty operacyjne, zwiększyć zaangażowanie użytkowników i zautomatyzować nudne procesy. Ale tylko wtedy, gdy wdrażasz je z konkretnym celem i mierzysz wyniki.</p>
+      <p>Nie potrzebujesz własnego modelu GPT. Często wystarczy integracja z istniejącym API za ułamek ceny custom developmentu.</p>
+
+      <hr style="margin:48px 0;border-color:#e8eaff;">
+      <p style="font-size:.95rem;color:#888;margin-bottom:8px;">Następny artykuł:</p>
+      <a href="blog-koszt-strony-internetowej.html" style="font-size:1.1rem;font-weight:700;color:#361cc1;text-decoration:none;">
+        Ile kosztuje strona internetowa w 2026? <i class="lni lni-arrow-right"></i>
+      </a>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer-area" style="background-color:#2e82ef;">
+    <div class="container">
+      <div class="footer-widget">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="footer-about mt-50">
+              <a class="logo" href="index.html"><img src="assets/images/logo/NEW_LOGO.svg" alt="ITLight logo" /></a>
+              <p class="text" data-i18n="footer-tagline">Zbuduj świetną aplikację lub stronę z naszą pomocą.</p>
+              <ul class="social">
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100090586831204"><i class="lni lni-facebook-filled"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/it-light/about/"><i class="lni lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-7 col-sm-12">
+            <div class="footer-link d-flex mt-50">
+              <div class="link-wrapper">
+                <div class="footer-title"><h4 class="title" style="font-size:18px;" data-i18n="footer-company">Firma</h4></div>
+                <ul class="link" style="padding:0;">
+                  <li><a href="index.html#about" data-i18n="footer-about">O nas</a></li>
+                  <li><a href="index.html#how_we_work" data-i18n="footer-how">Jak pracujemy</a></li>
+                </ul>
+              </div>
+              <div class="link-wrapper">
+                <div class="footer-title"><h4 class="title" style="font-size:18px;" data-i18n="footer-pages">Strony</h4></div>
+                <ul class="link" style="padding:0;">
+                  <li><a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html" data-i18n="nav-contact">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="footer-contact mt-50">
+              <div class="footer-title"><h4 class="title" style="font-size:18px;" data-i18n="footer-contact-title">Kontakt</h4></div>
+              <ul class="contact"><li>+48 786 497 374</li><li>kontakt@itlight.eu</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="row"><div class="col-lg-12">
+          <div class="copyright"><div class="copyright-content"><p class="text">ITLight Copyright 2024–2026</p></div></div>
+        </div></div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>
